@@ -1,0 +1,9 @@
+[
+  {
+    "available_to_trade_date": "2024-12-16",
+    "verified": true,
+    "filing_url": "https://example.invalid/test-fixture",
+    "profit_surprise_pct": 20,
+    "revenue_surprise_pct": 10
+  }
+]
