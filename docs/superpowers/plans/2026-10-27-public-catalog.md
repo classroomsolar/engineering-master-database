@@ -37,47 +37,47 @@
 
 Files: website/tools/build_collections.py, verify_collections.py, catalog_store.py; website/tests/test_data_pipeline.py; website/docs/data-model.md.
 
-- [ ] Reproduce unsafe/default report writes and fixed-path assumptions with tests.
-- [ ] Add explicit source/output paths and isolated deterministic generation; retain original identity rules.
-- [ ] Import raw rows/cells and catalog/provenance into a derived indexed SQLite model without rewriting originals.
-- [ ] Verify current relationships/hashes and test corruption, queries, repeatability and field preservation.
+- [x] Reproduce unsafe/default report writes and fixed-path assumptions with tests.
+- [x] Add explicit source/output paths and isolated deterministic generation; retain original identity rules.
+- [x] Import raw rows/cells and catalog/provenance into a derived indexed SQLite model without rewriting originals.
+- [x] Verify current relationships/hashes and test corruption, queries, repeatability and field preservation.
 
 ## Batch 3: Public website correctness and navigation
 
 Files: website/dist/index.html and assets; website/tests/test_browser.py.
 
-- [ ] Add failing browser regressions for stale requests, invalid pages/hash, failure recovery and reference filtering.
-- [ ] Fix root causes; preserve all existing categories, details, downloads and references.
-- [ ] Add useful source/quality filters and stable record navigation; improve public language, keyboard and mobile behavior.
-- [ ] Exercise all categories, original controls, downloads and new interactions in Chromium.
+- [x] Add failing browser regressions for stale requests, invalid pages/hash, failure recovery and reference filtering.
+- [x] Fix root causes; preserve all existing categories, details, downloads and references.
+- [x] Add useful source/quality filters and stable record navigation; improve public language, keyboard and mobile behavior.
+- [x] Exercise all categories, original controls, downloads and new interactions in Chromium.
 
 ## Batch 4: Source research and usable public serving
 
 Files: docs/research; website/tools/serve.py; website/tests/test_public_server.py.
 
-- [ ] Inspect authoritative current source snapshots and useful browsing patterns; stage exact comparisons separately.
-- [ ] Add real HTTP regressions for directory listing, hidden files, traversal, symlink escape, content types and safe headers.
-- [ ] Implement a read-only server rooted exclusively in the engineering dist directory; test valid assets and denied private paths.
-- [ ] Add equipment only when exact source identity, variant/scope and provenance are established; record any deferred import explicitly.
+- [x] Inspect authoritative current source snapshots and useful browsing patterns; stage exact comparisons separately.
+- [x] Add real HTTP regressions for directory listing, hidden files, traversal, symlink escape, content types and safe headers.
+- [x] Implement a read-only server rooted exclusively in the engineering dist directory; test valid assets and denied private paths.
+- [x] Add equipment only when exact source identity, variant/scope and provenance are established; record any deferred import explicitly.
 
 ## Batch 5: Integration, CI and current audit evidence
 
 Files: 06_Verification/verify_transfer.py and tests; .github/workflows/engineering.yml; README.md; .gitignore; docs/audits.
 
-- [ ] Test preservation verification in strict historical-snapshot and current immutable-input modes.
-- [ ] Distinguish source-code changes from input corruption; reject unsafe paths and report current run identity.
-- [ ] Run Python, data and browser checks through one reproducible documented workflow and CI.
-- [ ] Compare immutable inputs with original manifest again, review all changed files and resolve important findings.
-- [ ] Update reusable environment startup configuration for the restored checkout.
+- [x] Test preservation verification in strict historical-snapshot and current immutable-input modes.
+- [x] Distinguish source-code changes from input corruption; reject unsafe paths and report current run identity.
+- [x] Run Python, data and browser checks through one reproducible documented workflow and CI.
+- [x] Compare immutable inputs with original manifest again, review all changed files and resolve important findings.
+- [x] Update reusable environment startup configuration for the restored checkout.
 
 ## Batch 6: GitHub delivery
 
-- [ ] Record exact passing/failing/skipped/unrun checks and research scope; never claim universal absence of bugs.
-- [ ] Commit and push the tested improvement branch, create a reviewable PR and attach it to this task.
+- [x] Record exact passing/failing/skipped/unrun checks and research scope; never claim universal absence of bugs.
+- [x] Commit and push the tested improvement branch, create a reviewable PR and attach it to this task.
 
 ## Completion evidence
 
-Batches 1–5 are complete. All implementation/test steps above were executed: 25 transfer tests and 40 website/tool tests pass without skips; released and rebuilt collection verification pass 3,617,576 checks each; two builds match exactly; full SQLite import/foreign keys/integrity and 277,938 metric bindings pass; protected input verification passes. Independent review findings were reproduced and fixed with regressions, including contradictory projected metrics, cold skip-link initialization and NUL search input. See docs/audits/2026-10-27-public-catalog.md for scope, source research, remaining qualifications and saved environment instructions. Batch 6 is being committed and delivered through a GitHub pull request.
+Batches 1–5 are complete. All implementation/test steps above were executed: 25 transfer tests and 40 website/tool tests pass without skips; released and rebuilt collection verification pass 3,617,576 checks each; two builds match exactly; full SQLite import/foreign keys/integrity and 277,938 metric bindings pass; protected input verification passes. Independent review findings were reproduced and fixed with regressions, including contradictory projected metrics, cold skip-link initialization and NUL search input. See docs/audits/2026-10-27-public-catalog.md for scope, source research, remaining qualifications and saved environment instructions. Batch 6 is delivered in https://github.com/classroomsolar/engineering-master-database/pull/1. The complete clean-runner GitHub workflow passed; a final maintenance revision pins supported CI action commits and the Ubuntu image.
 
 ## Execution decisions
 
