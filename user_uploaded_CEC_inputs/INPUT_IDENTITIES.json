@@ -1,0 +1,57 @@
+{
+  "inputFiles": 10,
+  "uniqueContents": 9,
+  "duplicateDisposition": "The two supplied Grid Support exports are byte-identical. Both original input filenames are retained as evidence; they were not imported twice.",
+  "files": [
+    {
+      "name": "Batteries_Archive_ADA.xlsx",
+      "bytes": 17816,
+      "sha256": "c3383d491f96de2f3ff84e708d11f87d47341f09478e7c3788273deabed2ea54"
+    },
+    {
+      "name": "Battery_List_Data_ADA.xlsx",
+      "bytes": 122389,
+      "sha256": "66077b6c5be5e68cfb87c7db42a54c16af3616abc80a22114dcad6a51a21f3ea"
+    },
+    {
+      "name": "Energy_Storage_System_List_Data_ADA.xlsx",
+      "bytes": 1373713,
+      "sha256": "bebd991435b184d16b09886c89c4971bf27521c72ec3b7354719a2a8a2230e0d"
+    },
+    {
+      "name": "Grid_Support_Inverter_List_Full_Data_ADA (1).xlsm",
+      "bytes": 1662900,
+      "sha256": "0292b8a044f9d7545bae762e75aad06928ede2d898d24ee88a26929b924b319d"
+    },
+    {
+      "name": "Grid_Support_Inverter_List_Full_Data_ADA (2).xlsm",
+      "bytes": 1662900,
+      "sha256": "0292b8a044f9d7545bae762e75aad06928ede2d898d24ee88a26929b924b319d"
+    },
+    {
+      "name": "Inverter_and_Energy_Storage_System_PCS_List_ADA.xlsx",
+      "bytes": 220570,
+      "sha256": "f3bc4326dc6162a29a6ac1cc334fc67ba6198631745833f4a5d519711c6fd9d8"
+    },
+    {
+      "name": "Meter_List_Data_ADA.xlsx",
+      "bytes": 73756,
+      "sha256": "3d8d151ec644bdf8b406dc20eca5b526f31cae5495d55fdd87cc41b85f5f77dc"
+    },
+    {
+      "name": "PV_Module-Archive_ADA.xlsx",
+      "bytes": 918013,
+      "sha256": "4de4c5ee8dd9a851d67806f3488c3df21ac8f50bf02566c8d3b2f35a0f9d55c6"
+    },
+    {
+      "name": "Power_Control_System_List_ADA.xlsx",
+      "bytes": 38053,
+      "sha256": "5cf09612d541d6ccd003459bbb5904faba62d2fcf327641b0e2a33f7b96d0d67"
+    },
+    {
+      "name": "Utility_Interactive_Inverter_List_Full_Data_ada.xlsm",
+      "bytes": 1171040,
+      "sha256": "4ced8429aad010c8b4cc0bbe1b466817cf18d8a69c5747217a4eb35fb201c942"
+    }
+  ]
+}

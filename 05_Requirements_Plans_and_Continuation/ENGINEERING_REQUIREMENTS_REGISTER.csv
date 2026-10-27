@@ -1,0 +1,41 @@
+ID,Area,User requirement or final decision,Current evidence and status
+E001,Database utilisation,Use the existing master database fully for the intended calculator.,"Requested; this website exposes all original source fields, but complete consumption by a separate calculator is not verified."
+E002,Plugins,Use every relevant installed plugin for its actual capability and report concrete access limits.,Ongoing research preference; unrelated plugins need not be forced into the task.
+E003,Video research,Use relevant equipment videos and vidIQ where usable; verify technical specifications against primary publications.,Requested; no exhaustive all-YouTube completion claim.
+E004,Papers,Verify research papers with research-capable tools and original publications.,Prior evidence retained; no claim every paper was independently reproduced.
+E005,Web research,Identify product/manufacturer/vendor first; obtain exact specifications from official or clearly qualified trusted sources.,Applied to source audits; continuing expansion remains open.
+E006,Exclusions,Leave Formula Genius out of the engineering workflow.,Retain exclusion.
+E007,Exclusions,Leave Coursera out of the engineering workflow.,Retain exclusion.
+E008,Workflow,Continue existing work; preserve progress; respect stop/resume directions.,Do not restart the project or claim background work runs without supported jobs.
+E009,Workflow,Work independently within authorised scope and avoid repeatedly waiting for routine implementation instructions.,Retain preference; do not make unsupported precision or completion guarantees.
+E010,Equipment expansion,"Add as much relevant authenticated equipment as reasonably available, without duplicate equipment entries.",Ongoing; current catalogue is not claimed exhaustive.
+E011,Vendors,Maintain traceable manufacturer/vendor identities and exact product variants.,Original identities and source records retained.
+E012,Duplicate handling,"Compare actual specifications, revisions, voltages and roles; names alone do not justify merging.",Scoped duplicate audits retained; no global semantic-uniqueness guarantee.
+E013,Suspect records,Check suspicious records against original sources; retain withheld/unqualified values when evidence is insufficient.,Existing review gates remain applicable.
+E014,CEC source,"Use official CEC equipment lists including active, archived and relevant configuration data.","55,018 source memberships retained; original download ledger and files included in DB12 evidence."
+E015,User CEC inputs,Compare uploaded CEC files with current database; add only genuinely missing records in proper category.,"DB13 comparison: ten inputs, nine unique contents; no missing rows or native value differences, no equipment additions."
+E016,Source identity,Do not import duplicated file content twice.,"The two Grid Support inputs are identical; original inputs retained as evidence, not duplicated equipment."
+E017,Organisation,"Keep all similar equipment in one functional place, without a separate CEC equipment section.","Implemented: 29 equipment categories, original source links attached within records."
+E018,PV modules,Keep all PV modules in one PV modules list.,"Implemented: 39,400 primary catalogue records."
+E019,Inverters,Keep inverters in one inverter list.,"Implemented: 5,739 catalogue records/configurations including all 5,603 core original inverter records."
+E020,Other equipment,Keep related equipment together while retaining distinct assembly/component and configuration roles.,"Implemented by category/type filters; counts are records/configurations, not installed quantities."
+E021,Raw provenance,"Keep original CEC and manufacturer claims inspectable with scope, identity basis and original source values.",Implemented; candidate links remain qualified.
+E022,Data preservation,Do not alter data during spreadsheet splitting or website conversion.,Master version 13 and all original source/Excel files retained unchanged.
+E023,Separate spreadsheets,Separate each original worksheet into an easier-to-open workbook and zip the results.,117 original per-sheet files included in the website spreadsheets folder; CABLE_NORMALIZATION also retains its hidden CABLES dependency.
+E024,Formulas,"Keep all original formulas, caches, native cell types and original features intact.","53,117 original formulas and 5,885,829 stored cells preserved; no extraction recalculation."
+E025,Website,Provide a functional data website with equipment tabs/categories.,Implemented as read-only browser; this is not an added engineering or trading calculator.
+E026,UI reference,Improve the interface using Jimo AI and Awwwards inspiration while preserving data.,"Implemented: original dark interface, large light typography, orbital background, luminous buttons and rounded panels."
+E027,UI source,Preserve current UI/UX and functional structure in subsequent access/migration work.,"No third-party proprietary source, logos or proprietary font copied; current code exported intact."
+E028,Browse,"Provide equipment search, manufacturer/type filters, pagination, sorting and field inspection.","Implemented, with original units and values retained."
+E029,Record detail,"Provide overview, all original specifications, original formulas/caches and connected sources.",Implemented; source applicability/identity qualifiers remain visible.
+E030,Exports,"Provide original Excel downloads, catalogue-index JSON and full original-source record export.",Implemented; all 117 Excel downloads included.
+E031,References,Keep supporting reference and audit rows accessible without making separate origin-based equipment lists.,Implemented through functional reference library.
+E032,Accessibility,Maintain responsive layout and keyboard access.,"Version 3 fixes filtered-category Tab entry and focus after activation; recorded responsive checks are iframe Chrome checks, not physical-device certification."
+E033,Verification,Verify preservation and equipment organisation precisely.,"3,617,575 organisation/source checks passed; original splitting and native-opening reports retained with limits."
+E034,Native opening,Ensure split workbooks can be opened.,117 files passed recorded LibreOffice native-opening checks; Microsoft Excel itself was not available.
+E035,Public access,Make the existing engineering website accessible directly by URL without signing in.,"Implemented: public access mode, same URL and same source version 3."
+E036,Access-only change,"For private-to-public change, keep UI/UX, functions, structure, equipment, values and everything else intact.",Only access policy changed; source version and all files remained unchanged.
+E037,Migration,"Provide one fresh ZIP with latest website, database, files, all requirements, final plans and a reusable new-account prompt.",This transfer package; hosting ownership and authorised connections require provider access separately.
+E038,Research precision,Preserve unresolved flags rather than inventing missing values or claiming 100% authentication.,76 electrical records remain withheld and 15 configuration claims remain unqualified in the retained source-audit categories.
+E039,VBA / calculators,Do not add unnecessary VBA or unrelated calculator files while completing the database task.,No VBA added; website is read only and original formula caches remain preserved.
+E040,Cross-project boundary,Include requested trading/Google AI Studio plans in the handoff without applying engineering public access to private portfolio data.,Complete private MarketMind source and final 145-item requirements included separately.

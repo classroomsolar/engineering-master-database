@@ -1,0 +1,1981 @@
+{
+  "algorithm": "SHA-256",
+  "excludes": "SHA256_MANIFEST.json itself only",
+  "files": [
+    {
+      "path": "00_START_HERE.md",
+      "bytes": 4797,
+      "sha256": "a40d5b60cc587ad3a667007318ae601abbb12be89abf9405b18397640ccf11d6"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/README.md",
+      "bytes": 843,
+      "sha256": "5c37d893434faf680aded4b02982f82d66c12b43aa8cd2ebc299fc70b6c9ab54"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/.openai/hosting.json",
+      "bytes": 106,
+      "sha256": "817e0cb070937b39b7bd46a0fc621cd50c1e3f22697e8e0fbeb68627d34722d9"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/DESIGN.md",
+      "bytes": 3001,
+      "sha256": "092413983df87b9e59882f66f1d2873279f3cc484d55c2a9e969912f6d342e5d"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/Inventory.csv",
+      "bytes": 23649,
+      "sha256": "845a1dabcf0f995ab6db7dce640836a91095f465442a350e6f0a18e465d9cd18"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/README.txt",
+      "bytes": 3165,
+      "sha256": "52d71ea0fe265c61dae5066205e72c060878370988586603ff1cb4866558edef"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/Verification_Report.txt",
+      "bytes": 1336,
+      "sha256": "ddfcf2529702dd82f5950d628c040a0af4c22cc1222cf5ad2988d08c12d70867"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/assets/app.css",
+      "bytes": 41754,
+      "sha256": "566c88ee5d19747f67d221ca55df094835eb2d4217b1f00b2e94fce3e5a8c02a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/assets/app.js",
+      "bytes": 37003,
+      "sha256": "406deb5261460da3bae2a6b92a4c3808ee24c55e4db8f10d708d6aa736a02ab2"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/breakers.js",
+      "bytes": 1609205,
+      "sha256": "f0eab68bc649bdbe213bb838ad889edd666837a1ccc780be9a86f703befd4c63"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/breakers.search.js",
+      "bytes": 723973,
+      "sha256": "9837e1b062c3487a1e5478702113930b8ec5f1e9a631c4e6153205bc0891ba8d"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/cable-cleats.js",
+      "bytes": 7081,
+      "sha256": "bdf67d11f6853a3339ff556506945d79cbd735357c5ff6233c9af87f5d66cdaa"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/cable-cleats.search.js",
+      "bytes": 11837,
+      "sha256": "ee92bd3604ff2738c03346967950e77a0b3a642f9dd3bb45db124886e16b9b72"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/cable-trays.js",
+      "bytes": 5992,
+      "sha256": "d7ef704b44d017b6518a8b08c38d3e4c0dbd3ec5c786a1e8fa6873d8d83ecb4c"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/cable-trays.search.js",
+      "bytes": 19080,
+      "sha256": "49409363de26e2497d076d1c2d53a487975ef417b792aa1fe9d0cb186d315af2"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/cables.js",
+      "bytes": 278791,
+      "sha256": "79fc93d8b01ea70f41b6543a9527107a991644d0a0ddb2daf34f346a1d8c6532"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/cables.search.js",
+      "bytes": 1315263,
+      "sha256": "855a9bd193b0dfc9e9364c2d0e216ddc3f4f2c52da32d787f42d4da8b9c0363c"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/conductors.js",
+      "bytes": 43759,
+      "sha256": "3ee07f44465e013c51a155ccc3b7af48162052be2a4656d2dfdff53cb105c711"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/conductors.search.js",
+      "bytes": 142439,
+      "sha256": "5d6dc23d537dab7e9da5f0534bada862467be0501006425d8211637f8545563f"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/conduits.js",
+      "bytes": 797,
+      "sha256": "32a5d411a6a23823dc64e9191c188617c38569ca22a87a62eb551e673ed94ef3"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/conduits.search.js",
+      "bytes": 961,
+      "sha256": "e3348f402a11a38a59acf5344c7835975cf86baede482a529e04a48ac382f611"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/controlled-switching.js",
+      "bytes": 55221,
+      "sha256": "150beb4fcff367f4f5f63d7dba87a634e6c5fa7d035a1c641264cfa6e031af68"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/controlled-switching.search.js",
+      "bytes": 24521,
+      "sha256": "1e0961d9954f3f072db6d092d7cbd4adab3544cce543b3f043f18110bae321b0"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/controllers.js",
+      "bytes": 53020,
+      "sha256": "45a750125f178b84e11b9aac876e45618cf6c79b073ae6f18db6bba5a625826a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/controllers.search.js",
+      "bytes": 35300,
+      "sha256": "f6688c1fffb26c36cd7f52513658576aad50dc886580d915f63602b270033921"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/disconnects.js",
+      "bytes": 8548,
+      "sha256": "1cc9ba441014978c17a0660ca5fe5570ccc2fbc431e856de133cc9183c1137bd"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/disconnects.search.js",
+      "bytes": 14100,
+      "sha256": "63f5715f1e8e32909557d0a1422db4287626c93deffc17b9ceafaa1ff3fb7740"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/enclosures.js",
+      "bytes": 3963,
+      "sha256": "003b89c6d9c581b9a8dcde9ec71fdd4636f4b817b0abc6443bfb343a723069a0"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/enclosures.search.js",
+      "bytes": 7495,
+      "sha256": "e2eb35f1096c20b1991d26dbaac330c39dd722a2f9f486f34a7f5720dc69c188"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/energy-storage.js",
+      "bytes": 356407,
+      "sha256": "2d5da58036378506a338278342aa36e3c9969c24e7826b84ba7daac82d14d4f4"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/energy-storage.search.js",
+      "bytes": 725403,
+      "sha256": "b355367ed74db994b40b6abc54733bfa05c4df0af5d43c8693b80f62b9b60ed3"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/ev-charging.js",
+      "bytes": 1476,
+      "sha256": "70be79e44fb4238a67e4e7eb23e8896172f838900ae447ba503da5fcc0cef068"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/ev-charging.search.js",
+      "bytes": 3804,
+      "sha256": "1a787aac605d1f1d9e31471b4ffcbdf6cad208612237b476b3e1cf99b814051c"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/fire-protection.js",
+      "bytes": 784,
+      "sha256": "10127e83cbf3378d0ae64a1c186ca0a5b7ad7bc818ecc9e14ca3c6fda21b8b3f"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/fire-protection.search.js",
+      "bytes": 1072,
+      "sha256": "77e2ec30ed6b3aa4b3539b3137b81c9cef3d4dc1c59f839df94a043cfddddfe5"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/fuses.js",
+      "bytes": 397894,
+      "sha256": "009f145146c7787ce5ecd2b6f5f9bac2d56b66e7c5a7482bba749681e2222f58"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/fuses.search.js",
+      "bytes": 224610,
+      "sha256": "7ce9c15fe0b6c9079263a8653b2c64d0555077d0c5f5b2728fa7b8faa5e85643"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/generators.js",
+      "bytes": 1115,
+      "sha256": "1c1c2e91b25bf79f4a0ea56a02b962503573dcd652ce8b33d78537c28cb15567"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/generators.search.js",
+      "bytes": 3967,
+      "sha256": "3ddad08d024b0f2ed349abc514cab711c348015e264e83dd1d271f15cd8420a3"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/grounding.js",
+      "bytes": 6146,
+      "sha256": "35c0d6a7c9907ccafea24ca80313c406ecc1ec7c9b4052dacbf5aa4ea92473cd"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/grounding.search.js",
+      "bytes": 12114,
+      "sha256": "3317ada7f53e0928fbf8d7658f713b97b7b625825798212094e046edaa871460"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/index.js",
+      "bytes": 23247,
+      "sha256": "332adeab13c95fcd63155e26ba0a4205b58dac479e1ac06612c1269be620770b"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/inverters.js",
+      "bytes": 244886,
+      "sha256": "4f9e09b5ff875c8fbb8fdbee12ba043ce8caf271c2ec6e282b63a823ef63a1f9"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/inverters.search.js",
+      "bytes": 1151318,
+      "sha256": "18fa6d30d657129cbb6240a082428bf691aec5a90451877f17e91f2e193a71b3"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/meters.js",
+      "bytes": 28347,
+      "sha256": "247493114f13b494e1a57165f605aa506d3189806c27c47ffae301866adbbba5"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/meters.search.js",
+      "bytes": 48543,
+      "sha256": "ec061355829b7fdb1b29c6d5b6d884d375f618e775c546deee4ead1b044e158e"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/motors.js",
+      "bytes": 146819,
+      "sha256": "2a38ac4568667321fc3e60eecc5a96ee5b5203b53728446bb2d8dc678e1e5279"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/motors.search.js",
+      "bytes": 177267,
+      "sha256": "f5dc418c64349d63f6596b9c204e5d40aef304203d805ab9e5f5f887deab745c"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/optimizers.js",
+      "bytes": 3539,
+      "sha256": "f012422c77d4dacf1481800bcd04d8ac17a99ac5038aef2042e599ef3f5e9d5b"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/optimizers.search.js",
+      "bytes": 4595,
+      "sha256": "b107d636a351a01c6a173d061c818f81c9e43a0a1f1e654f617b28a4d3a0fe12"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/parts.js",
+      "bytes": 17362,
+      "sha256": "ace8359694caa3a36307191553392231b6f710720f1b5424982e588f86e3aa8f"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/parts.search.js",
+      "bytes": 24046,
+      "sha256": "806ab459131478188bb517ca36b64f145cf8ca80643f1209ca31a92ff45d6bf9"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/pv-modules.js",
+      "bytes": 1640035,
+      "sha256": "912ec6306d2d62a160f53a8fe2ce51bcff82dc8834ad4b29c6a643c2214d19c6"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/pv-modules.search.js",
+      "bytes": 4924375,
+      "sha256": "a987348516c9acd134773fe16529f30b0069cb9218501dade0ede70f3a8a8ae8"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/reclosers.js",
+      "bytes": 71430,
+      "sha256": "ce8af160b55b2417fe4a72894ed0caa163d1294b71b38280c30af0c24e763650"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/reclosers.search.js",
+      "bytes": 32986,
+      "sha256": "dfc10ec3f7a7117102f307db65c82f887bee8c77e2f8b2aa0699a8ae4a32793e"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/rectifiers.js",
+      "bytes": 10435,
+      "sha256": "49b76294d1789cfcbcf287b640c9c626b11bde190b4079f24f511045be8b639a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/rectifiers.search.js",
+      "bytes": 10975,
+      "sha256": "c2731a7f74aa44bc7f1c1bcdb6cfc29f0f766569cee6789c0a608b833a316b00"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/relays.js",
+      "bytes": 188799,
+      "sha256": "418b510bb8ccca9477f7dbd1c2942812c85176f0b2519884271331705f1b71d5"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/relays.search.js",
+      "bytes": 104887,
+      "sha256": "6d4fcf40964717822a5a60e6a90ed0670fbfa6130b6d05e7c3d30cc3baff3719"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/surge-protection.js",
+      "bytes": 3437,
+      "sha256": "c3d646be2d92d9c3e77f31f7a9ed9024ecf8501086a8c4a5f92bd7e0cd2f3c99"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/surge-protection.search.js",
+      "bytes": 10093,
+      "sha256": "a89007d20fdc6fba7a3af685d745db1f316cfa6c9647e3da056c970e61b6a82e"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/switchgear.js",
+      "bytes": 3923,
+      "sha256": "fdbef24d02b2ad91f61702e1826bde429a4e88fcc7170d68ec422c9f1416140a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/switchgear.search.js",
+      "bytes": 6719,
+      "sha256": "5ff65308be5b1aab5c19c84c9ae9b60e5ca1d8b9c0a7753bd5ab779e16849d79"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/terminations.js",
+      "bytes": 24577,
+      "sha256": "4c0521a6d73af12d1be696e88acdaf5c9dca4b89c91ab334b002fdfa7254fd5c"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/terminations.search.js",
+      "bytes": 46441,
+      "sha256": "72774ef5ada47e32150dfe8b91b67f62b029acc5816a6281230be01da389f624"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/transformers.js",
+      "bytes": 46321,
+      "sha256": "06afd088b09fdeb5ba66de30ee1a447aea0d9be0bc04e6c9473b73bdc0dad2a8"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/collections/transformers.search.js",
+      "bytes": 56077,
+      "sha256": "12ea1da734b1584c03370f85744f3b7f8cd4be060961e1c4b4046eab6af31342"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/catalog.js",
+      "bytes": 124494,
+      "sha256": "fb3bf1619f85f58cb5271b12794f0f711269f290b0efe7a9703ec1c7da5fc3bb"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s001.js",
+      "bytes": 1586759,
+      "sha256": "49d37491be14213228df09567f23ef8b01ac731eea4cbe67f8857c6b3d23169f"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s002.js",
+      "bytes": 12347,
+      "sha256": "b5d26472f3108a0770c27beb36fd6580160cfa4bc122985a847d31d7e36a3a6a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s003.js",
+      "bytes": 200243,
+      "sha256": "d3aea73ec81a2fa5e072a7a16f509ae3995387885261d9896104dfc09d4effa7"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s004.js",
+      "bytes": 2636399,
+      "sha256": "9bb5ef0be50d8227f7ca13ad0f1a6566edd422f9933167160cb72f601e38119f"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s005.js",
+      "bytes": 25523,
+      "sha256": "bc2483b7f9ddee3814117e84ae87b77c9170bc89f69feddac46dced4573d809f"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s006.js",
+      "bytes": 200911,
+      "sha256": "1d80e9b824eb6163dae7f563cc2d7ff3c1b5cba412fe724c490deb4bdd05c768"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s007.js",
+      "bytes": 47283,
+      "sha256": "3f88925d5452a8b8883030a03c7f72c63beca6413c0be5743c314234c2a4b9e0"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s008.js",
+      "bytes": 73591,
+      "sha256": "1a825810aa35ed75832612815a9014c2e35a84051d7110f45e01386479125fa2"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s009.js",
+      "bytes": 104431,
+      "sha256": "1cc328aac385ebe0ea6d99f10a8b177354eda6c4910f8d8639cdfd25d96e87c2"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s010.js",
+      "bytes": 2835,
+      "sha256": "40c53d491111507af022d1d2890fac91e46e5ae442c92ba7a21aa5eb13d0d083"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s011.js",
+      "bytes": 76607,
+      "sha256": "afbb438be15a1f19e27d126e111d553d176ee8fe73e372f942a7aae334b12035"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s012.js",
+      "bytes": 55927,
+      "sha256": "f1a744e76b5e803978849c9844aaf40cb2bfd6f1af5afb2967f5feacdb8ab7cb"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s013.js",
+      "bytes": 749163,
+      "sha256": "b375eb13479cb23b917b9a70d75799ba2a9f395ae01062701b7cdf1b155e01ce"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s014.js",
+      "bytes": 374411,
+      "sha256": "72632d03fe6fc0d09f5b03c21b74e5672faf813e842dba2646d88b5775e239a3"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s015.js",
+      "bytes": 170527,
+      "sha256": "0d8f4dffd0e27d33558ac29b187e038bb5510c63cc9e11ddbee7d3c07af231b0"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s016.js",
+      "bytes": 54743,
+      "sha256": "914b1cc59f3a86f3d929aecd1fa55783043f544cc060fbb90ad017efa5314674"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s017.js",
+      "bytes": 276515,
+      "sha256": "24f8c6c73832e0450db06cc87bb3da6a622d4d906007073e9902c208d897768b"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s018.js",
+      "bytes": 109327,
+      "sha256": "3ff0d53a6a08ec6b1ac3b9cfb3fe3ddf4b42a3a9bcaa26327a3c6ecbeb4e95f6"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s019.js",
+      "bytes": 43479,
+      "sha256": "9e284962ef8fbd23c9f61c487a0836a190610e54f662875428287d0dcfd98dc8"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s020.js",
+      "bytes": 39423,
+      "sha256": "80f029a7d362173a76c7f614c031796a2f2262230b9d57ca14ee3f4c1c165281"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s021.js",
+      "bytes": 3683,
+      "sha256": "37286c439f14ce1f3d76f7a059c7eaa94b2b41760f720c645b6aea961b731368"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s022.js",
+      "bytes": 2903,
+      "sha256": "e2c6df9873351235fad7a9562542b5aa8626b28f71b3f8a96a3b1488e3a98021"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s023.js",
+      "bytes": 1411,
+      "sha256": "7a59ec100e523921599207e32eb3d15743e8389eb767b2bd73d84e20183cfb3e"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s024.js",
+      "bytes": 687,
+      "sha256": "797f36b859b3b2727e92c87d37f35ca08cf481578d9a3bd8ed839b9b43cdf27d"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s025.js",
+      "bytes": 6851,
+      "sha256": "9aac6c4b20b2267c6e239d925408908884fdb9e937ef0e222eb9715ab61dfc0f"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s026.js",
+      "bytes": 13627,
+      "sha256": "ae3b03a64d1ce68642557bcbdaede911ff0cc16dd1407a8b7a751fed3417d80c"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s027.js",
+      "bytes": 1203,
+      "sha256": "3b516525dac362e4e740fce60b56393157556f0b9bb506c3faad457f79b25f65"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s028.js",
+      "bytes": 495,
+      "sha256": "6b060749778eee731d889f4fe48d4251b20f6286fd7903177fe4505796d6d9fd"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s029.js",
+      "bytes": 404271,
+      "sha256": "7912c489886bfdf85b71168b18042ce30daa5c2b29d15c15d2bef248112a64ac"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s030.js",
+      "bytes": 8763,
+      "sha256": "d55b0e798c91f7120a9eb8152e9bb6777eb9f8b940517ddc7e5a8fc8900f54fb"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s031.js",
+      "bytes": 27423,
+      "sha256": "9bb6ee02410a9a91abdec79120a1af463f49939f200b83e387562d726c6b4e52"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s032.js",
+      "bytes": 17347,
+      "sha256": "9b3ff32c1a83ffe457d6cbc558d1d96ee18334f0e02afb05b81473038b150756"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s033.js",
+      "bytes": 827,
+      "sha256": "b5acdb90e9ce7b65612d903df93991058d7dc08a4703b1ea893113a666f7e4b8"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s034.js",
+      "bytes": 771,
+      "sha256": "0794c78e6e69c428b868beeac742673769cf99e2499a8a08e35518429b35842f"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s035.js",
+      "bytes": 511,
+      "sha256": "c85983a3d51415d28fc1815554c729cad2e9d418afbf3a5b15e312b2501df724"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s036.js",
+      "bytes": 719,
+      "sha256": "c3147a74a46bdf53cdff24a1540d0b48b56265a06a2d7676b4bacda9aa798cfc"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s037.js",
+      "bytes": 9315,
+      "sha256": "d6cc12964a059ccda2161e2f8430a86f1124773b8ae90318a563a3ded456490a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s038.js",
+      "bytes": 6819,
+      "sha256": "c5306961e9dc550f83d9a2e4334628da6f2d7ed3d8d0b434654c540506548767"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s039.js",
+      "bytes": 12127,
+      "sha256": "783c92d58a54cf2090a94c4a8473b5cfaba2013688c1410fc5c386037290833c"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s040.js",
+      "bytes": 11291,
+      "sha256": "8d920381c7b5df473c21ff7ada2ffb1ec88c5dd1cb8b6506b65adc10109bfdb3"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s041.js",
+      "bytes": 11127,
+      "sha256": "bbe1f6a8f3185a53f7323e31994f52553557216ab90d9428516377ac7a6cb862"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s042.js",
+      "bytes": 499,
+      "sha256": "bc27e2536e85f393a479abdc73aa7ee9c09d642c1c045af5e917d5e411f48850"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s043.js",
+      "bytes": 1347,
+      "sha256": "87c494c33e68dad7cfb5cb4b34b86483e5426f2a1c5dfabdf4b393b077f47685"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s044.js",
+      "bytes": 9811,
+      "sha256": "be214167f8b7d7a1088020ed945d35e820bdd32757013a8894a081d30112bca7"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s045.js",
+      "bytes": 719,
+      "sha256": "0a4685e3d62359cc64b25339f580dd3cc30d61d2ce0c527b053fe9277f158e95"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s046.js",
+      "bytes": 245575,
+      "sha256": "2d4f9ab2b50504c816f656df88cd5f799024cc05ea8e6c7261f4d508b26caac4"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s047.js",
+      "bytes": 57479,
+      "sha256": "17d2737a4cdd816eef1e678a4ec1be8679c7c6ab5fe67170cceaec6ee3dd6494"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s048.js",
+      "bytes": 1011,
+      "sha256": "121112ae80cf57f663016cc7abfb35124b9666002b7e83080c9f21013aa5568d"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s049.js",
+      "bytes": 623,
+      "sha256": "8ed25bf924481e39c2ddac1fc0d0d04ec0e253fa4c5414ccd04e1572c3343298"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s050.js",
+      "bytes": 303,
+      "sha256": "5657fce1cab24c65746862022d91a44f788d72061cf9daf40bdf82289fe92659"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s051.js",
+      "bytes": 531,
+      "sha256": "e292940f7f405bd8fc75c0ef4d209a322afd5baf449c6e45d9486aeb74655577"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s052.js",
+      "bytes": 37047,
+      "sha256": "17e0cf0c540e03121a4af742d400ab852134722fc324e016cc4143925a44f489"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s053.js",
+      "bytes": 37007,
+      "sha256": "7f4b2cb47a6a1b2f231532c15afc960a960c5cdbaef0c3581b12c61ab303b6d9"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s054.js",
+      "bytes": 4763,
+      "sha256": "09415dda2281bae425ba8b8ecf214a18b1a80c87c1d5eb2b58ea568c7d72fbea"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s055.js",
+      "bytes": 995,
+      "sha256": "31e23e1d238e29901f604df36e53827539b87f70d8287b260f99ee8d8f4c5fec"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s056.js",
+      "bytes": 1571,
+      "sha256": "4872393b142bfd3aadfc4724542383d243dd831012df58303bfe62dfa3863024"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s057.js",
+      "bytes": 13383,
+      "sha256": "a1c1e58c16bed63bd2bd1bfb27bbfedd5935fd2f64d9d7b57aeb9d4463f833ec"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s058.js",
+      "bytes": 967,
+      "sha256": "0509500e7ea6d0aca642c1639d463149a594b8085e8141f10276451167bda5ed"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s059.js",
+      "bytes": 3763,
+      "sha256": "5945ee822dd614c27cf01555e3ad12941c9b49a287fff6b7135fd83cb1c8778a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s060.js",
+      "bytes": 10027,
+      "sha256": "318ab638a27abb5b0f4d50ffecbf7e29f390a1a0c7b69cda43e88f42cbfc2bbd"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s061.js",
+      "bytes": 3871,
+      "sha256": "30d1fb6cb24ab44d6faa919a84c0dcac022c26a633d198f67d2e2f296e182e85"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s062.js",
+      "bytes": 1259,
+      "sha256": "39f574dee70f99f1182ae4ac07cde1e796fce1dcba120eb532d513e4eec448de"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s063.js",
+      "bytes": 1051,
+      "sha256": "216a5c661da6735751e9bb4edf4576dc3b9d9fc492a94d80a68decf7230c4efe"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s064.js",
+      "bytes": 511,
+      "sha256": "6d341b4eb2f67d7cce6a52604e2d2b84ebc5d90c48ee678b948293998851796a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s065.js",
+      "bytes": 707,
+      "sha256": "ecdf4f93d36c645b42f82618d094c0532a53e664233f1d90abc1455b7fe1af7a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s066.js",
+      "bytes": 659,
+      "sha256": "956c45783ce96515a2be991bce7ca5bb97a8ae539f5525f19affa5d782b980a8"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s067.js",
+      "bytes": 659,
+      "sha256": "53c0d35f8140ac97f9a271b2a0f98081e03b13cf934be8f408c31a860249a6b4"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s068.js",
+      "bytes": 839,
+      "sha256": "8339f45b4d897a6b63da48b172d24391911d95feaf8a2b0d51f0ffd9620b35e0"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s069.js",
+      "bytes": 859,
+      "sha256": "336c1cc9d9a9b770636b38bfe47b40d7e35dd71a5d66c04987d259936f4a394f"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s070.js",
+      "bytes": 643,
+      "sha256": "c90a56fe68e0b42bf1d3f78b60539e162ca9f48a896433d9dc1255773ae490b7"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s071.js",
+      "bytes": 515,
+      "sha256": "04b2d9f0a4d1b8fe7fa4602a9e375d016290f8addbffe5c17fdfcb7d94ef46c9"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s072.js",
+      "bytes": 507,
+      "sha256": "c6ccacb968d4e68172a8ab168f5e1c1f095ab85b069064b9efd1249e78638bcd"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s073.js",
+      "bytes": 1319,
+      "sha256": "c1690015f067d617515d350ba80dabd8a1f5735cffade5bee0b74ed98ef69212"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s074.js",
+      "bytes": 34171,
+      "sha256": "91800fc61d4425f59bb18dbe35b8626989cc58bc0d07aeebc354c2190b415b9c"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s075.js",
+      "bytes": 16831,
+      "sha256": "1aeac9cbc70f3564b488c2ee33899a908000153e385c4feb4871b4beca9c510b"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s076.js",
+      "bytes": 4315,
+      "sha256": "183d51857273c4af082c03f8af0428ac581871933df56b0cdd79cbca157eaa62"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s077.js",
+      "bytes": 1995,
+      "sha256": "f548e106dee392aef27885913c3ca6d41c6236a2530021871929321b6a4dba65"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s078.js",
+      "bytes": 38179,
+      "sha256": "c426555791661e8ee0e75812600c9e00bffa26fbf362aacf2a04a0c1d9b15d62"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s079.js",
+      "bytes": 5643,
+      "sha256": "1ef14a2a30c64aec94c531411bdef30a17e0f6bf8f4b92f8322c1c8e8a271b86"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s080.js",
+      "bytes": 73583,
+      "sha256": "118286f48514da7d40fe5d21b115ce102b05da887706dccf33c4d6ad56ac5106"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s081.js",
+      "bytes": 39555,
+      "sha256": "c854986e517ddfbe5c6e1f8cd4c60ab4eeeefe177c1c490cc2c90af48d5374b8"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s082.js",
+      "bytes": 11503,
+      "sha256": "de65cfbd756a41f2e1fac6011f1c5bd33d135c8f87a9efea1b3b23eae3243e36"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s083.js",
+      "bytes": 7079,
+      "sha256": "9a272e309a6897b98a86bd7bb42d04f712aba28e0bddb95167556cf4150e6c2d"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s084.js",
+      "bytes": 848907,
+      "sha256": "34dbb3b7a44799bbdc5a11ab0983428a05e384e589c3273998ff5f131ec6d7d3"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s085.js",
+      "bytes": 6775,
+      "sha256": "4ead56e802422c500071e24b9bd6b24432661f4d7b35c8f7dbc29eb5d2163872"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s086.js",
+      "bytes": 1233267,
+      "sha256": "7b7096b7e718acf89d9dfb6da986cb03c7725313876b5d5f14647693c9615859"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s087.js",
+      "bytes": 7659,
+      "sha256": "30302c5dd5fed62ff96f18694b18255f2db9b5faa74a7ba6a43552811c0d49ae"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s088.js",
+      "bytes": 2899,
+      "sha256": "76c7bd9175895b51d2b32b162bc560a47dbd4a6ba0fe7098201cb0b96027a0d9"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s089.js",
+      "bytes": 4451,
+      "sha256": "ebeff575e63b2cd2f267c392d6505293e2f40f39631a6171ef4850db370c173b"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s090.js",
+      "bytes": 21747,
+      "sha256": "c45c7b79be33ffe76eec29c25ef191430073385a9216ce60c70be1bf9b8029ec"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s091.js",
+      "bytes": 3123,
+      "sha256": "3a07ae0637ac4349852a7ee1037b0a66e51c9584f878350fdf2ca3ba2a8fbd3a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s092.js",
+      "bytes": 2431955,
+      "sha256": "c687dfd8ca484e16cc387d63696753fd02a1670297f74212387448df05fb9673"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s093.js",
+      "bytes": 719,
+      "sha256": "7cf2ab3d076b185b5c4d82c1521a38cb14b420dadef7f17ab62667faf8ca7277"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s094.js",
+      "bytes": 2022539,
+      "sha256": "e8c5199f149689c62623dec47e8a1638f9f640104e66fd8c62bf93bfd1013ff7"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s095.js",
+      "bytes": 472267,
+      "sha256": "ab4de5e7f004ec1f17bac69b709ceca204bc663ba9ce21f47ccde0a210000d59"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s096.js",
+      "bytes": 323015,
+      "sha256": "fe2de12ddf4e1c1d800b3075c70b784b53186cf67073a3d2784c3307bf9b80d9"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s097.js",
+      "bytes": 52959,
+      "sha256": "20ec3d56c724526f0d7ee5424620f78b6f9199aaa8bc49b6a2f1764522c48bc1"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s098.js",
+      "bytes": 341663,
+      "sha256": "8d29ae54ec3742a69e44a5303abb04349f7e106aca9bdd71015652809f3a8361"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s099.js",
+      "bytes": 33143,
+      "sha256": "307feb1320b1bbc7de159a972f19afd27afb6d1277931b5f72fbbe88feaa2af2"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s100.js",
+      "bytes": 74407,
+      "sha256": "732c8bfc23a7eb1ba54860012df3485f469be46e6e2b3378134182bf6bed69cc"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s101.js",
+      "bytes": 5219,
+      "sha256": "1ed13da8bf6900be26fa98777cae1a37352d1402102b707929e99747f037237e"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s102.js",
+      "bytes": 1159,
+      "sha256": "f1613219519e34a87fa4487a9a92fd0836d37d1c40495df253131edd64554977"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s103.js",
+      "bytes": 331839,
+      "sha256": "a07e7a485e22d5f5d5bc3abddf05cb7589481cbe105d2dc434b44e524157e909"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s104.js",
+      "bytes": 430075,
+      "sha256": "84c57b96089ea361923ac8a35aa0aa9e99869a8188d7eed80e991736654542ee"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s105.js",
+      "bytes": 7907,
+      "sha256": "63f9c21508cfa88c4da157a218f6c9e11a5a64bc66a565773bb9466dce2f933c"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s106.js",
+      "bytes": 5183,
+      "sha256": "25d84f55e1d4e3f6b7ff07108738fa14168ceb49d727cc7994ec6fe137996564"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s107.js",
+      "bytes": 5843,
+      "sha256": "58727fc73453f73a336dacdbe59ec9d4b6431760923f2aed93a3b05153ca2467"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s108.js",
+      "bytes": 13751,
+      "sha256": "f73d1cfcb5dd1affce55e8b05f89ddd7d4fa38ccb7aabbb2595c17e8b5ae7c92"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s109.js",
+      "bytes": 30695,
+      "sha256": "4bc4af4dbf9c5095da41b5e67c373fb178c22906ad5d469a366fcd9a489f0b1d"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s110.js",
+      "bytes": 2315,
+      "sha256": "716765cc3a973328ad9e2987d3502067d44faaae29c6661d4a376def183c188e"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s111.js",
+      "bytes": 852963,
+      "sha256": "e62cc860f15ee615b62862e8fd3719fc2ec6b647748dc2319448aa347352d7ae"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s112.js",
+      "bytes": 451631,
+      "sha256": "4fb72e03751e2b45fcab87eb93f6d9dd4e1489260dca91e7d31a774347f8fece"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s113.js",
+      "bytes": 2211,
+      "sha256": "407bfd293ecf1691c34c53e6a855d3a7f7f83e56a6132fc8d84e60aab028bdfc"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s114.js",
+      "bytes": 3995,
+      "sha256": "f792b8948598065b84e54470d357a27f9bbfb02bf77d1198b392ba46452c5e70"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s115.js",
+      "bytes": 3995,
+      "sha256": "57af222311a671a8115eaf0354b63910b33e0b1b995c31fcaa79e49ef39bd043"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s116.js",
+      "bytes": 5659,
+      "sha256": "5094768c4328e1e616b97b4104b8b47095a91d15683efcb04e34b85dc372984c"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/data/s117.js",
+      "bytes": 2643,
+      "sha256": "c1b53bea883c5aee8b07f6b8960d9507be87aadc6b9bce9c136856583a5d2f9c"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/index.html",
+      "bytes": 12721,
+      "sha256": "2c022a4570835d6768f2c1cb23240ba371108afda75ffaf299c094fd06f8c81e"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/AMPACITY_AMBIENT_FACTORS.xlsx",
+      "bytes": 9136,
+      "sha256": "d0d7216952186fb0b10f16838c86a07992d91898283f63be900c4f52efd4d38d"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/AMPACITY_CCC_FACTORS.xlsx",
+      "bytes": 8561,
+      "sha256": "20e0a5bf735c9dffe5c420368eba6097b6bc6462fd0107e83b79fe7792ea8330"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/AMPACITY_PARAMETERS.xlsx",
+      "bytes": 8829,
+      "sha256": "77a2f43344ce89b0135bf542149c4b277b8b58d139e21858ca6ec574aa476950"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/AMPACITY_ROUTES.xlsx",
+      "bytes": 9963,
+      "sha256": "4587db778009b5e01df455aa3ebfd5eeb9311a6957a4017a0dc177a329eb8489"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/AUDIT_README.xlsx",
+      "bytes": 14642,
+      "sha256": "c09f3aae6b0b36dc33cbe53b6cdec7de5da78f5ee070c522fabe081e81934392"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/BATTERIES.xlsx",
+      "bytes": 51156,
+      "sha256": "c5e4b1ff16c0176af07bc57f1db17088b53f5ecc827626eac4738cd753ca7a2a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/BATTERY_PERFORMANCE.xlsx",
+      "bytes": 405209,
+      "sha256": "c1d5f5442366d91a30e4dc33962d4c73569cc311cc98d978281d463bfd7fac57"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/BOX_FILL.xlsx",
+      "bytes": 8834,
+      "sha256": "ae1d789fa60cd076e418fbb8e56c475a515e0fbb68e3d31a9bee57d0ea401ef5"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/BREAKER_LUGS.xlsx",
+      "bytes": 41396,
+      "sha256": "a727ad92ce10f00956ffc1859a6034ca055deedb56d33808a608b7a662015dfc"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CABLES.xlsx",
+      "bytes": 2962330,
+      "sha256": "3e2e1325d40455bcb37459dc4a61eaf893d2c5f5b613760186a3a5e22cf25788"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CABLE_CLEATS.xlsx",
+      "bytes": 22622,
+      "sha256": "b87f3ae29aa6b0a10dd4eaf3df1bc03bd52e4a3627f5db81d828260749d31601"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CABLE_CLEAT_SIZES.xlsx",
+      "bytes": 15169,
+      "sha256": "fd35296db351cfea9bc9cf236da8c95fc16ed6344c43f5514a5d2c97fb4b8da0"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CABLE_CLEAT_SIZE_MAP.xlsx",
+      "bytes": 27862,
+      "sha256": "acb6405db7289cf68b98f6d26e798555df0c74bd50c7d179f343344d08952ea2"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CABLE_FAULT_CURRENT_REFERENCE.xlsx",
+      "bytes": 10354,
+      "sha256": "7ee7b1cacd3857663c29d763de2d076fb251ac915c19fc05bae286b48d53d1a9"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CABLE_IMPEDANCE_DEFAULTS.xlsx",
+      "bytes": 9147,
+      "sha256": "62b96d5f29a546fcd90407f63553eb6d4869446d5e7ed0c30b1b7be3411ee5c8"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CABLE_NORMALIZATION.xlsx",
+      "bytes": 5544036,
+      "sha256": "f85399781075b4ef3ce74e2eb610a2f8f09d141319fab8bf2707657b6a751d4c"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CABLE_PLANNING_DEFAULTS.xlsx",
+      "bytes": 10109,
+      "sha256": "b25e893ccd98560a0856250e1695df6141177b5be5b6aab086f6bbd9fee751e8"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CABLE_SC_K_FACTORS.xlsx",
+      "bytes": 8885,
+      "sha256": "7095437befc9c5dc9b5893481398439a8cf4ba87e50f673686dfc7ed914a72b2"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CABLE_TRAYS.xlsx",
+      "bytes": 24676,
+      "sha256": "b7149e532b87e4077f930019c69d721752ca70867022febc88e537cd589703e0"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CABLE_TRAY_EQUIPMENT.xlsx",
+      "bytes": 26802,
+      "sha256": "4adf833e765bcb04a5762d2c40d39db8b55edac9692da3b72972597e4155dcf6"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CABLE_TYPES.xlsx",
+      "bytes": 46822,
+      "sha256": "b28552fc12c63b4d53e2c30b93e9363759d696df2813721241470609476911dc"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CALCULATOR_KEY_AUDIT.xlsx",
+      "bytes": 13051,
+      "sha256": "6fdd4d151814cc82ae711b48818277577957da17a0b50d2049c8c67210798e90"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_ASSEMBLY_RELATIONS.xlsx",
+      "bytes": 12022,
+      "sha256": "ff2c9b72e14a83c4a31f44e90f16d2c6d5f13c7fb6b862d85c368b2927b33e78"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_BATTERIES.xlsx",
+      "bytes": 112120,
+      "sha256": "636f89986ba9f3de4ad1b5f651dba066f198467f4aa196de263d174c9113ebad"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_BATTERY_ARCHIVE.xlsx",
+      "bytes": 9977,
+      "sha256": "59cb5b31fbe5babcf0dc393904c23bfeb8bdd6a2f5ccb505722146cb16046bfe"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_BATTERY_INVERTERS.xlsx",
+      "bytes": 542711,
+      "sha256": "6e512f14f81d8c7218d45c9eaeabd4f7c4a0a40ddc34fb06fe1229a78f1f4fd0"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_ENERGY_STORAGE.xlsx",
+      "bytes": 1259425,
+      "sha256": "648d59f0abb18cee58e1a411f5be03ab331683cef890afb6bda0aeefa127299e"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_FIELD_MAP.xlsx",
+      "bytes": 29427,
+      "sha256": "085f2053957fab979f52cb08b5b490d3430e66e82c0491f12ece17cdc9720450"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_FILE_RECONCILIATION.xlsx",
+      "bytes": 11016,
+      "sha256": "b32abe61fb3082c1f76c77eae57e104c74ba4af812ad69491e0391120b3c2c19"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_IMPORT_INDEX.xlsx",
+      "bytes": 10686,
+      "sha256": "8b1acb9d8605966abea0573b765d01496a432281ff479f8bed8bfbbcb8752581"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_INVERTER_ARCHIVE.xlsx",
+      "bytes": 742165,
+      "sha256": "e09a85f24cfdbfd009b238438574da4d4171e270832702c2be9da1305620fbf7"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_LEGACY_PCS.xlsx",
+      "bytes": 229225,
+      "sha256": "84e9d47edafbe824cc62fa771f859e05d01041f056851aaac67f7749b11bf7fb"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_LISTING_LINKS.xlsx",
+      "bytes": 1802397,
+      "sha256": "8d3a83207caedbe51a668d2bc905b3e32b75b59195824d63eeb02e955ec0c4f7"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_METERS.xlsx",
+      "bytes": 63683,
+      "sha256": "032acbc783e2729464881b21f6af625f9b8a06d012b989bfdc815349e19f7dd7"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_MODEL_GROUPS.xlsx",
+      "bytes": 729054,
+      "sha256": "8c4d50427f582c7159a1f9810e7b87a7c3f59f06dcc8a2f5c103b1a905f45f04"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_PMRS.xlsx",
+      "bytes": 15769,
+      "sha256": "d5d7901d3aa72ffe9d03a9590859cce39982f5f4b9ae7b81f9673c2cd51bc879"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_PMRS_HISTORICAL.xlsx",
+      "bytes": 16692,
+      "sha256": "42ba4caca1099a82e3f17aaf217afcefdb62f647bcc3f809bf527847dc78a3bc"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_POWER_CONTROL.xlsx",
+      "bytes": 24709,
+      "sha256": "79ce0dd80e4410fd0962a96aa6802d3d349236bede6e9392bffab16a405bd452"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_PV_ACTIVE.xlsx",
+      "bytes": 4418212,
+      "sha256": "4ce410e6c4418ae63b761bd3842f9cb946dfdc38e8676bb791e63b3f5faa207e"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_PV_ARCHIVE.xlsx",
+      "bytes": 916077,
+      "sha256": "1c80e3927b84ed79058d383130ec576fd69ccf461a5124978ecd6bb703b99c0a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_SOLAR_INVERTERS.xlsx",
+      "bytes": 922326,
+      "sha256": "f00aa1aac363badf9abe621173f6235baf305086b549bb1a636e0324128a6388"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_SOURCE_NOTES.xlsx",
+      "bytes": 39205,
+      "sha256": "fee2442826b3f4e11a8a6bbe626a8acbd92a036343647ecdbe9f9c7ebe7cfd74"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CEC_V2G.xlsx",
+      "bytes": 17119,
+      "sha256": "26594efadf6d08f39b0ba61220989f5f1e39348630bc325808b198b892234bd8"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CHANGE_LOG.xlsx",
+      "bytes": 1559099,
+      "sha256": "16a7884aad311b76f5efc7d4197ec60b28ea55478e82f64bfc5f57ae2fc65d6a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CONDUCTOR_MATERIALS.xlsx",
+      "bytes": 9156,
+      "sha256": "a30533c632587b8471a6a348b63dfc97918c3d38d25d6ffa690bb1119809c004"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CONDUCTOR_PROPERTIES.xlsx",
+      "bytes": 10824,
+      "sha256": "2ec9d703ace0cb52bec5a843509e3baae09aa45304084a5d3a13670afd4f69e5"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CONDUCTOR_SIZES.xlsx",
+      "bytes": 9275,
+      "sha256": "053c651d58b0be450b97c520cf0515ad908db811307eea598e2ba7172cb19a16"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CONDUITS.xlsx",
+      "bytes": 10263,
+      "sha256": "3264ff6afe7209ee020961151b46db7a4e5cbc53fc867372f4c03fd38876e361"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CONDUIT_FIRE_PROTECTION.xlsx",
+      "bytes": 9097,
+      "sha256": "3c52e57dd7e7b321a719ec82a7b799d9d5ad7f47d34563b22db35ca69e4d7e61"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/CSD_DEVICES.xlsx",
+      "bytes": 93757,
+      "sha256": "6077ae32394fdbca77e75c882a1eae067fa7a9c22581e43db22c11e356c5eb40"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/DATABASE_TABLE_INDEX.xlsx",
+      "bytes": 14627,
+      "sha256": "eb2fc1474fe9cfffc9afda23e8455a813fd697636b919b773793dd2af485b6e0"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/DATA_ISSUES.xlsx",
+      "bytes": 97707,
+      "sha256": "5cd8259802ea4413ba25ea1a7be45bded5239cb82fba36d97145b72ca3ead358"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/DISCONNECTS.xlsx",
+      "bytes": 32174,
+      "sha256": "1ec71e31ded9bb0efb1c1ec1288eb175debd341051113242972cdd17940111ae"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/EGC_SIZE_BY_OCPD.xlsx",
+      "bytes": 9331,
+      "sha256": "51870cacd08efee4039255bd165de35a83b569dd681116ebd51e14280355753d"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/EGC_SIZE_THRESHOLDS.xlsx",
+      "bytes": 9345,
+      "sha256": "13c0541819a90a7e73450591a277b9de98b8721b8bb33b97ad1a41e110f79015"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/ELECTRONIC_CONTROLLERS.xlsx",
+      "bytes": 76324,
+      "sha256": "88db514d503f6d62d1c9e6c103e02c05d250aa3ffa91c59aaa654440bf73bfb9"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/ENCLOSURES.xlsx",
+      "bytes": 23438,
+      "sha256": "dd4c0f3f4aadd628e2daf0a37941c63cc958fb09e6e5d3ae8d2e47bd689500e7"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/EQUIPMENT_RECORD_HISTORY.xlsx",
+      "bytes": 12955,
+      "sha256": "908fbcb925a657c96d388b6b70dfcf64404cb3f5eb51631d20bbf058963d2714"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/FIELD_AUDIT.xlsx",
+      "bytes": 143317,
+      "sha256": "466536a0cf801c8a7bfba3405651a2ee91786ea20132a79eadea49bc8bcd44b6"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/FIRE_PROTECTION.xlsx",
+      "bytes": 10111,
+      "sha256": "5a648808175186d544cfed9915b3f18bcb724c480512040f2429c923aa948bf3"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/FUSES.xlsx",
+      "bytes": 879418,
+      "sha256": "5775a995569b5446f79cf28c5e16b293b0879f2f717c5a808addd8b21c0b32e1"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/GENERATORS.xlsx",
+      "bytes": 12893,
+      "sha256": "918ae9f7df26d8222f9c395d194964c23c0c5fd7338a94f6fabccf650060d0fc"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/GROUND_ELECTRODES.xlsx",
+      "bytes": 22358,
+      "sha256": "3704c70d3d35b892bb7d77cb917e22d35c684cf6d1cb42d231048246e25fef67"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/HARMONICS.xlsx",
+      "bytes": 19810,
+      "sha256": "f2862d29ac7a4ae53fadcf8e0ac56c8167eec0cb167f48d3a5aed691bac2f8d8"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/HV_BREAKERS.xlsx",
+      "bytes": 175972,
+      "sha256": "56d45e95b0dd7c005df61c60480b169ddcc88dc954337c4c6de6a0b0dc9cd784"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/HV_BREAKERS_EXTENDED.xlsx",
+      "bytes": 115872,
+      "sha256": "693e83a18489ce13aafe8ec70336b5914f85423766cbab3363323d40466883c2"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/IBR.xlsx",
+      "bytes": 657800,
+      "sha256": "c34a13025bef885761079497c66e146329401572b739e8fb01733e355a02015d"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/INSTRUMENT_TRANSFORMERS.xlsx",
+      "bytes": 61568,
+      "sha256": "faa5786e27877129a8f2006910fee7b7e921fc9bd99a3a32331878424c436f42"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/INSULATION_CLASSES.xlsx",
+      "bytes": 9042,
+      "sha256": "671ccee2c9a1f0205f5b6c9c67afd67e9d608533884962181a2eca7e4e60979c"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/INTERRUPTION_COST.xlsx",
+      "bytes": 9725,
+      "sha256": "ed62a3e6ed31cee28a27ff71d06b43788ff4e605d3c274e5ccee49fc94b2b9b7"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/LEGACY_NEC_REFERENCE.xlsx",
+      "bytes": 73680,
+      "sha256": "8c9882c571a390743904f095e3a86532e4c07cb91caea5314c93bb176c41efd8"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/LV_BREAKERS.xlsx",
+      "bytes": 2039732,
+      "sha256": "53fbd99e1d05231ee9dedc582136c2e1650d678fd1062a4e76e08de2811466f4"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/MODEL_REQUIREMENTS.xlsx",
+      "bytes": 15300,
+      "sha256": "99ca3f9e641f8c46c13cd70b4540cb9cba4aefc65a797bd253a66f5f71985631"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/MOTORS_NAMEPLATE.xlsx",
+      "bytes": 154994,
+      "sha256": "018298f4746699fac29d9ea273cba3854c07bf65181903ebb722b71ab44aeae0"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/MOTOR_CHARACTERISTICS.xlsx",
+      "bytes": 127443,
+      "sha256": "4fea1e3b790e36348f8f2341ccd4a5fa11f7808b912a9ee81c126ba51cdfbe5b"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/MOTOR_LOCKED_ROTOR_CODES.xlsx",
+      "bytes": 9871,
+      "sha256": "0f9ceee67ddba9bdfb331abb8b3236238e4023d5c8394fa549831a18e2d204c6"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/MOTOR_MODELS.xlsx",
+      "bytes": 13828,
+      "sha256": "a6c648624be6c1901014fcd8008c67064f18e42839aad2efc65f5e864e371a93"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/NEC_AMPACITY_2020.xlsx",
+      "bytes": 109364,
+      "sha256": "63cdff405cb09e57e40388f7ea618f71b241e77ee39e99c26c1d76c5b3df2797"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/NEC_AMPACITY_2023.xlsx",
+      "bytes": 109348,
+      "sha256": "4c56ddc56b984cb2d89bbfdbad204d916e338e19fc921fe03a84b707388aa586"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/NEC_CHANNEL_TRAY_FILL.xlsx",
+      "bytes": 8872,
+      "sha256": "24cb38e9ce8c30d9dea9887cd422f06b311ce2d562b052d542b6ae8b948e70ff"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/NEC_TRAY_FILL.xlsx",
+      "bytes": 10013,
+      "sha256": "30d05bfcf186737183cfb222fd0936805e335e6adb472dbf3fc7ef136a81788a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/NEUTRAL_GROUNDING_RESISTORS.xlsx",
+      "bytes": 18828,
+      "sha256": "842bdb47be9f61c61f694ca9650e157fbb3dd97ea0ee026235d91dca74df2d6e"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/NUMERIC_BENCHMARKS.xlsx",
+      "bytes": 8149,
+      "sha256": "40d9bd865bba63d2381639f7c7222f774c761780e4264da05eaddf375ddd8e0a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/OPTIMIZER_REVIEW.xlsx",
+      "bytes": 13369,
+      "sha256": "5c3689c59be946dcdd8a03b9cbd4b863231befe239e42bfdda291ecfd81748e6"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/OVERLOAD_HEATERS.xlsx",
+      "bytes": 173608,
+      "sha256": "209f1c77604132bb9582550708cfd015046e93b56e99cab18c41836963bb0f8f"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/PAPER_AUDIT.xlsx",
+      "bytes": 30364,
+      "sha256": "1ae109b0dcdaad12cda8ce16aeeb1c9ec44509edce6380bf81d432ad3569aa83"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/PARTS_CATALOG.xlsx",
+      "bytes": 69270,
+      "sha256": "2dc4a4edb2dd82e3144c991e3c791a863ead9b0f52185d6a0958b5ab60bf4ee9"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/PLUGIN_LOG.xlsx",
+      "bytes": 14469,
+      "sha256": "38c2d6a3745bfbe95b4638cb3cf667b3b1a3c30d4a4d4169131e9799cc5075e4"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/PROTECTION_CURVES.xlsx",
+      "bytes": 9084,
+      "sha256": "2398b9cc799666f8ac2fa08c386457d4fc0be72001b4fe823770af480b53d8ca"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/PV_MODULES.xlsx",
+      "bytes": 4549879,
+      "sha256": "aa34ec3343e31d216e57f574b7d34a78e91d9e9e27e8e2168d1f4ec3a1746b39"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/PV_OPTIMIZERS.xlsx",
+      "bytes": 13854,
+      "sha256": "8d9279f5eb0a7ac6aaf21fc2db265729570e50c68c8e3c82f360efa9fb888637"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/PV_UNIT_REVIEW.xlsx",
+      "bytes": 2170148,
+      "sha256": "23ed468ae812a98bcd290f7665c779b577c59f364a003b49dcd2b05dfd2b459f"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/RAILWAY_LOADS.xlsx",
+      "bytes": 8817,
+      "sha256": "4f5df3955164afd449b4711c909a9bd90cf5dc04a3909184e5611cfaa8da678e"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/RECLOSERS.xlsx",
+      "bytes": 118928,
+      "sha256": "2baa339d7047e973db9608d6393923c408fe3bd3afe24d992e0d52cba68259b7"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/RECORD_RECONCILIATION.xlsx",
+      "bytes": 17443,
+      "sha256": "ce898b78aa6ccdf9130412167bf1b5506571a6283cf508c868b645a6ce37dfa8"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/RECTIFIERS.xlsx",
+      "bytes": 30466,
+      "sha256": "d1f813899b730d6886c72b1a32a5d4cbdf412314774c1b86cc09575558b0f594"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/RELAYS.xlsx",
+      "bytes": 267983,
+      "sha256": "b3a188c1d089855d355e9878348fdc7563ad6fc063541c7c8d928589199efd11"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/RELIABILITY.xlsx",
+      "bytes": 14280,
+      "sha256": "43aae59198c2af3e2607b831a11ae62b3873a0f15ea675175fbb44bfe3c1b4d3"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/RELIABILITY_EXTENDED.xlsx",
+      "bytes": 12587,
+      "sha256": "0f3bbe6aaa7d73a4fc94437bd07a5f2f5ddc3797ab1f1a1793816df19425230e"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/REQUEST_AUDIT.xlsx",
+      "bytes": 11787,
+      "sha256": "a8bbb4f40f24994a35baa281e4fd4a0a160caf062a935a1fcfd14df53db20ad6"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/RESEARCH_GUIDANCE.xlsx",
+      "bytes": 18108,
+      "sha256": "12793dc14322bcbde6af4e7e99f139e8320208aac7add6423f2ad671e5a2955e"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/SHEET_MAP.xlsx",
+      "bytes": 16831,
+      "sha256": "1445db12ef7d00ddae779407d2cce4935a74065b9582edc5c8b28483ab4c671e"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/SOURCE_REGISTER.xlsx",
+      "bytes": 284952,
+      "sha256": "676dc9f13868b55eae0143e9383f5b2492a2b1a9067a4ec108cdb77a7ef00608"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/SURGE_ARRESTERS.xlsx",
+      "bytes": 24578,
+      "sha256": "2b85270d5c0b9588e99caa2e8bf50db5c38c40dd51595d009d4fc8749d5591e0"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/SWITCHGEAR.xlsx",
+      "bytes": 21238,
+      "sha256": "1558d867bf9d8c20f7d44aab12eae234d5740252b9c3ccb1b435979b89a0681a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/TERMINATIONS.xlsx",
+      "bytes": 92025,
+      "sha256": "9221a867d35eb66dbd189196ae6841eba0d72e8c2ddaf387bdf33ca3b0de88ba"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/TRANSFORMERS.xlsx",
+      "bytes": 121593,
+      "sha256": "561645a8df581d16e22cff681f9b5e858a02d38d0e52197e310da623d1bb5041"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/TRANSMISSION_CONDUCTORS.xlsx",
+      "bytes": 313605,
+      "sha256": "cd440863b26aac9f24abc918951d479b2847062915e51eb66e987e490e686bb5"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/TRAY_ACCESSORY_RULES.xlsx",
+      "bytes": 12573,
+      "sha256": "deb9a2840ef16afc8d99c761f780b0cabbf2a37d1c1af044ca0d0db7eb413b40"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/TRAY_BARRIER_COVER_CODES.xlsx",
+      "bytes": 8796,
+      "sha256": "27771029292fbde3efcddb2fe20f9307d9a04dbc3e3615c257f206e059f5463a"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/TRAY_EGC_AREA_THRESHOLDS.xlsx",
+      "bytes": 8997,
+      "sha256": "0f70ba79a2d4e0fc81dd2ced2867851c333c715f33482bd3cfcf871b72beb2dd"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/TRAY_EGC_METAL_AREA.xlsx",
+      "bytes": 9068,
+      "sha256": "9cc5cf4768dd998507ab847991938ed607ff245ad196dc523f85befbe8e691a2"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/TRAY_ENGINEERING_DEFAULTS.xlsx",
+      "bytes": 8950,
+      "sha256": "d2c737746852f1d3b25b2dfd93fac75c18e1f24aa9fdc122010053d95ff32f02"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/TRAY_EXPANSION_RULES.xlsx",
+      "bytes": 9315,
+      "sha256": "458c16aba71e9f99ced906fbca318168b37cab54042d3b38fcf8be868f233958"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/TRAY_GROUNDING_ACCESSORIES.xlsx",
+      "bytes": 9717,
+      "sha256": "19e9c31ec60a9d837da76c24c94dfbd8771c2caf23f037258c7baacb8b67665f"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/TRAY_WIDTH_CODES.xlsx",
+      "bytes": 8763,
+      "sha256": "095c4a6d59975f8f6510af7f20ef955b5cf597e049b588608fbfffe0fce5ae65"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/spreadsheets/TRIP_DEVICES.xlsx",
+      "bytes": 493070,
+      "sha256": "b30f9fa300bd6d1c72b6796e719c357bccc84768bb854c5ea4b6b97b0bd0e405"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/verification/equipment_unification.json",
+      "bytes": 160380,
+      "sha256": "33ae5f2ce790bc12bf654ba9a5463fb9c89cc4e7c2310031465b2a2a9c1f6a64"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/verification/extraction_manifest.json",
+      "bytes": 128420,
+      "sha256": "4d3c0d1271c6c074ee6472235a2209bce7cceb8678e51d5c8e8b128b00726225"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/verification/interface_checks.json",
+      "bytes": 3579,
+      "sha256": "b1d03fd5dde6098b3b4d34e9162f9c7a31d5de63167ab837d62c6ff5ba77fe13"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/verification/native_open_checks.json",
+      "bytes": 12113,
+      "sha256": "c3dcaf602605d696d4e69e30eef7b49b431d364db6973bf21cfe5f825bda9c2c"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/verification/unified_catalog_checks.json",
+      "bytes": 1920,
+      "sha256": "6d2ccb312e0078523b05fc04aeec2150ee8c31faa341b684b4f5c60e342a4b1f"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/dist/verification/verification_report.json",
+      "bytes": 25478,
+      "sha256": "f849ab9a56dd954eb5dddf591b597a9063d9e593e51b6ef6e7769b683fb59cc1"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/tools/build_collections.py",
+      "bytes": 27352,
+      "sha256": "6f53657246434499f588448fc01b3831cf70a5ed8edd458f6aaae5def20e2d40"
+    },
+    {
+      "path": "01_Engineering_Equipment_Database/website/tools/verify_collections.py",
+      "bytes": 8134,
+      "sha256": "c97955598a07087bb1556c711acabeee4698b2bf75525d1d5ca7d7043b1a2803"
+    },
+    {
+      "path": "01_PASTE_IN_NEW_CHAT.txt",
+      "bytes": 4220,
+      "sha256": "61ba980585e8e5926ff4ebad902d53f9c376e9c34ad6b717d49bab9c55a234da"
+    },
+    {
+      "path": "02_Engineering_Master_Database/Engineering_Master_Database_Audited.xlsx",
+      "bytes": 33220157,
+      "sha256": "dcef1fb4a8b00edbfb5e420dc4e76e6f4a8975cd0599e2f3c7902c4ee44f9f52"
+    },
+    {
+      "path": "02_Engineering_Master_Database/README.md",
+      "bytes": 1253,
+      "sha256": "6aab45bf9970ed10708cfffda15d476b8931b351dc12aade0eec73c5ff08fa8f"
+    },
+    {
+      "path": "02_Engineering_Master_Database/source_audits/DB13_CEC_Upload_Comparison_Evidence.zip",
+      "bytes": 603411,
+      "sha256": "02773eb39efb0bd87bbd27e580cd88bf6a2acadd811d5be3cc95d87d5cf98284"
+    },
+    {
+      "path": "02_Engineering_Master_Database/source_audits/Master_Database_DB12_Source_Audit_Trail.zip",
+      "bytes": 12550766,
+      "sha256": "b6b928e94205cd3a2de65f9f0fa72e581fab9253e2e247236a035ee4b4da8af8"
+    },
+    {
+      "path": "02_Engineering_Master_Database/user_uploaded_CEC_inputs/Batteries_Archive_ADA.xlsx",
+      "bytes": 17816,
+      "sha256": "c3383d491f96de2f3ff84e708d11f87d47341f09478e7c3788273deabed2ea54"
+    },
+    {
+      "path": "02_Engineering_Master_Database/user_uploaded_CEC_inputs/Battery_List_Data_ADA.xlsx",
+      "bytes": 122389,
+      "sha256": "66077b6c5be5e68cfb87c7db42a54c16af3616abc80a22114dcad6a51a21f3ea"
+    },
+    {
+      "path": "02_Engineering_Master_Database/user_uploaded_CEC_inputs/Energy_Storage_System_List_Data_ADA.xlsx",
+      "bytes": 1373713,
+      "sha256": "bebd991435b184d16b09886c89c4971bf27521c72ec3b7354719a2a8a2230e0d"
+    },
+    {
+      "path": "02_Engineering_Master_Database/user_uploaded_CEC_inputs/Grid_Support_Inverter_List_Full_Data_ADA (1).xlsm",
+      "bytes": 1662900,
+      "sha256": "0292b8a044f9d7545bae762e75aad06928ede2d898d24ee88a26929b924b319d"
+    },
+    {
+      "path": "02_Engineering_Master_Database/user_uploaded_CEC_inputs/Grid_Support_Inverter_List_Full_Data_ADA (2).xlsm",
+      "bytes": 1662900,
+      "sha256": "0292b8a044f9d7545bae762e75aad06928ede2d898d24ee88a26929b924b319d"
+    },
+    {
+      "path": "02_Engineering_Master_Database/user_uploaded_CEC_inputs/INPUT_IDENTITIES.json",
+      "bytes": 1985,
+      "sha256": "47252ed92c5279fefd06219668dcc1e195d46907cb93ac6f9c99f68486748456"
+    },
+    {
+      "path": "02_Engineering_Master_Database/user_uploaded_CEC_inputs/Inverter_and_Energy_Storage_System_PCS_List_ADA.xlsx",
+      "bytes": 220570,
+      "sha256": "f3bc4326dc6162a29a6ac1cc334fc67ba6198631745833f4a5d519711c6fd9d8"
+    },
+    {
+      "path": "02_Engineering_Master_Database/user_uploaded_CEC_inputs/Meter_List_Data_ADA.xlsx",
+      "bytes": 73756,
+      "sha256": "3d8d151ec644bdf8b406dc20eca5b526f31cae5495d55fdd87cc41b85f5f77dc"
+    },
+    {
+      "path": "02_Engineering_Master_Database/user_uploaded_CEC_inputs/PV_Module-Archive_ADA.xlsx",
+      "bytes": 918013,
+      "sha256": "4de4c5ee8dd9a851d67806f3488c3df21ac8f50bf02566c8d3b2f35a0f9d55c6"
+    },
+    {
+      "path": "02_Engineering_Master_Database/user_uploaded_CEC_inputs/Power_Control_System_List_ADA.xlsx",
+      "bytes": 38053,
+      "sha256": "5cf09612d541d6ccd003459bbb5904faba62d2fcf327641b0e2a33f7b96d0d67"
+    },
+    {
+      "path": "02_Engineering_Master_Database/user_uploaded_CEC_inputs/Utility_Interactive_Inverter_List_Full_Data_ada.xlsm",
+      "bytes": 1171040,
+      "sha256": "4ced8429aad010c8b4cc0bbe1b466817cf18d8a69c5747217a4eb35fb201c942"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/00_READ_ME_FIRST.md",
+      "bytes": 3581,
+      "sha256": "4b1c20e6b0479399bb637452494a6687ab175a95a7064fb2dd7b27af5ce190fa"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/01_FINAL_USER_DECISIONS.md",
+      "bytes": 5828,
+      "sha256": "d4d5fe440972d2554196a1aa10c11f1617b710f755ecf3ccf95d20db5232bf52"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/02_IMPLEMENTATION_REALITY_CHECK.md",
+      "bytes": 2873,
+      "sha256": "522c0f39951fdb87cda539b43ec41f98922c2a07d08fcddcada36ecb75ecf049"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/03_GOOGLE_AI_STUDIO_REVIEW_GUIDE.md",
+      "bytes": 2063,
+      "sha256": "139d3d36bb691c7c6faf3f27aa360b2e55593c1c80d379e226c8c361436c0da2"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/README_START_HERE.md",
+      "bytes": 2016,
+      "sha256": "5972c52bac20d68b9740c86344df7ce23748bc555f63de54f7dc1e5e504acedd"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/design/UI_V3_DESKTOP_REFERENCE_PRIVATE.png",
+      "bytes": 413225,
+      "sha256": "a073908ae6742bd660c1ce55524c6776d86b4e7107c85423970e7b3bb3f29953"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/documentation/2026-10-25_UI_V3_RELEASE.md",
+      "bytes": 2118,
+      "sha256": "50d341c739b8e338ce0669e23aee0f5444807cf83cac8c5380e1959bcd48dd3f"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/documentation/EXISTING_LINKS_AND_EXPORTS.md",
+      "bytes": 2404,
+      "sha256": "15e34313f03bc50716548cb93cbfc98269ac82517bd8c12d330f3b98004de0cf"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/documentation/GOOGLE_AI_STUDIO_OFFICIAL_DOC_RESEARCH.md",
+      "bytes": 4567,
+      "sha256": "5a920fd87572f3a6d95199c55e9a0829d590f40f3eee973dc1b050318eda359b"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/documentation/SECURITY_AND_DATA_HANDLING.md",
+      "bytes": 1905,
+      "sha256": "beb4698db78ba48409eb3c4809adca5e17558b027a019796f4eacf9a77d84137"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/documentation/TECHNICAL_ARCHITECTURE_AND_DECISIONS.md",
+      "bytes": 6586,
+      "sha256": "b21c82700865416d39cf60c6a480338d15a8fe270bc81a082a8a47ee499fdc98"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/README.md",
+      "bytes": 13364,
+      "sha256": "1b5ee21c71fa10d386e99d99c29aac0792ea908b1d8e54c39d839ac59b30ee21"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/backtest_quality_gate.py",
+      "bytes": 2766,
+      "sha256": "a0693113cd0a9e2f0e1b0b5589560a840379cfb2f6726bccd6c3c0706358d624"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/benchmark_pipeline.py",
+      "bytes": 6233,
+      "sha256": "f5ab0651d75d40717bd39ae5c253ce91846ec3f597e80190d5bce71802aad249"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/cli.py",
+      "bytes": 6169,
+      "sha256": "447492a1862ce411137266f5467e38205c66126eb4090987d799a950384c496b"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/corporate_actions.py",
+      "bytes": 4978,
+      "sha256": "24541cd7221e795a5b4df36700d4b548f345ba2a22522fed67cdd46c7f368388"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/data/portfolio_statement_snapshot.json",
+      "bytes": 9536,
+      "sha256": "5f3a49fa4da3a0becb1c1cec35477d61a5efee7a48ab3b9de673227b82307627"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/docs/COMPETITOR_GAP_AUDIT_v04.md",
+      "bytes": 10825,
+      "sha256": "6ecfc5a4128d7f2a01809f2c6c581a2829e004e6f6739194ca8bf71ecaf35f60"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/docs/EXCHANGE_DATA_INPUTS.md",
+      "bytes": 2637,
+      "sha256": "627c1fa57baf6cc25daa70473355148cd109073a7f8260623cad8c33396c1dd7"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/docs/NSE_PIPELINE_GUIDE.md",
+      "bytes": 5114,
+      "sha256": "e3d33a6d37121441b017effed756ebcd3be22f079a59ba66024dd72d2cc4e0c3"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/docs/RELEASE_NOTES_v04.md",
+      "bytes": 3123,
+      "sha256": "82154a55dd6e6136c99bb83a1539a1f0d9079dff63825c9291858132960db111"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/docs/SOURCE_REGISTER.csv",
+      "bytes": 1726,
+      "sha256": "fd35231053a2ac6b096ac94497baf90cc3106d319a249adfae10874244f01891"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/docs/VERIFICATION_NOTES.md",
+      "bytes": 3917,
+      "sha256": "1e27b46d8d2f89a0a02621ecfd7e51c293fb4f9b9044498bfbd32701fcd8111c"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/make_dashboard.py",
+      "bytes": 10698,
+      "sha256": "4fb78d47389a439202f8d347d5407eb49f834d2143953872617ca7241ec7627a"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/market_engine.py",
+      "bytes": 26207,
+      "sha256": "44bcee0fecf4924b2787af34aad80a08b4fb9994f0278d931ca47eac978d7869"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/market_store.py",
+      "bytes": 8312,
+      "sha256": "6180594fc1b45b71097febcbd0a99ab7e683cc083213cc6d4dbbffb03421f5ba"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/nse_daily.py",
+      "bytes": 3723,
+      "sha256": "5c61eb828d7f73fde5a1d07492dbcbd49be165befc5f3361e87935732c08f633"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/nse_pipeline.py",
+      "bytes": 11172,
+      "sha256": "8de7c59dea536588f8d922cf91d4310efd094e4dc3e98cd8da108c4916712a7a"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/pdf_pipeline.py",
+      "bytes": 7409,
+      "sha256": "1de7942bd1313927bb9807dad9355d9e24368bf691b3e966043b832b864fc663"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/portfolio_analytics_v04.py",
+      "bytes": 9451,
+      "sha256": "1627779a9061e960ad8983f6706017041508a34b434ce267384bf896e6875665"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/run_daily.ps1",
+      "bytes": 2167,
+      "sha256": "fae20fee9d707ffe8c7422b65eb7dd54a2790b13af2a4cd8eeaa9b9e3b4b4bda"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/samples/SYNTHETIC_ONLY_TESTONLY_adjusted.csv",
+      "bytes": 66571,
+      "sha256": "6cc3f9a74c05d17a5d6e3a03f6e25c83abd4b1973f8150b92cfb5160e175c9ec"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/samples/SYNTHETIC_ONLY_earnings_events.json",
+      "bytes": 198,
+      "sha256": "9f068772f7769fc6b3d505f0c19231f18d6039360c9e2ae17d10f2c5d5bb2f66"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/samples/SYNTHETIC_ONLY_pit_fundamentals.json",
+      "bytes": 193,
+      "sha256": "c3b45e0e5c33e4694fa29a0ff5c1b6ad5f1f9ecd52c89b75e5f47d3a45111458"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/tests/generate_synthetic_fixture.py",
+      "bytes": 1206,
+      "sha256": "92cee0725335c65d11101113168f18c0e247016224415c498ebc7415af1e4f59"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/tests/test_engine.py",
+      "bytes": 9179,
+      "sha256": "07d31fcadbdb754178eb83b2613e9bed3306360fa17768aa9eca96de556ebad6"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/tests/test_nse_pipeline.py",
+      "bytes": 5882,
+      "sha256": "405da7859c01030542a5783438ec1b9c83d0cdd27fee48e3a235ebe9b5a7814d"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/tests/test_portfolio_analytics_v04.py",
+      "bytes": 3115,
+      "sha256": "e236691687df722bec37463863ca392ceefd1bd3cb8bf32ddacad20ef0291e99"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/tests/test_quality_gate.py",
+      "bytes": 2275,
+      "sha256": "ec0ab87bd4f4e163e17facfcb10018a987c8b536ffcea710dc704c3fef3f51cf"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/engine/tests/test_transactional_store.py",
+      "bytes": 5420,
+      "sha256": "900975bcede2100af4b35c491d9c2f4fdc8fc0c76f762af636de14664ec6402b"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/owner_private/Holdings_Statement_2026-10-22.xlsx",
+      "bytes": 5961,
+      "sha256": "d5a786788e66704b6c6502adaf0e67c10d0c8fb45454efb2dd93ec5cd1a81a41"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/owner_private/Original_Masterplan_2026-10-22.docx",
+      "bytes": 16762,
+      "sha256": "d3fe6fa897082c3842101c6250f892c64ca404286e3e3f2cccc169b56c52073f"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/owner_private/Portfolio_Tracker_2026-10-24.xlsx",
+      "bytes": 77657,
+      "sha256": "210d6956319f500da5698a1a9e232dafdc4c77acb64ac468f21ce31d9cc7bb40"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/owner_private/Stocks_Holdings_Statement_5439142630_2026-10-21.xlsx",
+      "bytes": 4254,
+      "sha256": "1f6a719ae70043a2ef0cf12c9b58cb31029460ae7ffb7ca1dcbf8f7d8dfcbe16"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/prompts/GOOGLE_AI_STUDIO_INDEPENDENT_AUDIT.md",
+      "bytes": 2600,
+      "sha256": "ae14bd87153dd6ba7a31dd6dee0740294dbeb3d85ae3a85408ed38850ae3e576"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/prompts/MASTER_PROMPT_FOR_NEXT_ACCOUNT_OR_AI_STUDIO.md",
+      "bytes": 14021,
+      "sha256": "bb4c52042fb54dfabfa6f9ad69a3afbfe1fa3feff3e0ca7d03189fab77812fe4"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/requirements/COMPLETE_REQUIREMENTS_REGISTER.csv",
+      "bytes": 54972,
+      "sha256": "d2997ecde064ec2f827840758d0e48bfe7735e0ab6e5f5e0bdb67c3a3004433e"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/requirements/COMPLETE_REQUIREMENTS_USER_MESSAGES.md",
+      "bytes": 25115,
+      "sha256": "928ef6458080fdb605c7d9e566c00bc57b20736eaa6d9d249d56559c0172d894"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/verification/FINAL_HANDOVER_AUDIT_2026-10-25.json",
+      "bytes": 1607,
+      "sha256": "a26d5e8fbcde6c7b1f6739e550fc53e0c2769bc2be63639ee6b43f0bde0c1c96"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/verification/QA_EVIDENCE.md",
+      "bytes": 2723,
+      "sha256": "5ac874ec51ce24f16785f530cf7a8fdcee2d350aaabb8b7b1c6ad4a75934506d"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/verification/SHA256_MANIFEST.csv",
+      "bytes": 6122,
+      "sha256": "89c60753559142e2594f8b8430ef73ead6adb7c7a65bb2721856d066411c6326"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/verification/UI_V3_QA_RESULTS.json",
+      "bytes": 562,
+      "sha256": "d05f9629565bd090439be2b532dee534d81f2d8c20368b9fd231a7c5a864cdc2"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/verification/VALIDATION_SUMMARY.json",
+      "bytes": 1481,
+      "sha256": "ec77bc8bc28d726899ab509877c15ec50fd615fd59bae98684620e174af3f24a"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/website/.env.example",
+      "bytes": 464,
+      "sha256": "3d0efc834a52dff0bcbd64305eb43892a3c4da36499891d75e0b73a98b10241e"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/website/index.html",
+      "bytes": 153383,
+      "sha256": "81a3806aacbd40cb3618daf31191d6da3e82eec20ef131025c84ae0b65916a66"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/website/package.json",
+      "bytes": 293,
+      "sha256": "dea7b97562e56d097e4e10c8f33bde496572283ca1a94e17e3230b2601825447"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/website/server.mjs",
+      "bytes": 6694,
+      "sha256": "b3285d2bd2a61443b2dd6531a5e548ebbb6a1f88d0ab821aff1149057a9dddee"
+    },
+    {
+      "path": "03_MarketMind_Financial_Trading/project/website/test_auth.mjs",
+      "bytes": 2681,
+      "sha256": "b6e4a6e066ad0e98f47d7882a3195dec5fb1202351bca793cb0d1a44620704c6"
+    },
+    {
+      "path": "04_Google_AI_Studio_Review/Indian_Market_Google_AI_Studio_SourceOnly_2026-10-26.zip",
+      "bytes": 129043,
+      "sha256": "a7456206a8214a5f59aa08e289c0123729fa1d824f76cf1ab7eb645e055b3d19"
+    },
+    {
+      "path": "04_Google_AI_Studio_Review/MarketMind_AI_Studio_SAFE_CODE_REVIEW_2026-10-25.zip",
+      "bytes": 55155,
+      "sha256": "ccb50850196c7024f436f30239879582139557c5cb7dc2a2e212b17917489d98"
+    },
+    {
+      "path": "04_Google_AI_Studio_Review/README.md",
+      "bytes": 789,
+      "sha256": "6dadc03e6f6be67516acf9717c26beb46adc53c959cedf11d4b1ee8fa44e3480"
+    },
+    {
+      "path": "05_Requirements_Plans_and_Continuation/ENGINEERING_REQUIREMENTS_REGISTER.csv",
+      "bytes": 7633,
+      "sha256": "ab77826a63b5f7b808b2e9a4f0bee2422f1b4e9505f146f96ed9193948532f08"
+    },
+    {
+      "path": "05_Requirements_Plans_and_Continuation/FINAL_STATE_AND_OPEN_WORK.md",
+      "bytes": 5737,
+      "sha256": "3f743165b83756724732bd927c201ff7ceaef2707fe45877a791a638eda28bb2"
+    },
+    {
+      "path": "05_Requirements_Plans_and_Continuation/MIGRATION_AND_TECHNICAL_GUIDE.md",
+      "bytes": 5698,
+      "sha256": "9ccdc2074275268dbbca466b9ea508c6185dcc9f3c29415685eac1dac82e234e"
+    },
+    {
+      "path": "06_Verification/EXPORT_PRESERVATION_REPORT.json",
+      "bytes": 1113,
+      "sha256": "69945a07ec1a28a603fb8f35f1e1e6d98c8dd59febd7386d9b07daf3e231ffc1"
+    },
+    {
+      "path": "06_Verification/verify_transfer.py",
+      "bytes": 1482,
+      "sha256": "8b30a5bdf18835343a85b9ef0f16da43ce5678e18947754aa51bf81848ba8061"
+    },
+    {
+      "path": "PROJECT_SNAPSHOT.json",
+      "bytes": 2061,
+      "sha256": "b8474aeb0408ebc3bce84f5884c048ac5ecd74a4112c9e7f0ff0a83224729659"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "snapshotDateLocal": "2026-10-25",
+  "timezone": "America/Los_Angeles",
+  "engineering": {
+    "projectId": "appgprj_6ade8ad51a9c8191b11d7d56fa80cef7",
+    "url": "https://engineering-equipment-master-data.thesocialjay3.chatgpt.site",
+    "accessMode": "public",
+    "accessPolicyRevision": 2,
+    "sourceVersion": 3,
+    "versionId": "appgprj_6ade8ad51a9c8191b11d7d56fa80cef7~appgver_47cf0559fe5081919ba3b257fd813942",
+    "sourceCommit": "fded66fba5ecd91208a5cb34de89b05213789101",
+    "deploymentId": "appgdep_6adeae2761c48191a8a7f503d29acbef",
+    "deploymentStatus": "succeeded",
+    "nativeAccessRechecked": "public, same source version 3",
+    "catalogRecords": 196306,
+    "equipmentCategories": 29,
+    "originalPVRecords": 39400,
+    "coreInverterRecords": 5603,
+    "inverterCategoryRecords": 5739,
+    "allRegistryMemberships": 55018,
+    "originalMasterVersion": 13,
+    "originalMasterSha256": "dcef1fb4a8b00edbfb5e420dc4e76e6f4a8975cd0599e2f3c7902c4ee44f9f52"
+  },
+  "financial": {
+    "package": "MarketMind_COMPLETE_LATEST_2026-10-25_PRIVATE_TRANSFER.zip",
+    "inputArchiveSha256": "cf8e8d9f94b99313538b07ffea49d575125498ea3fc8cc91c7b09f82d4e2e7a1",
+    "sourceFiles": 58,
+    "requirements": 145,
+    "websiteSourceSha1": "2b3e02656fcff5c9b445d50c5fd69a55d36a9cbe",
+    "lastRecordedUrl": "https://indian-market-intelligence-private.vercel.app/",
+    "accessBoundary": "Private portfolio; preserve authentication. Public engineering access does not apply to this project.",
+    "hostingEvidence": "Archived handover reports Vercel READY with SSO; owner browser login was not verified in that handover. Not reverified live by this export task.",
+    "algoState": "Offline research prototypes; no proven alpha, validated elapsed paper-trading period or live broker execution",
+    "geminiState": "Requested/documented, not connected in the archived evidence"
+  },
+  "handoffBoundary": "Files and source transfer do not transfer host ownership, connector OAuth, passwords, API keys, billing, API quotas or account-scoped automated tasks."
+}

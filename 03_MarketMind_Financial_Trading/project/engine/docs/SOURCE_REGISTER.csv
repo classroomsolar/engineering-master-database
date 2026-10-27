@@ -1,0 +1,13 @@
+Source,Category,URL,Validated scope,Unresolved caveat
+NSE official MCP,Exchange data,https://www.nseindia.com/nse-mcp,Official bhavcopy and delayed market tools,Not connected; explicitly informational/educational
+NSE historical MCP,Data endpoint,https://mcp.nseindia.in/bhavcopy/cm/mcp,Official documented MCP endpoint,Not authenticated or tested live; raw vs adjusted corporate actions
+NSE near-live MCP,Data endpoint,https://mcp.nseindia.in/cmmkt/mcp,Official documented MCP endpoint,Quotes delayed typically 1-3 min; no execution
+Groww API,Broker integration,https://groww.in/trade-api,Official paid API advertised at INR 499 plus taxes per month,Not subscribed or authenticated; no automatic orders
+AMFI NAV,Mutual fund data,https://www.amfiindia.com/net-asset-value/nav-download,Official download information,No latest NAV downloaded; old report format discontinued
+SEBI retail algo regulation,Regulatory,https://www.nseindia.com/static/trade/platform-services-non-neat-decision-support-tools-algorithm-trading,Official NSE summary and circular links,No API trades supported by this system
+BSE,Exchange disclosures,https://www.bseindia.com/,Official site,No direct data integration currently
+RBI,Banking/regulation,https://www.rbi.org.in/,Official site,Current releases not ingested
+Screener.in,Fundamental research,https://www.screener.in/,Public website,Not a licensed bulk-download feed
+Trendlyne,Fundamental and quant research,https://trendlyne.com/,Public/premium content,No licensed API
+TradingView,Technical concepts,https://in.tradingview.com/,Chart/research platform,No export/backtest integration
+Moneycontrol,News research,https://www.moneycontrol.com/,Public/premium news,Full articles not automatically read

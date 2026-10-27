@@ -1,0 +1,77 @@
+{
+  "result": "PASS",
+  "checks": [
+    {
+      "feature": "Single equipment navigation",
+      "result": "29 equipment categories; no separate registry equipment section."
+    },
+    {
+      "feature": "Full-source search",
+      "result": "BYD390MIK-36 resolves to one PV catalog record from 39,400 original primary records."
+    },
+    {
+      "feature": "Original specifications",
+      "result": "Original nameplate value 390 remains in PVM-012429 (D12430)."
+    },
+    {
+      "feature": "Conflicting source preservation",
+      "result": "Original registry value 420, original PTC 394.8 and manufacturer-publication scope remain inspectable under the same record."
+    },
+    {
+      "feature": "Inverter type filter",
+      "result": "Inverter subtype shows all 5,603 original primary inverter records within the 5,739-record inverter collection."
+    },
+    {
+      "feature": "Manufacturer filter",
+      "result": "SMA filter shows 29 matching inverter records."
+    },
+    {
+      "feature": "Final-page pagination",
+      "result": "Records 5,701\u20135,739 remain accessible on the last inverter page."
+    },
+    {
+      "feature": "Original engineering references",
+      "result": "Cable types reference opens all 797 original rows and 13 fields."
+    },
+    {
+      "feature": "Desktop page overflow",
+      "result": "Document width 1348 equals viewport width 1348; wide equipment table owns its horizontal scroll."
+    },
+    {
+      "feature": "Responsive layout",
+      "result": "390px and 320px iframe layouts render equipment navigation and data; content width equals client width (375px and 305px after vertical scrollbars)."
+    },
+    {
+      "feature": "Responsive data",
+      "result": "Original EHS3-228 record renders with 228 W, 1000 Vdc and its three original source records."
+    }
+  ],
+  "verificationLimits": [
+    "Responsive checks used real Chrome rendering inside fixed-width same-origin iframes, not separate physical mobile devices.",
+    "The scope is data organization, source fidelity and UI behavior. Underlying unresolved engineering and manufacturer-identity flags remain unchanged."
+  ],
+  "continuationChecks": {
+    "result": "PASS",
+    "originalSourceCommit": "15ab84ae5984769289f24ce0e423db0884f9fe0b",
+    "regression": {
+      "feature": "Keyboard access to filtered equipment categories",
+      "before": "With PV modules selected, filtering categories to inverter and pressing Tab skipped Inverters and focused sidebarReferences. The pre-fix assertion failed as expected.",
+      "after": "The same browser assertion passed: Tab reaches category-inverters, Enter selects Inverters, and keyboard focus stays on category-inverters."
+    },
+    "additionalChecks": [
+      "A category search with no results shows the empty state.",
+      "Clearing category search restores keyboard entry to the selected Inverters category.",
+      "ArrowDown selects Batteries & storage and leaves exactly one selected category and exactly one tab stop, both category-energy-storage.",
+      "PV full-source search returns PVM-012429 / BYD390MIK-36. The overview retains 390 W, 1500 Vdc, four source records and the original manufacturer-publication qualification."
+    ],
+    "dataVerification": {
+      "result": "PASS",
+      "checks": 3617575,
+      "failures": 0,
+      "equipmentCategories": 29,
+      "catalogRecords": 196306,
+      "originalSourceAndExcelFilesUnchanged": 235
+    },
+    "scope": "Keyboard navigation only. No source data, equipment profiles, search indexes, formulas or original Excel files were changed."
+  }
+}

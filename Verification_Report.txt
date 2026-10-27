@@ -1,0 +1,23 @@
+PRESERVATION AND OPENING CHECKS
+
+PASS — all 117 original worksheets included.
+PASS — all 5,885,829 primary stored cells preserved.
+PASS — all 53,117 original formulas and saved formula values preserved.
+PASS — original worksheet XML, tables, relationship parts, styles and theme match the master byte-for-byte.
+PASS — every browser-exported value, cell type, style index, formula and cell position matches the original.
+PASS — 9,224,772 preservation checks; zero failures.
+PASS — all 117 delivered Excel files opened and converted successfully in isolated LibreOffice.
+PASS — all 53,117 formula cells produced non-error results in that native opening check.
+
+The original v13 master has not been modified.
+Its SHA-256 is dcef1fb4a8b00edbfb5e420dc4e76e6f4a8975cd0599e2f3c7902c4ee44f9f52.
+
+116 files contain one original worksheet.
+CABLE_NORMALIZATION.xlsx also contains an unchanged hidden CABLES dependency sheet. Its original formulas are preserved without external-file links.
+
+The opening check used LibreOfficeDev 26.8.0.0.alpha0.
+Microsoft Excel was not available for a direct opening test.
+No original equipment specifications or pre-existing review flags were changed by this task.
+
+Machine-readable checks and hashes are in the verification folder.
+Inventory.csv maps every original worksheet to its Excel file.

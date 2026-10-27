@@ -1,0 +1,23 @@
+{
+  "result": "PASS",
+  "dateLocal": "2026-10-25",
+  "sourceSiteCommit": "fded66fba5ecd91208a5cb34de89b05213789101",
+  "siteSourceFilesByteIdentical": 310,
+  "masterWorkbookVersion": 13,
+  "masterWorkbookSha256": "dcef1fb4a8b00edbfb5e420dc4e76e6f4a8975cd0599e2f3c7902c4ee44f9f52",
+  "separateXlsxFilesByteIdenticalToPriorZip": 117,
+  "originalSourceAndXlsxBlobHashesMatched": 235,
+  "financialFilesByteIdenticalToLatestPrivateArchive": 58,
+  "financialRequirementsUniqueAndContiguous": 145,
+  "originalUserCecInputs": 10,
+  "uniqueUserCecInputContents": 9,
+  "includedArchiveAndOoxmlCrcChecks": 135,
+  "concreteCredentialPatternHits": 0,
+  "copiedPriorEngineeringCheckResult": {
+    "result": "PASS",
+    "checks": 3617575,
+    "failures": 0
+  },
+  "freshChecksScope": "Export byte identity, original input identity, archive CRC, complete requirements and source presence. No new equipment research, financial live-service verification, deployment or changes to runtime code/data.",
+  "noGlobalCertification": "Existing data/identity qualifications remain; offline tests do not certify strategy profitability."
+}

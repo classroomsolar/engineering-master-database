@@ -1,0 +1,997 @@
+{
+  "result": "PASS",
+  "source": {
+    "name": "Engineering_Master_Database_Audited.xlsx",
+    "version": 13,
+    "sha256": "dcef1fb4a8b00edbfb5e420dc4e76e6f4a8975cd0599e2f3c7902c4ee44f9f52",
+    "bytes": 33220157
+  },
+  "workbookFiles": 117,
+  "primaryWorksheetCount": 117,
+  "hiddenDependencyCopies": 1,
+  "originalStoredCellsCompared": 5885829,
+  "originalFormulasPreserved": 53117,
+  "checks": {
+    "source_identity": 1,
+    "exactly_117_files": 1,
+    "every_original_sheet_included": 1,
+    "unique_zip_members": 117,
+    "zip_crc": 117,
+    "output_file_sha": 117,
+    "expected_sheet_count": 117,
+    "primary_sheet_visible": 117,
+    "dependency_sheets_hidden": 117,
+    "unique_sheet_ids": 117,
+    "worksheet_xml_exact": 118,
+    "support_part_exact": 586,
+    "styles_exact": 117,
+    "unique_relationship_ids": 351,
+    "relationship_target_exists": 820,
+    "content_type_overrides_exist": 117,
+    "every_part_has_content_type": 1171,
+    "unique_table_ids": 117,
+    "unique_table_names": 117,
+    "app_metadata_count": 117,
+    "browser_chunk_hash": 117,
+    "browser_chunk_wrapper": 117,
+    "browser_all_rows": 117,
+    "browser_row_position": 411402,
+    "browser_cell_value_type_style": 5885829,
+    "browser_present_cells_and_formulas": 411402,
+    "browser_absent_cells": 2511099,
+    "exact_cell_count": 117,
+    "exact_formula_count": 117,
+    "all_original_cells": 1,
+    "all_original_formulas": 1
+  },
+  "totalChecks": 9224772,
+  "failureCount": 0,
+  "failures": [],
+  "sheets": [
+    {
+      "sheet": "CABLES",
+      "cellCount": 554210,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CABLE_TYPES",
+      "cellCount": 10374,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "TRANSMISSION_CONDUCTORS",
+      "cellCount": 49988,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "PV_MODULES",
+      "cellCount": 788828,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "BATTERIES",
+      "cellCount": 8254,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "BATTERY_PERFORMANCE",
+      "cellCount": 94797,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "TRANSFORMERS",
+      "cellCount": 22044,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "MOTORS_NAMEPLATE",
+      "cellCount": 26471,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "MOTOR_CHARACTERISTICS",
+      "cellCount": 14287,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "MOTOR_MODELS",
+      "cellCount": 1122,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "HV_BREAKERS",
+      "cellCount": 37546,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "HV_BREAKERS_EXTENDED",
+      "cellCount": 24256,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "LV_BREAKERS",
+      "cellCount": 505351,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "FUSES",
+      "cellCount": 228581,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "RELAYS",
+      "cellCount": 53620,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "RECLOSERS",
+      "cellCount": 26180,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "TRIP_DEVICES",
+      "cellCount": 107341,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "OVERLOAD_HEATERS",
+      "cellCount": 28885,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "ELECTRONIC_CONTROLLERS",
+      "cellCount": 11193,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CSD_DEVICES",
+      "cellCount": 20320,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "RELIABILITY",
+      "cellCount": 990,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "RELIABILITY_EXTENDED",
+      "cellCount": 711,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "FIRE_PROTECTION",
+      "cellCount": 209,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CONDUIT_FIRE_PROTECTION",
+      "cellCount": 65,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "HARMONICS",
+      "cellCount": 2230,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "RECTIFIERS",
+      "cellCount": 3224,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "INTERRUPTION_COST",
+      "cellCount": 155,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "RAILWAY_LOADS",
+      "cellCount": 49,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "IBR",
+      "cellCount": 101555,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "SWITCHGEAR",
+      "cellCount": 1866,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "INSTRUMENT_TRANSFORMERS",
+      "cellCount": 9142,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "DISCONNECTS",
+      "cellCount": 2693,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CONDUCTOR_MATERIALS",
+      "cellCount": 31,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CONDUCTOR_SIZES",
+      "cellCount": 124,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CABLE_SC_K_FACTORS",
+      "cellCount": 54,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "INSULATION_CLASSES",
+      "cellCount": 43,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "GROUND_ELECTRODES",
+      "cellCount": 1848,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "NEUTRAL_GROUNDING_RESISTORS",
+      "cellCount": 1506,
+      "formulas": 2,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "SURGE_ARRESTERS",
+      "cellCount": 1809,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CABLE_TRAYS",
+      "cellCount": 1943,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CABLE_CLEATS",
+      "cellCount": 1612,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "BOX_FILL",
+      "cellCount": 48,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CONDUITS",
+      "cellCount": 275,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "ENCLOSURES",
+      "cellCount": 2359,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "PROTECTION_CURVES",
+      "cellCount": 60,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "SOURCE_REGISTER",
+      "cellCount": 24507,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "TERMINATIONS",
+      "cellCount": 11611,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "AMPACITY_ROUTES",
+      "cellCount": 261,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "AMPACITY_AMBIENT_FACTORS",
+      "cellCount": 105,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "AMPACITY_CCC_FACTORS",
+      "cellCount": 24,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "AMPACITY_PARAMETERS",
+      "cellCount": 45,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "NEC_AMPACITY_2020",
+      "cellCount": 22875,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "NEC_AMPACITY_2023",
+      "cellCount": 22875,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "GENERATORS",
+      "cellCount": 256,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "MOTOR_LOCKED_ROTOR_CODES",
+      "cellCount": 219,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CABLE_FAULT_CURRENT_REFERENCE",
+      "cellCount": 308,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CABLE_TRAY_EQUIPMENT",
+      "cellCount": 2054,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "TRAY_EXPANSION_RULES",
+      "cellCount": 84,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CABLE_CLEAT_SIZES",
+      "cellCount": 992,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CABLE_CLEAT_SIZE_MAP",
+      "cellCount": 3469,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "TRAY_ACCESSORY_RULES",
+      "cellCount": 371,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CABLE_PLANNING_DEFAULTS",
+      "cellCount": 198,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "NEC_TRAY_FILL",
+      "cellCount": 250,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "NEC_CHANNEL_TRAY_FILL",
+      "cellCount": 49,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "TRAY_ENGINEERING_DEFAULTS",
+      "cellCount": 30,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CABLE_IMPEDANCE_DEFAULTS",
+      "cellCount": 80,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "TRAY_EGC_METAL_AREA",
+      "cellCount": 66,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "EGC_SIZE_BY_OCPD",
+      "cellCount": 110,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "EGC_SIZE_THRESHOLDS",
+      "cellCount": 110,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "TRAY_EGC_AREA_THRESHOLDS",
+      "cellCount": 55,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "TRAY_WIDTH_CODES",
+      "cellCount": 32,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "TRAY_BARRIER_COVER_CODES",
+      "cellCount": 25,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "TRAY_GROUNDING_ACCESSORIES",
+      "cellCount": 105,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "PARTS_CATALOG",
+      "cellCount": 11867,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "BREAKER_LUGS",
+      "cellCount": 7358,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "PV_OPTIMIZERS",
+      "cellCount": 702,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CONDUCTOR_PROPERTIES",
+      "cellCount": 350,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "LEGACY_NEC_REFERENCE",
+      "cellCount": 13140,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "SHEET_MAP",
+      "cellCount": 1108,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "FIELD_AUDIT",
+      "cellCount": 24649,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "DATA_ISSUES",
+      "cellCount": 21564,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "RESEARCH_GUIDANCE",
+      "cellCount": 225,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "MODEL_REQUIREMENTS",
+      "cellCount": 382,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "PV_UNIT_REVIEW",
+      "cellCount": 461335,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "PLUGIN_LOG",
+      "cellCount": 215,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CHANGE_LOG",
+      "cellCount": 178563,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "AUDIT_README",
+      "cellCount": 104,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "OPTIMIZER_REVIEW",
+      "cellCount": 777,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "DATABASE_TABLE_INDEX",
+      "cellCount": 702,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "PAPER_AUDIT",
+      "cellCount": 1391,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CALCULATOR_KEY_AUDIT",
+      "cellCount": 711,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CABLE_NORMALIZATION",
+      "cellCount": 191196,
+      "formulas": 53105,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": [
+        "CABLES"
+      ]
+    },
+    {
+      "sheet": "NUMERIC_BENCHMARKS",
+      "cellCount": 30,
+      "formulas": 10,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_PV_ACTIVE",
+      "cellCount": 770674,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_SOLAR_INVERTERS",
+      "cellCount": 145237,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_BATTERY_INVERTERS",
+      "cellCount": 76960,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_BATTERIES",
+      "cellCount": 18089,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_ENERGY_STORAGE",
+      "cellCount": 272180,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_METERS",
+      "cellCount": 8254,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_LEGACY_PCS",
+      "cellCount": 45158,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_V2G",
+      "cellCount": 1110,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_BATTERY_ARCHIVE",
+      "cellCount": 170,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_INVERTER_ARCHIVE",
+      "cellCount": 142312,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_PV_ARCHIVE",
+      "cellCount": 168553,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_POWER_CONTROL",
+      "cellCount": 2430,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_PMRS",
+      "cellCount": 923,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_PMRS_HISTORICAL",
+      "cellCount": 1028,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_FIELD_MAP",
+      "cellCount": 3288,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_SOURCE_NOTES",
+      "cellCount": 1700,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_IMPORT_INDEX",
+      "cellCount": 130,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_LISTING_LINKS",
+      "cellCount": 353513,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_MODEL_GROUPS",
+      "cellCount": 116072,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_ASSEMBLY_RELATIONS",
+      "cellCount": 468,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "REQUEST_AUDIT",
+      "cellCount": 95,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "EQUIPMENT_RECORD_HISTORY",
+      "cellCount": 340,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "RECORD_RECONCILIATION",
+      "cellCount": 1221,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    },
+    {
+      "sheet": "CEC_FILE_RECONCILIATION",
+      "cellCount": 140,
+      "formulas": 0,
+      "worksheet_xml_identical": true,
+      "browser_values_identical": true,
+      "dependencies": []
+    }
+  ],
+  "notes": [
+    "Every primary worksheet XML is byte-for-byte identical to the corresponding worksheet in the original v13 workbook.",
+    "CABLE_NORMALIZATION retains the original CABLES worksheet as one hidden dependency; it is excluded from the primary cell and formula totals.",
+    "All original tables, worksheet relationships, style definitions, theme and cached formula results are preserved. Only workbook packaging/navigation/app metadata is regenerated.",
+    "Browser values are original stored lexical values, with cell types, style indices, presence, source addresses and formulas checked against every source cell.",
+    "Native application open tests are recorded separately. These preservation checks are not a new certification of the underlying equipment specifications."
+  ]
+}
