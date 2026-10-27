@@ -1,9 +1,0 @@
-{
- "name": "indian-market-intelligence-private-website",
- "private": true,
- "version": "0.4.1-transfer",
- "description": "Private offline-data Indian investment research web viewer; not live trading",
- "type": "module",
- "scripts": {"start": "node server.mjs"},
- "engines": {"node": ">=20"}
-}

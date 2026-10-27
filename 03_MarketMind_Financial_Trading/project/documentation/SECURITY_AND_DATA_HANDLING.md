@@ -1,9 +1,0 @@
-# Security and confidentiality audit notes
-
-1. **Entire main ZIP is PRIVATE**. It contains original broker XLSX statements and embedded dated portfolio holdings. Store encrypted with owner-only access. Do not upload whole ZIP to public GitHub, public Replit project, shared Drive, or an AI model without deliberate consent.
-2. Offline `website/index.html` includes a complete historical investment dataset in its page source. Never serve it publicly on GitHub Pages/Netlify/Vercel as plain unauthenticated HTML. The Node `server.mjs` provides owner-login protection, but additional deployment security is needed for high-stakes financial information.
-3. The Node wrapper requires APP_USERNAME, APP_PASSWORD (min 12 chars), SESSION_SECRET (min 32 chars). Secrets are never bundled. HTTP should be used only for isolated local testing; use real HTTPS with `PUBLIC_BASE_URL=https://...` for actual hosting. Protect server environment variables and backup access. Consider managed authentication with MFA for live deployments.
-4. The browser's saved snapshots are NOT live feeds. There is no Google Sheets or Groww API token, Telegram session, Gemini API key, or real-order capability anywhere in this archive. Never infer consent to connect an entire Google account.
-5. Raw newspaper PDFs are not included. Temporary newspapers must be collected under valid permissions and removed from temporary storage after verified processing within 24 hours; never touch original Telegram channel posts.
-6. Google AI Studio data access depends on API account, model, region and terms. Even if Google services share a login, permissions/retention/quota are distinct. Use owner-approved non-sensitive input for early Gemini auditing.
-7. Original stock and mutual-fund source statements may contain private broker identifiers and transaction details. Do not output these in UI logs or API responses to anonymous sessions.

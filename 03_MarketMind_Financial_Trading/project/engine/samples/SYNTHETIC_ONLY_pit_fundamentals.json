@@ -1,9 +1,0 @@
-[
-  {
-    "published_date": "2024-01-01",
-    "source_url": "https://example.invalid/test-fixture",
-    "point_in_time_confirmed": true,
-    "quality_score": 80,
-    "valuation_score": 70
-  }
-]
