@@ -1,0 +1,44 @@
+name: Engineering catalog
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: engineering-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      REQUIRE_BROWSER_TESTS: "1"
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install browser test dependencies
+        run: |
+          python -m pip install playwright==1.62.0
+          python -m playwright install --with-deps chromium
+      - name: Test transfer verification
+        run: python -m unittest discover -s 06_Verification/tests -p 'test_*.py' -v
+      - name: Test data tools, serving boundary, and browser behavior
+        run: python -m unittest discover -s 01_Engineering_Equipment_Database/website/tests -p 'test_*.py' -v
+      - name: Independently verify released and rebuilt collections
+        run: |
+          mkdir -p build
+          python 01_Engineering_Equipment_Database/website/tools/verify_collections.py --source-workbook 02_Engineering_Master_Database/Engineering_Master_Database_Audited.xlsx --report build/released-verification.json
+          python 01_Engineering_Equipment_Database/website/tools/build_collections.py --output-dir build/derived
+          python 01_Engineering_Equipment_Database/website/tools/verify_collections.py --source-workbook 02_Engineering_Master_Database/Engineering_Master_Database_Audited.xlsx --collections-dist build/derived --report build/rebuilt-verification.json
+          python 01_Engineering_Equipment_Database/website/tools/catalog_store.py build --collections-dist build/derived --output build/catalog.sqlite
+      - name: Verify protected original inputs and report source changes
+        run: python 06_Verification/verify_transfer.py --mode inputs --allow-output build --output build/transfer-verification.json

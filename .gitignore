@@ -1,0 +1,6 @@
+# Explicitly generated verification/build products; original released data is tracked.
+/build/
+/01_Engineering_Equipment_Database/website/build/
+__pycache__/
+*.py[cod]
+.venv/
