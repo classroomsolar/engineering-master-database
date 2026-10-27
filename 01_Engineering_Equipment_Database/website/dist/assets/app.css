@@ -8,3 +8,12 @@ dialog{color:var(--text);font-family:var(--font);background:#0e192b;border:1px s
 .equipment-table td,.model-name{font-size:12px}.model-code{font-size:9px}.rating-text,.voltage-text{font-size:11px}.equipment-table th{font-size:10px}.source-indicator{font-size:10px}.source-page-controls>div>span{margin:0 8px}.spec-value{font-size:12px}.spec-label{font-size:11px}.source-card-title strong{font-size:12px}.record-tabs button{font-size:12px}.strip-note:before{content:"";display:inline-block;width:5px;height:6px;border:1px solid #6b7b94;border-radius:1px;opacity:.7}
 @media(max-width:650px){.hero h1{font-size:clamp(29px,8.5vw,52px)}}
 
+
+/* Keep every public control usable across narrow screens and keyboard navigation. */
+.skip-link{position:absolute;top:8px;left:16px;z-index:110;padding:12px 18px;background:#f4f6fb;color:#111c2d;border-radius:8px;transform:translateY(-160%)}
+.skip-link:focus{transform:translateY(0)}
+.filterbar{flex-wrap:wrap}.filterbar>.record-search{flex:1 0 100%}.filter-select{flex:1;min-width:125px}.status-select{width:155px}
+.filterbar input:focus-visible,.filterbar select:focus-visible,.category-search input:focus-visible,.spec-search input:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.table-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:-3px}.loading-state .overview-note{margin:0;color:#b5c9e6}.loading-state .button{font-size:12px}
+.strip-note:before{display:none}.drawer-footer #recordPermalink{color:#a8c5ff}.reference-sidebar .overview-note{padding:12px;font-size:11px}
+@media(max-width:650px){.filter-select{min-width:calc(50% - 8px)}.filter-reset{flex:1;min-height:40px}.filter-select select{font-size:11px;min-height:40px}.site-header{padding:0 16px}.collection-heading-actions{max-width:110px}.record-tabs button{min-height:44px}.page-controls>button{min-width:36px;min-height:36px}footer button{min-height:40px;font-size:10px}.reference-pages button{min-height:36px}.drawer-footer .text-button{font-size:10px;min-height:28px}.collection-navigation .text-button{font-size:9px}.reference-sidebar .category-search input{font-size:12px}.reference-button{font-size:10px}.record-identity h2{font-size:24px}}

@@ -1,13 +1,13 @@
 (() => {
 "use strict";
 const C=window.EQUIPMENT_CATALOG, RAW=window.DB_CATALOG, $=id=>document.getElementById(id);
-if(!C||!RAW){$("loadingState").textContent="The catalog could not load. Please reload this page.";return;}
+if(!C||!RAW){const box=$("loadingState"),retry=document.createElement("button");retry.className="button button-secondary";retry.textContent="Reload catalog";retry.onclick=()=>location.reload();box.replaceChildren(document.createTextNode("The catalog could not load. Please reload to try again."),retry);$("resultsCount").textContent="The catalog could not load.";return;}
 const fmt=n=>n.toLocaleString("en-US");
 const metas=new Map(RAW.sheets.map(m=>[m.id,m]));
 const byName=new Map(RAW.sheets.map(m=>[m.name,m]));
 const I={id:0,rid:1,maker:2,model:3,type:4,rating:5,voltage:6,quality:7,review:8,states:9,refs:10,primary:11,registry:12,candidate:13,search:14,gate:15};
-const S={meta:null,records:null,filtered:[],page:1,pageSize:50,query:"",maker:"",type:"",sort:null,dir:1,sequence:0,detailIndex:-1,view:"overview",detailToken:0,snapshot:null,focus:null,sourcePage:0,searchReady:false};
-const RS={meta:null,rows:[],filtered:[],page:1,sequence:0};
+const S={meta:null,records:null,filtered:[],page:1,pageSize:50,query:"",maker:"",type:"",state:"",quality:"",filterSequence:0,listReady:false,sort:null,dir:1,sequence:0,detailIndex:-1,view:"overview",detailToken:0,snapshot:null,focus:null,sourcePage:0,searchReady:false};
+const RS={meta:null,rows:[],filtered:[],page:1,sequence:0,ready:false};
 const requests=new Map(),collectionRequests=new Map(),searchRequests=new Map(),searchInFlight=new Map();
 let currentCollection=null,rawCache=null,rawWanted="",toastTimer,searchTimer;
 const ICONS={
@@ -45,7 +45,7 @@ function loadScript(file,key,registry){
  const old=registry.get(key);if(old)return old.promise;
  let resolve,reject;const promise=new Promise((r,j)=>{resolve=r;reject=j;});registry.set(key,{promise,resolve,reject});
  const script=document.createElement("script");script.src=file;script.async=true;
- script.onerror=()=>{registry.delete(key);reject(new Error("The data file could not be opened. Reload to try again."));script.remove();};
+ script.onerror=()=>{registry.delete(key);reject(new Error("The data file could not be opened. Please try again."));script.remove();};
  script.onload=()=>{if(registry.has(key)){registry.delete(key);reject(new Error("The data file did not initialize."));}script.remove();};
  document.head.appendChild(script);return promise;
 }
@@ -61,6 +61,12 @@ async function rawData(sid){
 }
 async function snapshot(ref){const d=await rawData(ref[0]),r=d.rows.get(ref[1]);if(!r)throw new Error("The original source row could not be found.");return {meta:d.meta,row:r,ref};}
 function getCurrent(){return S.detailIndex>=0?S.records?.[S.filtered[S.detailIndex]]:null;}
+function setListReady(ready){
+ S.listReady=ready;$("equipmentPanel").setAttribute("aria-busy",String(!ready));$("pageNumber").disabled=!ready;$("exportIndex").disabled=!ready;
+ document.querySelectorAll("[data-sort]").forEach(b=>b.disabled=!ready);
+ if(!ready){$("equipmentBody").replaceChildren();$("pageSummary").textContent="";for(const id of ["firstPage","previousPage","nextPage","lastPage"])$(id).disabled=true;}
+}
+function retryMessage(box,message,label,action){box.replaceChildren(el("p","overview-note",message));const b=el("button","button button-secondary",label);b.onclick=action;box.append(b);}
 function loading(text,on=true){const box=$("loadingState");box.replaceChildren();box.hidden=false;if(on)box.append(el("span","loading-orbit"));box.append(el("span","",text));}
 function renderCategories(){
  const q=$("categorySearch").value.trim().toLowerCase(),tabs=$("categoryTabs"),focusedId=tabs.contains(document.activeElement)?document.activeElement.id:null;tabs.replaceChildren();let group="";
@@ -79,32 +85,47 @@ function renderCategories(){
  if(focusedId)$(focusedId)?.focus();
  $("equipmentPanel").setAttribute("aria-labelledby",$("category-"+S.meta?.id)?"category-"+S.meta.id:"collectionTitle");
 }
-async function selectCollection(meta,changeHash=true){
- if(!meta)return;closeRecord(false);const seq=++S.sequence;S.meta=meta;S.records=null;S.filtered=[];S.query="";S.maker="";S.type="";S.sort=null;S.dir=1;S.page=1;S.searchReady=false;
- $("equipmentSearch").value="";$("manufacturerFilter").replaceChildren(new Option("All manufacturers",""));$("typeFilter").replaceChildren(new Option("All types",""));
+async function selectCollection(meta,changeHash=true,recordId=""){
+ if(!meta)return;clearTimeout(searchTimer);closeRecord(false,false);S.filterSequence++;setListReady(false);const seq=++S.sequence;S.meta=meta;S.records=null;S.filtered=[];S.query="";S.maker="";S.type="";S.state="";S.quality="";S.sort=null;S.dir=1;S.page=1;S.searchReady=false;
+ $("equipmentSearch").value="";$("qualityFilter").value="";$("listingStateFilter").replaceChildren(new Option("All listing states",""));$("manufacturerFilter").replaceChildren(new Option("All manufacturers",""));$("typeFilter").replaceChildren(new Option("All types",""));
  $("stripCategory").textContent=meta.label;$("collectionFamily").textContent=meta.family;
  $("collectionTitle").replaceChildren(document.createTextNode(meta.label),el("span","title-dot","."));
  $("collectionDescription").textContent=meta.description;$("collectionCount").textContent=fmt(meta.count)+" records";$("allRecordsBadge").textContent=fmt(meta.count);$("resultsCount").textContent="Opening the equipment list…";
  $("equipmentBody").replaceChildren();$("pageSummary").textContent="";$("pageTotal").textContent="";$("pageNumber").value=1;
  for(const id of ["firstPage","previousPage","nextPage","lastPage"])$(id).disabled=true;
  loading("Opening "+meta.label.toLowerCase()+"…");renderCategories();$("tableScroll").scrollTop=0;
- if(changeHash)history.replaceState(null,"","#"+meta.id);
- try{const rows=await collectionData(meta);if(seq!==S.sequence)return;S.records=rows;S.searchReady=!!currentCollection?.searchReady;const makers=[...new Set(rows.map(r=>r[I.maker]).filter(Boolean))].sort((a,b)=>a.localeCompare(b));makers.forEach(m=>$("manufacturerFilter").add(new Option(m,m)));meta.types.forEach(t=>$("typeFilter").add(new Option(t,t)));applyFilters();}
- catch(err){if(seq===S.sequence){loading(err.message,false);$("resultsCount").textContent="The equipment list could not load.";}console.error(err);}
+ if(changeHash)writeHash(meta.id,recordId);
+ try{const rows=await collectionData(meta);if(seq!==S.sequence)return;S.records=rows;S.searchReady=!!currentCollection?.searchReady;const makers=[...new Set(rows.map(r=>r[I.maker]).filter(Boolean))].sort((a,b)=>a.localeCompare(b));makers.forEach(m=>$("manufacturerFilter").add(new Option(m,m)));meta.types.forEach(t=>$("typeFilter").add(new Option(t,t)));
+ const states=[...new Set(rows.flatMap(r=>r[I.states]).filter(Boolean))].sort(collator.compare);states.forEach(v=>$("listingStateFilter").add(new Option(v,v)));$("listingStateFilter").add(new Option("No listing state recorded","__none"));
+ await applyFilters();if(seq===S.sequence&&recordId)openLinkedRecord(recordId);}
+ catch(err){if(seq===S.sequence){loading("",false);retryMessage($("loadingState"),err.message,"Retry category",()=>selectCollection(meta,false,recordId));$("resultsCount").textContent="The equipment list could not load.";}console.error(err);}
 }
 const collator=new Intl.Collator("en",{numeric:true,sensitivity:"base"});
+function reviewNoted(r){return !!(r[I.review]||r[I.candidate]);}
 async function applyFilters(){
- if(!S.records)return;const words=S.query.trim().toLowerCase().split(/\s+/).filter(Boolean);S.filtered=[];
- if(words.length&&!S.searchReady){const seq=S.sequence;loading("Searching all original source specifications…");$("resultsCount").textContent="Searching all source fields…";try{const texts=await searchData(S.meta);if(seq!==S.sequence)return;S.records.forEach((r,i)=>r[I.search]=texts[i]);S.searchReady=true;if(currentCollection?.id===S.meta.id)currentCollection.searchReady=true;return applyFilters();}catch(err){if(seq===S.sequence){loading(err.message,false);$("resultsCount").textContent="Search could not load. Reset the filters to browse all records.";}console.error(err);return;}}
- S.records.forEach((r,i)=>{if(S.maker&&r[I.maker]!==S.maker)return;if(S.type&&r[I.type]!==S.type)return;if(words.length&&!words.every(w=>r[I.search].includes(w)||r[I.rid].toLowerCase().includes(w)))return;S.filtered.push(i);});
- sortRecords();S.page=1;renderRows();
+ const request=++S.filterSequence;if(!S.records)return;
+ const seq=S.sequence,words=S.query.trim().toLowerCase().split(/\s+/).filter(Boolean);
+ if(words.length&&!S.searchReady){
+  setListReady(false);loading("Searching all original source specifications…");$("resultsCount").textContent="Searching all source fields…";
+  try{const texts=await searchData(S.meta);if(seq!==S.sequence||request!==S.filterSequence)return;S.records.forEach((r,i)=>r[I.search]=texts[i]);S.searchReady=true;if(currentCollection?.id===S.meta.id)currentCollection.searchReady=true;}
+  catch(err){if(seq===S.sequence&&request===S.filterSequence){loading("",false);retryMessage($("loadingState"),err.message,"Retry search",applyFilters);$("resultsCount").textContent="Search could not load. Retry or reset the filters to browse.";}console.error(err);return;}
+ }
+ if(request!==S.filterSequence)return;
+ closeRecord(false);S.filtered=[];
+ S.records.forEach((r,i)=>{
+  if(S.maker&&r[I.maker]!==S.maker)return;if(S.type&&r[I.type]!==S.type)return;
+  if(S.state&&(S.state==="__none"?r[I.states].some(Boolean):!r[I.states].includes(S.state)))return;
+  if(S.quality==="review"&&!reviewNoted(r)||S.quality==="candidate"&&!r[I.candidate]||S.quality==="noted"&&!r[I.quality]||S.quality==="unnoted"&&!!r[I.quality])return;
+  if(words.length&&!words.every(w=>(r[I.search]||"").includes(w)||r[I.rid].toLowerCase().includes(w)))return;S.filtered.push(i);
+ });
+ setListReady(true);sortRecords();S.page=1;renderRows();
 }
 function sortRecords(){
  if(!S.records||!S.sort)return;const key={model:I.model,manufacturer:I.maker,type:I.type,rating:I.rating}[S.sort],dir=S.dir;
  S.filtered.sort((a,b)=>{const ra=S.records[a],rb=S.records[b],va=S.sort==="rating"?metric(ra[key]):ra[key],vb=S.sort==="rating"?metric(rb[key]):rb[key];if(!va&&vb)return 1;if(va&&!vb)return -1;if(S.sort==="rating"){const units=collator.compare(ra[key][1]||"",rb[key][1]||"");if(units)return units*dir;const na=Number(ra[key][0]),nb=Number(rb[key][0]);if(Number.isFinite(na)&&Number.isFinite(nb)&&na!==nb)return(na<nb?-1:1)*dir;}return collator.compare(va||"",vb||"")*dir||a-b;});
 }
 function renderRows(){
- if(!S.records)return;const n=S.filtered.length,pages=Math.max(1,Math.ceil(n/S.pageSize));S.page=Math.max(1,Math.min(S.page,pages));const start=(S.page-1)*S.pageSize,end=Math.min(start+S.pageSize,n),body=$("equipmentBody");body.replaceChildren();
+ if(!S.records||!S.listReady)return;const n=S.filtered.length,pages=Math.max(1,Math.ceil(n/S.pageSize));S.page=Math.max(1,Math.min(Math.trunc(Number(S.page))||1,pages));const start=(S.page-1)*S.pageSize,end=Math.min(start+S.pageSize,n),body=$("equipmentBody");body.replaceChildren();
  for(let pos=start;pos<end;pos++){
   const r=S.records[S.filtered[pos]],row=el("tr");row.tabIndex=0;row.setAttribute("aria-label","Open "+(r[I.model]||"equipment record")+" · "+r[I.rid]);row.dataset.recordId=r[I.rid];
   const model=el("td"),wrap=el("div","model-cell"),ico=el("span","row-icon");ico.innerHTML=icon(S.meta.icon,17);
@@ -121,17 +142,21 @@ function renderRows(){
  $("pageSummary").textContent=n?fmt(start+1)+"–"+fmt(end)+" of "+fmt(n)+" records":"No matching records";
  $("pageNumber").value=S.page;$("pageNumber").max=pages;$("pageTotal").textContent="of "+fmt(pages);$("firstPage").disabled=$("previousPage").disabled=S.page===1;$("nextPage").disabled=$("lastPage").disabled=S.page>=pages;
  document.querySelectorAll("[data-sort]").forEach(b=>{b.classList.toggle("sort-active",S.sort===b.dataset.sort);b.lastElementChild.textContent=S.sort===b.dataset.sort?(S.dir===1?"↑":"↓"):"↕";b.parentElement.setAttribute("aria-sort",S.sort===b.dataset.sort?(S.dir===1?"ascending":"descending"):"none");});
- if(n)$("loadingState").hidden=true;else loading("No records match these filters. Try a different model, manufacturer or equipment type.",false);
+ if(n)$("loadingState").hidden=true;else{loading("",false);retryMessage($("loadingState"),"No records match these filters. Change a filter or reset to browse all records.","Clear filters",resetFilters);}
 }
-function resetFilters(){$("equipmentSearch").value="";$("manufacturerFilter").value="";$("typeFilter").value="";S.query=S.maker=S.type="";applyFilters();}
-function goPage(p){S.page=p;renderRows();$("tableScroll").scrollTop=0;}
-function openRecord(pos,trigger){
- if(!S.records||pos<0||pos>=S.filtered.length)return;
+function resetFilters(){clearTimeout(searchTimer);for(const id of ["equipmentSearch","manufacturerFilter","typeFilter","listingStateFilter","qualityFilter"])$(id).value="";S.query=S.maker=S.type=S.state=S.quality="";applyFilters();}
+function goPage(p){if(!S.listReady)return;S.page=Number.isFinite(p)?Math.trunc(p):1;renderRows();$("tableScroll").scrollTop=0;}
+function openRecord(pos,trigger,changeHash=true){
+ if(!S.records||!S.listReady||pos<0||pos>=S.filtered.length)return;
  if(trigger)S.focus=trigger;S.detailIndex=pos;S.detailToken++;S.snapshot=null;S.sourcePage=0;
  const r=getCurrent();$("recordCategory").textContent=S.meta.label;$("recordId").textContent=r[I.rid];$("recordManufacturer").textContent=r[I.maker]||"Manufacturer not stated";$("recordTitle").textContent=r[I.model]||r[I.rid];$("recordType").textContent=r[I.type];$("recordIcon").innerHTML=icon(S.meta.icon,29);$("sourceCount").textContent=r[I.refs].length;$("recordPosition").textContent=fmt(pos+1)+" of "+fmt(S.filtered.length);
- $("previousRecord").disabled=pos===0;$("nextRecord").disabled=pos>=S.filtered.length-1;$("recordDrawer").hidden=false;$("recordBackdrop").hidden=false;document.body.style.overflow="";document.body.style.overflow="hidden";setRecordView("overview");$("closeRecord").focus();
+ if(changeHash)writeHash(S.meta.id,r[I.rid]);$("recordPermalink").href=recordHash(S.meta.id,r[I.rid]);setBackgroundInert(true);$("previousRecord").disabled=pos===0;$("nextRecord").disabled=pos>=S.filtered.length-1;$("recordDrawer").hidden=false;$("recordBackdrop").hidden=false;document.body.style.overflow="";document.body.style.overflow="hidden";setRecordView("overview");$("closeRecord").focus();
 }
-function closeRecord(focus=true){if($("recordDrawer").hidden)return;$("recordDrawer").hidden=true;$("recordBackdrop").hidden=true;document.body.style.overflow="";S.detailToken++;S.detailIndex=-1;S.snapshot=null;if(focus&&S.focus?.isConnected)S.focus.focus();S.focus=null;}
+function setBackgroundInert(value){document.querySelectorAll("body > header,body > main,body > footer,.skip-link").forEach(n=>n.inert=value);}
+function recordHash(category,rid=""){return "#"+encodeURIComponent(category)+(rid?"/"+encodeURIComponent(rid):"");}
+function writeHash(category,rid=""){history.replaceState(null,"",recordHash(category,rid));}
+function openLinkedRecord(rid){const index=S.filtered.findIndex(i=>S.records[i][I.rid]===rid||S.records[i][I.id]===rid);if(index>=0){S.page=Math.floor(index/S.pageSize)+1;renderRows();openRecord(index,null,false);writeHash(S.meta.id,getCurrent()[I.rid]);}else{toast("This record was not found in the selected category.");writeHash(S.meta.id);}}
+function closeRecord(focus=true,changeHash=true){if($("recordDrawer").hidden)return;$("recordDrawer").hidden=true;$("recordBackdrop").hidden=true;setBackgroundInert(false);document.body.style.overflow="";S.detailToken++;S.detailIndex=-1;S.snapshot=null;if(changeHash&&S.meta)writeHash(S.meta.id);if(focus&&S.focus?.isConnected)S.focus.focus();S.focus=null;}
 function recordLine(label,value,cls=""){const div=el("div","detail-line");div.append(el("span","",label),el("strong",cls,value||"—"));return div;}
 function setRecordView(view){
  S.view=view;S.detailToken++;$("recordContent").setAttribute("aria-labelledby",view+"Tab");$("recordContent").scrollTop=0;document.querySelectorAll(".record-tabs [role=tab]").forEach(b=>{b.setAttribute("aria-selected",String(b.dataset.view===view));b.tabIndex=b.dataset.view===view?0:-1;});
@@ -143,7 +168,7 @@ function renderOverview(){
  const metrics=el("div","overview-metrics");
  [["Rating",r[I.rating]],["Voltage",r[I.voltage]]].forEach(([label,a])=>{const b=el("div","overview-metric");b.append(el("span","",a[2]||label));const s=el("strong","",a[0]||"—");if(a[1])s.append(el("small","",a[1]));b.append(s);metrics.append(b);});box.append(metrics);
  const cap=el("div","record-section-label");cap.append(el("span","","EQUIPMENT DETAILS"),el("span","","ORIGINAL RECORD"));box.append(cap,recordLine("Manufacturer",r[I.maker]),recordLine("Model",r[I.model]),recordLine("Equipment type",r[I.type]),recordLine("Record ID",r[I.rid]),recordLine("Listing states",r[I.states].filter(Boolean).join(" · ")),recordLine("Source records",fmt(r[I.refs].length)));
- if(r[I.quality]||r[I.review]||r[I.gate]){
+ if(r[I.quality]||r[I.review]||r[I.candidate]||r[I.gate]){
   const q=el("div","quality-card"+(r[I.review]||r[I.candidate]?"":" neutral"));q.append(el("strong","",r[I.review]||r[I.candidate]?"Review notes remain applicable":"Original data status"));if(r[I.candidate])q.append(el("div","",fmt(r[I.candidate])+" source listing or configuration relationship"+(r[I.candidate]===1?" requires":"s require")+" identity review. Candidate links do not establish an approved equipment match."));
   if(r[I.quality])q.append(el("pre","",r[I.quality]));if(r[I.gate])q.append(el("pre","",r[I.gate]));box.append(q);
  }
@@ -187,7 +212,7 @@ async function renderSpecifications(){
   const head=el("div","specification-header");head.append(el("span","",snap.meta.headers.length+" original fields"));const a=el("a","","Original Excel ↗");a.href=snap.meta.file;a.download=snap.meta.name+".xlsx";head.append(a);box.append(head);
   const label=el("label","spec-search"),i=document.createElement("input");i.type="search";i.placeholder="Find a field or value…";i.setAttribute("aria-label","Find a specification field");const si=el("span","search-icon");label.append(si,i);box.append(label);
   const fields=el("div");fields.id="specificationFields";fields.append(nativeFields(snap));box.append(fields);i.oninput=()=>{fields.replaceChildren(nativeFields(snap,i.value));if(!fields.children.length)fields.append(el("p","overview-note","No original fields match this search."));};
- }catch(err){if(token===S.detailToken)box.replaceChildren(el("p","overview-note",err.message));console.error(err);}
+ }catch(err){if(token===S.detailToken)retryMessage(box,err.message,"Retry specifications",renderSpecifications);console.error(err);}
 }
 function renderSources(){
  const r=getCurrent();if(!r)return;const box=$("recordContent");box.replaceChildren();const refs=r[I.refs],per=15,pages=Math.max(1,Math.ceil(refs.length/per));S.sourcePage=Math.min(S.sourcePage,pages-1);
@@ -212,35 +237,35 @@ function renderSources(){
 function metricObject(a){return a[2]?{storedValue:a[0],unit:a[1],originalField:a[2]}:{storedValue:null,unit:a[1],originalField:null,displayNote:a[0]||null};}
 function recordObject(record){return {recordId:record[I.rid],equipmentCategory:S.meta.label,manufacturer:record[I.maker],model:record[I.model],equipmentType:record[I.type],rating:metricObject(record[I.rating]),voltage:metricObject(record[I.voltage]),originalDataStatus:record[I.quality],identityReviewNoted:record[I.review],originalSelectionGate:record[I.gate],listingStates:record[I.states],sources:record[I.refs].map(ref=>({sourceSheet:metas.get(ref[0]).name,sourceRow:ref[1],relationship:ref[2],originalDisposition:ref[3],originalLinkRow:ref[4],originalScope:ref[5]||"",originalIdentityBasis:ref[6]||"",originalExcel:metas.get(ref[0]).file}))};}
 function downloadJson(data,name){const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),5000);}
-function exportIndex(){if(!S.records)return;downloadJson({purpose:"Catalog index. Full original fields remain in the source records and original Excel files.",category:S.meta.label,originalWorkbook:C.original,records:S.filtered.map(i=>recordObject(S.records[i]))},S.meta.id+"_catalog_index.json");toast("Catalog index saved with original values and source links.");}
+function exportIndex(){if(!S.records||!S.listReady)return;downloadJson({purpose:"Catalog index. Full original fields remain in the source records and original Excel files.",category:S.meta.label,originalWorkbook:C.original,records:S.filtered.map(i=>recordObject(S.records[i]))},S.meta.id+"_catalog_index.json");toast("Catalog index saved with original values and source links.");}
 async function exportRecord(){
  const r=getCurrent();if(!r)return;const b=$("exportRecord");b.disabled=true;b.textContent="Preparing original source records…";
  try{const out=recordObject(r);out.originalSourceRecords=[];for(const ref of r[I.refs]){const snap=await snapshot(ref);out.originalSourceRecords.push({sheet:snap.meta.name,row:snap.row[0],relationship:ref[2],fields:snap.meta.headers.map((name,i)=>({field:name,address:columnName(i)+snap.row[0],storedValue:snap.row[1][i],cellType:snap.row[2][i],styleIndex:snap.row[3][i],cellPresent:snap.row[5].includes(i),formula:snap.row[4][String(i)]||null}))});}downloadJson(out,(r[I.rid]||"equipment_record").replace(/[^A-Za-z0-9_-]/g,"_")+".json");toast("Full record saved with every attached original source row.");}
  catch(err){toast(err.message);console.error(err);}finally{b.disabled=false;b.textContent="Save full record ↓";}
 }
 function browse(){closeRecord(false);$("catalog").scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"});}
-function showIntegrity(){if(!$("referencesDialog").open)$("integrityDialog").showModal();}
-function openReferences(){closeRecord(false);$("referencesDialog").showModal();renderReferenceList();if(!RS.meta)selectReference(C.references[0]);}
+function showIntegrity(){closeRecord(false);if(!$("referencesDialog").open&&!$("integrityDialog").open)$("integrityDialog").showModal();}
+function openReferences(){closeRecord(false);if($("referencesDialog").open||$("integrityDialog").open)return;$("referencesDialog").showModal();renderReferenceList();if(!RS.meta)selectReference(C.references[0]);}
 function renderReferenceList(){
  const q=$("referenceSearch").value.trim().toLowerCase(),box=$("referenceList");box.replaceChildren();let group="";
- C.references.filter(m=>!q||(m.label+" "+m.group).toLowerCase().includes(q)).forEach(m=>{if(m.group!==group){group=m.group;box.append(el("div","reference-group",group));}const b=el("button","reference-button"+(RS.meta?.id===m.id?" active":""),m.label);b.append(el("span","",fmt(m.rows)));b.onclick=()=>selectReference(m);box.append(b);});
+ const entries=C.references.filter(m=>!q||(m.label+" "+m.group).toLowerCase().includes(q));if(!entries.length)box.append(el("p","overview-note","No references match this search."));entries.forEach(m=>{if(m.group!==group){group=m.group;box.append(el("div","reference-group",group));}const b=el("button","reference-button"+(RS.meta?.id===m.id?" active":""),m.label);b.append(el("span","",fmt(m.rows)));b.onclick=()=>selectReference(m);box.append(b);});
 }
 async function selectReference(meta){
- const seq=++RS.sequence;RS.meta=meta;RS.rows=[];RS.filtered=[];RS.page=1;$("referenceRecordSearch").value="";$("referenceGroup").textContent=meta.group;$("referenceTitle").textContent=meta.label;$("referenceCount").textContent="Opening original source data…";$("referenceStatus").hidden=false;$("referenceStatus").textContent="Loading…";$("referenceTable").querySelector("thead").replaceChildren();$("referenceTable").querySelector("tbody").replaceChildren();renderReferenceList();
+ const seq=++RS.sequence;RS.ready=false;$("referencePrevious").disabled=$("referenceNext").disabled=true;$("referencePageSummary").textContent="";RS.meta=meta;RS.rows=[];RS.filtered=[];RS.page=1;$("referenceRecordSearch").value="";$("referenceGroup").textContent=meta.group;$("referenceTitle").textContent=meta.label;$("referenceCount").textContent="Opening original source data…";$("referenceStatus").hidden=false;$("referenceStatus").textContent="Loading…";$("referenceTable").querySelector("thead").replaceChildren();$("referenceTable").querySelector("tbody").replaceChildren();renderReferenceList();
  const original=metas.get(meta.id),a=$("referenceDownload");a.hidden=false;a.href=original.file;a.download=original.name+".xlsx";
- try{const r=await rawData(meta.id);if(seq!==RS.sequence)return;RS.rows=r.allRows;RS.filtered=RS.rows.map((_,i)=>i);$("referenceCount").textContent=fmt(RS.rows.length)+" original data rows · "+r.meta.headers.length+" fields";renderReferenceTable();}
- catch(err){if(seq===RS.sequence)$("referenceStatus").textContent=err.message;console.error(err);}
+ try{const r=await rawData(meta.id);if(seq!==RS.sequence)return;RS.rows=r.allRows;RS.ready=true;$("referenceCount").textContent=fmt(RS.rows.length)+" original data rows · "+r.meta.headers.length+" fields";filterReference();}
+ catch(err){if(seq===RS.sequence)retryMessage($("referenceStatus"),err.message,"Retry reference",()=>selectReference(meta));console.error(err);}
 }
-function filterReference(){if(!RS.meta)return;const q=$("referenceRecordSearch").value.trim().toLowerCase();RS.filtered=[];RS.rows.forEach((r,i)=>{if(!q||r[1].some(v=>v!==null&&v.toLowerCase().includes(q)))RS.filtered.push(i);});RS.page=1;renderReferenceTable();}
+function filterReference(){if(!RS.meta||!RS.ready)return;const q=$("referenceRecordSearch").value.trim().toLowerCase();RS.filtered=[];RS.rows.forEach((r,i)=>{if(!q||r[1].some(v=>v!==null&&v.toLowerCase().includes(q)))RS.filtered.push(i);});RS.page=1;renderReferenceTable();}
 function renderReferenceTable(){
- const m=metas.get(RS.meta.id),t=$("referenceTable"),h=t.querySelector("thead"),b=t.querySelector("tbody");h.replaceChildren();b.replaceChildren();const tr=document.createElement("tr");tr.append(el("th","","Row"));m.headers.forEach(v=>tr.append(el("th","",v)));h.append(tr);t.style.minWidth=(100+m.headers.length*170)+"px";
+ if(!RS.ready)return;const m=metas.get(RS.meta.id),t=$("referenceTable"),h=t.querySelector("thead"),b=t.querySelector("tbody");h.replaceChildren();b.replaceChildren();const tr=document.createElement("tr");tr.append(el("th","","Row"));m.headers.forEach(v=>tr.append(el("th","",v)));h.append(tr);t.style.minWidth=(100+m.headers.length*170)+"px";
  const n=RS.filtered.length,pages=Math.max(1,Math.ceil(n/50));RS.page=Math.max(1,Math.min(pages,RS.page));const from=(RS.page-1)*50,to=Math.min(from+50,n);
  for(let i=from;i<to;i++){const r=RS.rows[RS.filtered[i]],row=document.createElement("tr");const num=el("td");num.append(el("div","",r[0]));row.append(num);m.headers.forEach((_,j)=>{const td=el("td"),v=el("div","",r[1][j]===null?"":r[1][j]);td.title=columnName(j)+r[0];td.append(v);row.append(td);});b.append(row);}
  $("referenceStatus").hidden=n>0;if(!n)$("referenceStatus").textContent="No rows match this search.";$("referencePageSummary").textContent=n?fmt(from+1)+"–"+fmt(to)+" of "+fmt(n):"0 rows";$("referencePrevious").disabled=RS.page===1;$("referenceNext").disabled=RS.page>=pages;
 }
 $("categorySearch").oninput=renderCategories;
 $("equipmentSearch").oninput=()=>{clearTimeout(searchTimer);searchTimer=setTimeout(()=>{S.query=$("equipmentSearch").value;applyFilters();},140);};
-$("manufacturerFilter").onchange=()=>{S.maker=$("manufacturerFilter").value;applyFilters();};$("typeFilter").onchange=()=>{S.type=$("typeFilter").value;applyFilters();};$("resetFilters").onclick=resetFilters;$("allEquipmentTab").onclick=resetFilters;
+$("manufacturerFilter").onchange=()=>{S.maker=$("manufacturerFilter").value;applyFilters();};$("typeFilter").onchange=()=>{S.type=$("typeFilter").value;applyFilters();};$("listingStateFilter").onchange=()=>{S.state=$("listingStateFilter").value;applyFilters();};$("qualityFilter").onchange=()=>{S.quality=$("qualityFilter").value;applyFilters();};$("resetFilters").onclick=resetFilters;$("allEquipmentTab").onclick=resetFilters;
 document.querySelectorAll("[data-sort]").forEach(b=>b.onclick=()=>{if(S.sort===b.dataset.sort)S.dir*=-1;else{S.sort=b.dataset.sort;S.dir=1;}sortRecords();S.page=1;renderRows();});
 $("firstPage").onclick=()=>goPage(1);$("previousPage").onclick=()=>goPage(S.page-1);$("nextPage").onclick=()=>goPage(S.page+1);$("lastPage").onclick=()=>goPage(Math.ceil(S.filtered.length/50));$("pageNumber").onchange=()=>goPage(Number($("pageNumber").value)||1);
 $("closeRecord").onclick=()=>closeRecord();$("recordBackdrop").onclick=()=>closeRecord();$("previousRecord").onclick=()=>openRecord(S.detailIndex-1);$("nextRecord").onclick=()=>openRecord(S.detailIndex+1);
@@ -253,14 +278,21 @@ $("exportIndex").onclick=exportIndex;$("exportRecord").onclick=exportRecord;
 $("closeIntegrity").onclick=()=>$("integrityDialog").close();$("closeReferences").onclick=()=>$("referencesDialog").close();
 $("referenceSearch").oninput=renderReferenceList;$("referenceRecordSearch").oninput=filterReference;$("referencePrevious").onclick=()=>{RS.page--;renderReferenceTable();};$("referenceNext").onclick=()=>{RS.page++;renderReferenceTable();};
 document.addEventListener("keydown",e=>{
- if(e.key==="Escape")closeRecord();
- if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="k"){e.preventDefault();browse();$("categorySearch").focus();}
+ if(e.key==="Escape"&&!$("referencesDialog").open&&!$("integrityDialog").open)closeRecord();
+ if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="k"&&!$("referencesDialog").open&&!$("integrityDialog").open){e.preventDefault();browse();$("categorySearch").focus();}
  if(e.key==="/"&&!["INPUT","TEXTAREA","SELECT"].includes(document.activeElement.tagName)&&$("recordDrawer").hidden&&!$("referencesDialog").open&&!$("integrityDialog").open){e.preventDefault();browse();$("equipmentSearch").focus();}
  if(e.key==="Tab"&&!$("recordDrawer").hidden){const focus=[...$("recordDrawer").querySelectorAll("button:not(:disabled),input,a[href],summary")].filter(n=>n.getClientRects().length),first=focus[0],last=focus.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}}
 });
-window.addEventListener("hashchange",()=>{const id=decodeURIComponent(location.hash.slice(1));const m=C.collections.find(m=>m.id===id);if(m&&m.id!==S.meta?.id)selectCollection(m,false);});
+window.addEventListener("hashchange",navigateHash);
 $("categoryCount").textContent=C.collections.length;$("recordCount").textContent=fmt(C.catalogRecords);$("integrityCells").textContent=fmt(C.storedCells);$("integrityFormulas").textContent=fmt(C.originalFormulas);$("originalIdentity").textContent="Workbook: "+C.original.name+"\nVersion: "+C.original.version+"\nSHA-256: "+C.original.sha256;
 const legacy={"PV_MODULES":"pv-modules","IBR":"inverters","BATTERIES":"energy-storage","CABLES":"cables","CEC_PV_ACTIVE":"pv-modules","CEC_PV_ARCHIVE":"pv-modules","CEC_SOLAR_INVERTERS":"inverters","CEC_BATTERY_INVERTERS":"inverters","CEC_INVERTER_ARCHIVE":"inverters","CEC_BATTERIES":"energy-storage","CEC_ENERGY_STORAGE":"energy-storage","CEC_METERS":"meters"};
-const initial=decodeURIComponent(location.hash.slice(1));selectCollection(C.collections.find(m=>m.id===(legacy[initial]||initial))||C.collections[0]);
+function navigateHash(){
+ if(location.hash==="#equipmentPanel"&&S.meta)return;
+ let category="",recordId="";try{[category,recordId=""]=location.hash.slice(1).split("/").map(decodeURIComponent);}catch{toast("That catalog link is invalid. Showing the equipment catalog.");}
+ const meta=C.collections.find(m=>m.id===(legacy[category]||category))||C.collections[0];
+ if(meta.id!==S.meta?.id||!S.records){selectCollection(meta,true,recordId);return;}
+ if(recordId){resetFilters();openLinkedRecord(recordId);}else closeRecord(false,false);
+}
+navigateHash();
 })();
 
