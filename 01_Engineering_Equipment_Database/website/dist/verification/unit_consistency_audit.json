@@ -1,0 +1,1032 @@
+{
+  "generatedAt": "2026-11-18T18:15:03.912249+00:00",
+  "policy": "Raw workbook values preserved intact; single canonical unit enforced per equipment category with explicit basis/prefix/schema flagging.",
+  "totals": {
+    "categories": 29,
+    "totalRecords": 195478,
+    "cleanRecords": 81125,
+    "prefixNormalizedRecords": 12702,
+    "crossBasisRecords": 2328,
+    "schemaOrMissingUnitRecords": 99323,
+    "categoriesWithAnomalies": 13
+  },
+  "categories": [
+    {
+      "id": "breakers",
+      "label": "Circuit breakers",
+      "family": "Protection & control",
+      "total": 75606,
+      "canonicalRatingUnit": "A",
+      "canonicalVoltageUnit": "kV",
+      "note": "Breaker current (A) and max voltage (kV); unitless trip-unit/variant strings and '(source)' unstated voltage units flagged.",
+      "clean": 3717,
+      "prefixNormalized": 18,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 71871,
+      "totalFlagged": 71889,
+      "rawRatingUnits": {
+        "A": 53826,
+        "(unitless)": 21365,
+        "(blank)": 415
+      },
+      "rawVoltageUnits": {
+        "(source)": 50524,
+        "(blank)": 21777,
+        "kV": 3305
+      },
+      "samples": [
+        {
+          "recordId": "HVE-000001",
+          "model": "HP-121-40",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "121",
+          "rawVoltage": "",
+          "ratingStatus": "UNIT_MISSING",
+          "voltageStatus": "BLANK"
+        },
+        {
+          "recordId": "HVE-000002",
+          "model": "FK-7.2-50",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "8.25",
+          "rawVoltage": "",
+          "ratingStatus": "UNIT_MISSING",
+          "voltageStatus": "BLANK"
+        },
+        {
+          "recordId": "HVE-000003",
+          "model": "HP-169-40",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "169",
+          "rawVoltage": "",
+          "ratingStatus": "UNIT_MISSING",
+          "voltageStatus": "BLANK"
+        }
+      ]
+    },
+    {
+      "id": "fuses",
+      "label": "Fuses",
+      "family": "Protection & control",
+      "total": 22271,
+      "canonicalRatingUnit": "A",
+      "canonicalVoltageUnit": "kV",
+      "note": "21,817 legacy fuse rows stored Voltage (kV/V) inside Primary Rating; normalized into Voltage (kV) and flagged.",
+      "clean": 454,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 21817,
+      "totalFlagged": 21817,
+      "rawRatingUnits": {
+        "kV": 19631,
+        "V": 2186,
+        "A": 454
+      },
+      "rawVoltageUnits": {
+        "(blank)": 21817,
+        "kV": 454
+      },
+      "samples": [
+        {
+          "recordId": "FUS-000001",
+          "model": "DO-III 143G",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "23 kV",
+          "rawVoltage": "",
+          "ratingStatus": "MISPLACED_IN_RATING",
+          "voltageStatus": "MISPLACED_IN_RATING"
+        },
+        {
+          "recordId": "FUS-000002",
+          "model": "DO-III 143G",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "23 kV",
+          "rawVoltage": "",
+          "ratingStatus": "MISPLACED_IN_RATING",
+          "voltageStatus": "MISPLACED_IN_RATING"
+        },
+        {
+          "recordId": "FUS-000003",
+          "model": "DO-III 143G",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "23 kV",
+          "rawVoltage": "",
+          "ratingStatus": "MISPLACED_IN_RATING",
+          "voltageStatus": "MISPLACED_IN_RATING"
+        }
+      ]
+    },
+    {
+      "id": "energy-storage",
+      "label": "Batteries & storage",
+      "family": "Solar & storage",
+      "total": 8799,
+      "canonicalRatingUnit": "kWh",
+      "canonicalVoltageUnit": "V",
+      "note": "Mixed physical quantities: Energy (kWh) vs Battery cell charge (Ah) vs Control power (kW/kVA); non-kWh units and V/cell explicitly flagged.",
+      "clean": 1015,
+      "prefixNormalized": 6368,
+      "crossBasis": 1416,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 7784,
+      "rawRatingUnits": {
+        "kWh": 7801,
+        "Ah": 865,
+        "kVA": 131,
+        "kW": 2
+      },
+      "rawVoltageUnits": {
+        "Vac": 6786,
+        "(blank)": 1599,
+        "V/cell": 281,
+        "V": 133
+      },
+      "samples": [
+        {
+          "recordId": "BAT-000001",
+          "model": "NAN",
+          "flag": "CROSS_BASIS_FLAGGED",
+          "rawRating": "2552 Ah",
+          "rawVoltage": "2.055000066757202 V/cell",
+          "ratingStatus": "CROSS_BASIS",
+          "voltageStatus": "CROSS_BASIS"
+        },
+        {
+          "recordId": "BAT-000002",
+          "model": "NAN",
+          "flag": "CROSS_BASIS_FLAGGED",
+          "rawRating": "688 Ah",
+          "rawVoltage": "2.055000066757202 V/cell",
+          "ratingStatus": "CROSS_BASIS",
+          "voltageStatus": "CROSS_BASIS"
+        },
+        {
+          "recordId": "BAT-000003",
+          "model": "NAN",
+          "flag": "CROSS_BASIS_FLAGGED",
+          "rawRating": "824 Ah",
+          "rawVoltage": "2.055000066757202 V/cell",
+          "ratingStatus": "CROSS_BASIS",
+          "voltageStatus": "CROSS_BASIS"
+        }
+      ]
+    },
+    {
+      "id": "inverters",
+      "label": "Inverters",
+      "family": "Solar & storage",
+      "total": 5729,
+      "canonicalRatingUnit": "kW",
+      "canonicalVoltageUnit": "V",
+      "note": "All W/kW/MW scaled to kW; apparent-power kVA/MVA mapped on 1 kVA = 1 kW (unity PF eq.) basis and flagged; kV/V voltages normalized to V.",
+      "clean": 28,
+      "prefixNormalized": 5454,
+      "crossBasis": 247,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 5701,
+      "rawRatingUnits": {
+        "W": 5436,
+        "MVA": 139,
+        "kVA": 104,
+        "kW": 32,
+        "(blank)": 18
+      },
+      "rawVoltageUnits": {
+        "kV": 5231,
+        "(blank)": 362,
+        "V": 136
+      },
+      "samples": [
+        {
+          "recordId": "IBR-SMA-CORE1-50US",
+          "model": "SMA Sunny Tripower CORE1 50-US (STP 50-US-41)",
+          "flag": "CROSS_BASIS_FLAGGED",
+          "rawRating": "0.053 MVA",
+          "rawVoltage": "0.48 kV",
+          "ratingStatus": "CROSS_BASIS",
+          "voltageStatus": "PREFIX_CONVERTED"
+        },
+        {
+          "recordId": "IBR-PE-HEMK-GEN3",
+          "model": "Power Electronics HEMK GEN 3 family",
+          "flag": "CROSS_BASIS_FLAGGED",
+          "rawRating": "5.26 MVA",
+          "rawVoltage": "",
+          "ratingStatus": "CROSS_BASIS",
+          "voltageStatus": "BLANK"
+        },
+        {
+          "recordId": "IBR-PE-HEMK-MVSKID",
+          "model": "Power Electronics HEMK + MV Skid Compact family",
+          "flag": "CROSS_BASIS_FLAGGED",
+          "rawRating": "5.26 MVA",
+          "rawVoltage": "0.69 kV",
+          "ratingStatus": "CROSS_BASIS",
+          "voltageStatus": "PREFIX_CONVERTED"
+        }
+      ]
+    },
+    {
+      "id": "reclosers",
+      "label": "Reclosers",
+      "family": "Protection & control",
+      "total": 3267,
+      "canonicalRatingUnit": "A",
+      "canonicalVoltageUnit": "kV",
+      "note": "Recloser continuous current (A) and rated kV; unitless ratings flagged.",
+      "clean": 126,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 3141,
+      "totalFlagged": 3141,
+      "rawRatingUnits": {
+        "(unitless)": 3141,
+        "(blank)": 104,
+        "A": 22
+      },
+      "rawVoltageUnits": {
+        "(blank)": 3245,
+        "kV": 22
+      },
+      "samples": [
+        {
+          "recordId": "REC-000074",
+          "model": "4H [5A Coil]",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "5",
+          "rawVoltage": "",
+          "ratingStatus": "UNIT_MISSING",
+          "voltageStatus": "BLANK"
+        },
+        {
+          "recordId": "REC-000075",
+          "model": "4H [5A Coil]",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "A",
+          "rawVoltage": "",
+          "ratingStatus": "UNIT_MISSING",
+          "voltageStatus": "BLANK"
+        },
+        {
+          "recordId": "REC-000076",
+          "model": "4H [5A Coil]",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "C",
+          "rawVoltage": "",
+          "ratingStatus": "UNIT_MISSING",
+          "voltageStatus": "BLANK"
+        }
+      ]
+    },
+    {
+      "id": "terminations",
+      "label": "Cable terminations",
+      "family": "Installation & hardware",
+      "total": 989,
+      "canonicalRatingUnit": "A",
+      "canonicalVoltageUnit": "kV",
+      "note": "Termination current (A) and voltage class (kV).",
+      "clean": 0,
+      "prefixNormalized": 841,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 148,
+      "totalFlagged": 989,
+      "rawRatingUnits": {
+        "(blank)": 794,
+        "A": 195
+      },
+      "rawVoltageUnits": {
+        "(source)": 989
+      },
+      "samples": [
+        {
+          "recordId": "ETN-LE215CC09T",
+          "model": "LE215CC09T",
+          "flag": "PREFIX_NORMALIZED",
+          "rawRating": "200 A",
+          "rawVoltage": "15 kV (source)",
+          "ratingStatus": "NATIVE",
+          "voltageStatus": "PREFIX_CONVERTED"
+        },
+        {
+          "recordId": "ETN-LE225CC09",
+          "model": "LE225CC09",
+          "flag": "PREFIX_NORMALIZED",
+          "rawRating": "200 A",
+          "rawVoltage": "25 kV (source)",
+          "ratingStatus": "NATIVE",
+          "voltageStatus": "PREFIX_CONVERTED"
+        },
+        {
+          "recordId": "ETN-LE235D06T",
+          "model": "LE235D06T",
+          "flag": "PREFIX_NORMALIZED",
+          "rawRating": "200 A",
+          "rawVoltage": "35 kV (source)",
+          "ratingStatus": "NATIVE",
+          "voltageStatus": "PREFIX_CONVERTED"
+        }
+      ]
+    },
+    {
+      "id": "controllers",
+      "label": "Controllers",
+      "family": "Protection & control",
+      "total": 1691,
+      "canonicalRatingUnit": "kW",
+      "canonicalVoltageUnit": "V",
+      "note": "Power control gateways (kW, V) mixed with electronic controller text curves.",
+      "clean": 787,
+      "prefixNormalized": 0,
+      "crossBasis": 1,
+      "schemaOrMissingUnit": 903,
+      "totalFlagged": 904,
+      "rawRatingUnits": {
+        "(unitless)": 903,
+        "(blank)": 777,
+        "kW": 11
+      },
+      "rawVoltageUnits": {
+        "(blank)": 1680,
+        "V": 11
+      },
+      "samples": [
+        {
+          "recordId": "ECT-000527",
+          "model": "Form 3A",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "100 (Blue label)",
+          "rawVoltage": "",
+          "ratingStatus": "UNIT_MISSING",
+          "voltageStatus": "BLANK"
+        },
+        {
+          "recordId": "ECT-000528",
+          "model": "Form 3A",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "200 (Blue label)",
+          "rawVoltage": "",
+          "ratingStatus": "UNIT_MISSING",
+          "voltageStatus": "BLANK"
+        },
+        {
+          "recordId": "ECT-000529",
+          "model": "Form 3A",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "280 (Blue label)",
+          "rawVoltage": "",
+          "ratingStatus": "UNIT_MISSING",
+          "voltageStatus": "BLANK"
+        }
+      ]
+    },
+    {
+      "id": "parts",
+      "label": "Parts & accessories",
+      "family": "Installation & hardware",
+      "total": 744,
+      "canonicalRatingUnit": "in",
+      "canonicalVoltageUnit": "",
+      "note": "Fractional trade-size strings flagged for unit standardization.",
+      "clean": 6,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 738,
+      "totalFlagged": 738,
+      "rawRatingUnits": {
+        "(unitless)": 738,
+        "(blank)": 6
+      },
+      "rawVoltageUnits": {
+        "(blank)": 744
+      },
+      "samples": [
+        {
+          "recordId": "PRT-000001",
+          "model": "001-00001",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "1/2\"",
+          "rawVoltage": "",
+          "ratingStatus": "UNIT_MISSING",
+          "voltageStatus": "BLANK"
+        },
+        {
+          "recordId": "PRT-000002",
+          "model": "001-00002",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "3/4\"",
+          "rawVoltage": "",
+          "ratingStatus": "UNIT_MISSING",
+          "voltageStatus": "BLANK"
+        },
+        {
+          "recordId": "PRT-000003",
+          "model": "001-00003",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "1\"",
+          "rawVoltage": "",
+          "ratingStatus": "UNIT_MISSING",
+          "voltageStatus": "BLANK"
+        }
+      ]
+    },
+    {
+      "id": "motors",
+      "label": "Motors",
+      "family": "Power & distribution",
+      "total": 6920,
+      "canonicalRatingUnit": "kVA",
+      "canonicalVoltageUnit": "kV",
+      "note": "Motor collection mixes kVA apparent ratings and HP mechanical shaft ratings (HP flagged as cross-basis).",
+      "clean": 6362,
+      "prefixNormalized": 0,
+      "crossBasis": 558,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 558,
+      "rawRatingUnits": {
+        "(blank)": 5962,
+        "HP": 558,
+        "kVA": 400
+      },
+      "rawVoltageUnits": {
+        "(blank)": 5962,
+        "kV": 958
+      },
+      "samples": [
+        {
+          "recordId": "MTR-000401",
+          "model": "MV motor 250 HP / 2300-4000 V",
+          "flag": "CROSS_BASIS_FLAGGED",
+          "rawRating": "250 HP",
+          "rawVoltage": "4 kV",
+          "ratingStatus": "CROSS_BASIS",
+          "voltageStatus": "NATIVE"
+        },
+        {
+          "recordId": "MTR-000402",
+          "model": "MV motor 300 HP / 2300-4000 V",
+          "flag": "CROSS_BASIS_FLAGGED",
+          "rawRating": "300 HP",
+          "rawVoltage": "4 kV",
+          "ratingStatus": "CROSS_BASIS",
+          "voltageStatus": "NATIVE"
+        },
+        {
+          "recordId": "MTR-000403",
+          "model": "460 V motor 250 HP",
+          "flag": "CROSS_BASIS_FLAGGED",
+          "rawRating": "250 HP",
+          "rawVoltage": "0.46 kV",
+          "ratingStatus": "CROSS_BASIS",
+          "voltageStatus": "NATIVE"
+        }
+      ]
+    },
+    {
+      "id": "transformers",
+      "label": "Transformers",
+      "family": "Power & distribution",
+      "total": 1741,
+      "canonicalRatingUnit": "kVA",
+      "canonicalVoltageUnit": "kV",
+      "note": "Power transformers normalized to kVA & kV; instrument transformer ununitized ratios flagged.",
+      "clean": 1201,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 540,
+      "totalFlagged": 540,
+      "rawRatingUnits": {
+        "kVA": 1199,
+        "(unitless)": 540,
+        "(blank)": 2
+      },
+      "rawVoltageUnits": {
+        "kV": 1164,
+        "(blank)": 577
+      },
+      "samples": [
+        {
+          "recordId": "CT-LITTELFUSE-SE-CS30-70",
+          "model": "Littelfuse SE-CS30-70 ground-fault current sensor (70 mm window per datasheet)",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "30 A ground-fault sensor current rating",
+          "rawVoltage": "",
+          "ratingStatus": "UNIT_MISSING",
+          "voltageStatus": "BLANK"
+        },
+        {
+          "recordId": "CT-LITTELFUSE-SE-CS30-8",
+          "model": "Littelfuse SE-CS30-8 ground-fault current sensor (200 mm nominal window per datasheet)",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "30 A ground-fault sensor current rating",
+          "rawVoltage": "",
+          "ratingStatus": "UNIT_MISSING",
+          "voltageStatus": "BLANK"
+        },
+        {
+          "recordId": "CT-EATON-42-3598",
+          "model": "Eaton 42-3598 Freedom Size 6 motor-control current transformer",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "800 A (from manufacturer 800:5 A ratio)",
+          "rawVoltage": "",
+          "ratingStatus": "UNIT_MISSING",
+          "voltageStatus": "BLANK"
+        }
+      ]
+    },
+    {
+      "id": "disconnects",
+      "label": "Disconnect switches",
+      "family": "Power & distribution",
+      "total": 166,
+      "canonicalRatingUnit": "A",
+      "canonicalVoltageUnit": "V",
+      "note": "Disconnect continuous current (A); composite AC/DC voltage strings flagged.",
+      "clean": 1,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 165,
+      "totalFlagged": 165,
+      "rawRatingUnits": {
+        "A": 166
+      },
+      "rawVoltageUnits": {
+        "(source)": 166
+      },
+      "samples": [
+        {
+          "recordId": "DISC-EATON-STS363FD3",
+          "model": "Eaton STS363FD3 shunt-trip safety switch",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "100 A",
+          "rawVoltage": "600 Vac / 250 Vdc (source)",
+          "ratingStatus": "NATIVE",
+          "voltageStatus": "UNIT_MISSING"
+        },
+        {
+          "recordId": "DISC-EATON-STS363ND34",
+          "model": "Eaton STS363ND34 shunt-trip safety switch",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "100 A",
+          "rawVoltage": "600 Vac / 250 Vdc (source)",
+          "ratingStatus": "NATIVE",
+          "voltageStatus": "UNIT_MISSING"
+        },
+        {
+          "recordId": "DISC-EATON-STS363NW6",
+          "model": "Eaton STS363NW6 shunt-trip safety switch, NEMA 4X SS",
+          "flag": "UNIT_OR_SCHEMA_ANOMALY",
+          "rawRating": "100 A",
+          "rawVoltage": "600 Vac / 250 Vdc (source)",
+          "ratingStatus": "NATIVE",
+          "voltageStatus": "UNIT_MISSING"
+        }
+      ]
+    },
+    {
+      "id": "grounding",
+      "label": "Grounding equipment",
+      "family": "Protection & control",
+      "total": 192,
+      "canonicalRatingUnit": "A",
+      "canonicalVoltageUnit": "kV",
+      "note": "Mixes Neutral Grounding Resistors (A, kV) and Ground Electrodes (ft length).",
+      "clean": 87,
+      "prefixNormalized": 0,
+      "crossBasis": 105,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 105,
+      "rawRatingUnits": {
+        "ft": 105,
+        "A": 80,
+        "(blank)": 7
+      },
+      "rawVoltageUnits": {
+        "(blank)": 111,
+        "kV": 81
+      },
+      "samples": [
+        {
+          "recordId": "ERICO-615800",
+          "model": "nVent ERICO copper-bonded ground rod 615800",
+          "flag": "CROSS_BASIS_FLAGGED",
+          "rawRating": "10 ft",
+          "rawVoltage": "",
+          "ratingStatus": "CROSS_BASIS",
+          "voltageStatus": "BLANK"
+        },
+        {
+          "recordId": "ERICO-615803",
+          "model": "nVent ERICO copper-bonded ground rod 615803",
+          "flag": "CROSS_BASIS_FLAGGED",
+          "rawRating": "10 ft",
+          "rawVoltage": "",
+          "ratingStatus": "CROSS_BASIS",
+          "voltageStatus": "BLANK"
+        },
+        {
+          "recordId": "ERICO-615880",
+          "model": "nVent ERICO copper-bonded ground rod 615880",
+          "flag": "CROSS_BASIS_FLAGGED",
+          "rawRating": "8 ft",
+          "rawVoltage": "",
+          "ratingStatus": "CROSS_BASIS",
+          "voltageStatus": "BLANK"
+        }
+      ]
+    },
+    {
+      "id": "ev-charging",
+      "label": "EV charging",
+      "family": "Solar & storage",
+      "total": 22,
+      "canonicalRatingUnit": "kW",
+      "canonicalVoltageUnit": "V",
+      "note": "EV charger power (kW) and AC voltage (V).",
+      "clean": 0,
+      "prefixNormalized": 21,
+      "crossBasis": 1,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 22,
+      "rawRatingUnits": {
+        "kW": 22
+      },
+      "rawVoltageUnits": {
+        "Vac": 22
+      },
+      "samples": [
+        {
+          "recordId": "DB11-V2G-00001",
+          "model": "RES-DCVC125-480-V2G",
+          "flag": "PREFIX_NORMALIZED",
+          "rawRating": "125 kW",
+          "rawVoltage": "480 Vac",
+          "ratingStatus": "NATIVE",
+          "voltageStatus": "PREFIX_CONVERTED"
+        },
+        {
+          "recordId": "DB11-V2G-00002",
+          "model": "RES-DCVC60-480-V2G",
+          "flag": "PREFIX_NORMALIZED",
+          "rawRating": "60 kW",
+          "rawVoltage": "480 Vac",
+          "ratingStatus": "NATIVE",
+          "voltageStatus": "PREFIX_CONVERTED"
+        },
+        {
+          "recordId": "DB11-V2G-00003",
+          "model": "dcbel Ara",
+          "flag": "CROSS_BASIS_FLAGGED",
+          "rawRating": "15.2 kW",
+          "rawVoltage": "208/240 Vac",
+          "ratingStatus": "NATIVE",
+          "voltageStatus": "CROSS_BASIS"
+        }
+      ]
+    },
+    {
+      "id": "pv-modules",
+      "label": "PV modules",
+      "family": "Solar & storage",
+      "total": 39275,
+      "canonicalRatingUnit": "W",
+      "canonicalVoltageUnit": "Vdc",
+      "note": "PV module nameplate power (W) and max system DC voltage (Vdc).",
+      "clean": 39275,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 0,
+      "rawRatingUnits": {
+        "W": 39275
+      },
+      "rawVoltageUnits": {
+        "Vdc": 32755,
+        "(blank)": 6520
+      },
+      "samples": []
+    },
+    {
+      "id": "cables",
+      "label": "Cables",
+      "family": "Power & distribution",
+      "total": 12837,
+      "canonicalRatingUnit": "",
+      "canonicalVoltageUnit": "kV",
+      "note": "Cable catalog rated voltage (kV).",
+      "clean": 12837,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 0,
+      "rawRatingUnits": {
+        "(blank)": 12837
+      },
+      "rawVoltageUnits": {
+        "kV": 12430,
+        "(blank)": 407
+      },
+      "samples": []
+    },
+    {
+      "id": "relays",
+      "label": "Relays",
+      "family": "Protection & control",
+      "total": 8914,
+      "canonicalRatingUnit": "",
+      "canonicalVoltageUnit": "",
+      "note": "Standardized inspection view.",
+      "clean": 8914,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 0,
+      "rawRatingUnits": {
+        "(blank)": 8914
+      },
+      "rawVoltageUnits": {
+        "(blank)": 8914
+      },
+      "samples": []
+    },
+    {
+      "id": "controlled-switching",
+      "label": "Controlled switching",
+      "family": "Protection & control",
+      "total": 2575,
+      "canonicalRatingUnit": "",
+      "canonicalVoltageUnit": "",
+      "note": "Standardized inspection view.",
+      "clean": 2575,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 0,
+      "rawRatingUnits": {
+        "(blank)": 2575
+      },
+      "rawVoltageUnits": {
+        "(blank)": 2575
+      },
+      "samples": []
+    },
+    {
+      "id": "conductors",
+      "label": "Conductors",
+      "family": "Power & distribution",
+      "total": 1610,
+      "canonicalRatingUnit": "A",
+      "canonicalVoltageUnit": "",
+      "note": "Transmission conductor ampacity (A).",
+      "clean": 1610,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 0,
+      "rawRatingUnits": {
+        "A": 1610
+      },
+      "rawVoltageUnits": {
+        "(blank)": 1610
+      },
+      "samples": []
+    },
+    {
+      "id": "meters",
+      "label": "Meters",
+      "family": "Solar & storage",
+      "total": 802,
+      "canonicalRatingUnit": "",
+      "canonicalVoltageUnit": "",
+      "note": "Standardized inspection view.",
+      "clean": 802,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 0,
+      "rawRatingUnits": {
+        "(blank)": 802
+      },
+      "rawVoltageUnits": {
+        "(blank)": 802
+      },
+      "samples": []
+    },
+    {
+      "id": "rectifiers",
+      "label": "Rectifiers",
+      "family": "Power & distribution",
+      "total": 379,
+      "canonicalRatingUnit": "",
+      "canonicalVoltageUnit": "",
+      "note": "Standardized inspection view.",
+      "clean": 379,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 0,
+      "rawRatingUnits": {
+        "(blank)": 379
+      },
+      "rawVoltageUnits": {
+        "(blank)": 379
+      },
+      "samples": []
+    },
+    {
+      "id": "cable-cleats",
+      "label": "Cable cleats",
+      "family": "Installation & hardware",
+      "total": 275,
+      "canonicalRatingUnit": "",
+      "canonicalVoltageUnit": "",
+      "note": "Standardized inspection view.",
+      "clean": 275,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 0,
+      "rawRatingUnits": {
+        "(blank)": 275
+      },
+      "rawVoltageUnits": {
+        "(blank)": 275
+      },
+      "samples": []
+    },
+    {
+      "id": "cable-trays",
+      "label": "Cable trays",
+      "family": "Installation & hardware",
+      "total": 219,
+      "canonicalRatingUnit": "in",
+      "canonicalVoltageUnit": "",
+      "note": "Tray width in inches.",
+      "clean": 219,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 0,
+      "rawRatingUnits": {
+        "(blank)": 129,
+        "in wide": 90
+      },
+      "rawVoltageUnits": {
+        "(blank)": 219
+      },
+      "samples": []
+    },
+    {
+      "id": "enclosures",
+      "label": "Enclosures & vaults",
+      "family": "Installation & hardware",
+      "total": 156,
+      "canonicalRatingUnit": "",
+      "canonicalVoltageUnit": "",
+      "note": "Standardized inspection view.",
+      "clean": 156,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 0,
+      "rawRatingUnits": {
+        "(blank)": 156
+      },
+      "rawVoltageUnits": {
+        "(blank)": 156
+      },
+      "samples": []
+    },
+    {
+      "id": "switchgear",
+      "label": "Switchgear",
+      "family": "Power & distribution",
+      "total": 114,
+      "canonicalRatingUnit": "A",
+      "canonicalVoltageUnit": "kV",
+      "note": "Switchgear continuous current (A) and rated kV.",
+      "clean": 114,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 0,
+      "rawRatingUnits": {
+        "(blank)": 91,
+        "A": 23
+      },
+      "rawVoltageUnits": {
+        "kV": 114
+      },
+      "samples": []
+    },
+    {
+      "id": "surge-protection",
+      "label": "Surge arresters",
+      "family": "Protection & control",
+      "total": 76,
+      "canonicalRatingUnit": "kV MCOV",
+      "canonicalVoltageUnit": "kV",
+      "note": "Arrester MCOV (kV) and system class (kV).",
+      "clean": 76,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 0,
+      "rawRatingUnits": {
+        "kV MCOV": 76
+      },
+      "rawVoltageUnits": {
+        "(blank)": 71,
+        "kV": 5
+      },
+      "samples": []
+    },
+    {
+      "id": "optimizers",
+      "label": "Power optimizers",
+      "family": "Solar & storage",
+      "total": 43,
+      "canonicalRatingUnit": "W",
+      "canonicalVoltageUnit": "Vdc",
+      "note": "Optimizer DC input power (W) and max input voltage (Vdc).",
+      "clean": 43,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 0,
+      "rawRatingUnits": {
+        "W": 42,
+        "(blank)": 1
+      },
+      "rawVoltageUnits": {
+        "Vdc": 42,
+        "(blank)": 1
+      },
+      "samples": []
+    },
+    {
+      "id": "fire-protection",
+      "label": "Fire protection",
+      "family": "Installation & hardware",
+      "total": 25,
+      "canonicalRatingUnit": "",
+      "canonicalVoltageUnit": "",
+      "note": "Standardized inspection view.",
+      "clean": 25,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 0,
+      "rawRatingUnits": {
+        "(blank)": 25
+      },
+      "rawVoltageUnits": {
+        "(blank)": 25
+      },
+      "samples": []
+    },
+    {
+      "id": "conduits",
+      "label": "Conduits",
+      "family": "Installation & hardware",
+      "total": 24,
+      "canonicalRatingUnit": "in",
+      "canonicalVoltageUnit": "",
+      "note": "Conduit nominal trade size in inches.",
+      "clean": 24,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 0,
+      "rawRatingUnits": {
+        "in trade size": 24
+      },
+      "rawVoltageUnits": {
+        "(blank)": 24
+      },
+      "samples": []
+    },
+    {
+      "id": "generators",
+      "label": "Generators",
+      "family": "Power & distribution",
+      "total": 17,
+      "canonicalRatingUnit": "MVA",
+      "canonicalVoltageUnit": "kV",
+      "note": "Generator rated MVA and terminal kV.",
+      "clean": 17,
+      "prefixNormalized": 0,
+      "crossBasis": 0,
+      "schemaOrMissingUnit": 0,
+      "totalFlagged": 0,
+      "rawRatingUnits": {
+        "MVA": 17
+      },
+      "rawVoltageUnits": {
+        "kV": 12,
+        "(blank)": 5
+      },
+      "samples": []
+    }
+  ]
+}

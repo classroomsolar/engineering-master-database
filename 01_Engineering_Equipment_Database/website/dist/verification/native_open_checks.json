@@ -1,0 +1,617 @@
+{
+  "result": "PASS",
+  "engine": "LibreOfficeDev 26.8.0.0.alpha0 (headless)",
+  "fileCount": 117,
+  "workbooksOpenedAndConverted": 117,
+  "method": "Opened each delivered XLSX using an isolated headless LibreOffice profile and converted its visible primary sheet to a scratch-only CSV. Delivered workbooks were not saved or changed by LibreOffice.",
+  "formulaCellsCheckedForNativeErrors": 53117,
+  "nativeFormulaErrorCount": 0,
+  "formulaChecks": [
+    {
+      "sheet": "NEUTRAL_GROUNDING_RESISTORS",
+      "formula_cells": 2,
+      "errors": 0
+    },
+    {
+      "sheet": "CABLE_NORMALIZATION",
+      "formula_cells": 53105,
+      "errors": 0
+    },
+    {
+      "sheet": "NUMERIC_BENCHMARKS",
+      "formula_cells": 10,
+      "errors": 0
+    }
+  ],
+  "errors": [],
+  "files": [
+    {
+      "sheet": "CABLES",
+      "opened": true,
+      "csv_bytes": 7014955
+    },
+    {
+      "sheet": "CABLE_TYPES",
+      "opened": true,
+      "csv_bytes": 46989
+    },
+    {
+      "sheet": "TRANSMISSION_CONDUCTORS",
+      "opened": true,
+      "csv_bytes": 458835
+    },
+    {
+      "sheet": "PV_MODULES",
+      "opened": true,
+      "csv_bytes": 24914911
+    },
+    {
+      "sheet": "BATTERIES",
+      "opened": true,
+      "csv_bytes": 68744
+    },
+    {
+      "sheet": "BATTERY_PERFORMANCE",
+      "opened": true,
+      "csv_bytes": 746431
+    },
+    {
+      "sheet": "TRANSFORMERS",
+      "opened": true,
+      "csv_bytes": 1102205
+    },
+    {
+      "sheet": "MOTORS_NAMEPLATE",
+      "opened": true,
+      "csv_bytes": 668058
+    },
+    {
+      "sheet": "MOTOR_CHARACTERISTICS",
+      "opened": true,
+      "csv_bytes": 176073
+    },
+    {
+      "sheet": "MOTOR_MODELS",
+      "opened": true,
+      "csv_bytes": 18341
+    },
+    {
+      "sheet": "HV_BREAKERS",
+      "opened": true,
+      "csv_bytes": 377725
+    },
+    {
+      "sheet": "HV_BREAKERS_EXTENDED",
+      "opened": true,
+      "csv_bytes": 306729
+    },
+    {
+      "sheet": "LV_BREAKERS",
+      "opened": true,
+      "csv_bytes": 5391875
+    },
+    {
+      "sheet": "FUSES",
+      "opened": true,
+      "csv_bytes": 2957114
+    },
+    {
+      "sheet": "RELAYS",
+      "opened": true,
+      "csv_bytes": 1081066
+    },
+    {
+      "sheet": "RECLOSERS",
+      "opened": true,
+      "csv_bytes": 460258
+    },
+    {
+      "sheet": "TRIP_DEVICES",
+      "opened": true,
+      "csv_bytes": 1776279
+    },
+    {
+      "sheet": "OVERLOAD_HEATERS",
+      "opened": true,
+      "csv_bytes": 567674
+    },
+    {
+      "sheet": "ELECTRONIC_CONTROLLERS",
+      "opened": true,
+      "csv_bytes": 490765
+    },
+    {
+      "sheet": "CSD_DEVICES",
+      "opened": true,
+      "csv_bytes": 276073
+    },
+    {
+      "sheet": "RELIABILITY",
+      "opened": true,
+      "csv_bytes": 12746
+    },
+    {
+      "sheet": "RELIABILITY_EXTENDED",
+      "opened": true,
+      "csv_bytes": 13306
+    },
+    {
+      "sheet": "FIRE_PROTECTION",
+      "opened": true,
+      "csv_bytes": 2749
+    },
+    {
+      "sheet": "CONDUIT_FIRE_PROTECTION",
+      "opened": true,
+      "csv_bytes": 866
+    },
+    {
+      "sheet": "HARMONICS",
+      "opened": true,
+      "csv_bytes": 44437
+    },
+    {
+      "sheet": "RECTIFIERS",
+      "opened": true,
+      "csv_bytes": 168543
+    },
+    {
+      "sheet": "INTERRUPTION_COST",
+      "opened": true,
+      "csv_bytes": 3146
+    },
+    {
+      "sheet": "RAILWAY_LOADS",
+      "opened": true,
+      "csv_bytes": 651
+    },
+    {
+      "sheet": "IBR",
+      "opened": true,
+      "csv_bytes": 8641324
+    },
+    {
+      "sheet": "SWITCHGEAR",
+      "opened": true,
+      "csv_bytes": 93436
+    },
+    {
+      "sheet": "INSTRUMENT_TRANSFORMERS",
+      "opened": true,
+      "csv_bytes": 358717
+    },
+    {
+      "sheet": "DISCONNECTS",
+      "opened": true,
+      "csv_bytes": 166679
+    },
+    {
+      "sheet": "CONDUCTOR_MATERIALS",
+      "opened": true,
+      "csv_bytes": 765
+    },
+    {
+      "sheet": "CONDUCTOR_SIZES",
+      "opened": true,
+      "csv_bytes": 1402
+    },
+    {
+      "sheet": "CABLE_SC_K_FACTORS",
+      "opened": true,
+      "csv_bytes": 518
+    },
+    {
+      "sheet": "INSULATION_CLASSES",
+      "opened": true,
+      "csv_bytes": 816
+    },
+    {
+      "sheet": "GROUND_ELECTRODES",
+      "opened": true,
+      "csv_bytes": 121453
+    },
+    {
+      "sheet": "NEUTRAL_GROUNDING_RESISTORS",
+      "opened": true,
+      "csv_bytes": 79726
+    },
+    {
+      "sheet": "SURGE_ARRESTERS",
+      "opened": true,
+      "csv_bytes": 125021
+    },
+    {
+      "sheet": "CABLE_TRAYS",
+      "opened": true,
+      "csv_bytes": 77392
+    },
+    {
+      "sheet": "CABLE_CLEATS",
+      "opened": true,
+      "csv_bytes": 102851
+    },
+    {
+      "sheet": "BOX_FILL",
+      "opened": true,
+      "csv_bytes": 729
+    },
+    {
+      "sheet": "CONDUITS",
+      "opened": true,
+      "csv_bytes": 5741
+    },
+    {
+      "sheet": "ENCLOSURES",
+      "opened": true,
+      "csv_bytes": 138333
+    },
+    {
+      "sheet": "PROTECTION_CURVES",
+      "opened": true,
+      "csv_bytes": 708
+    },
+    {
+      "sheet": "SOURCE_REGISTER",
+      "opened": true,
+      "csv_bytes": 2645916
+    },
+    {
+      "sheet": "TERMINATIONS",
+      "opened": true,
+      "csv_bytes": 752815
+    },
+    {
+      "sheet": "AMPACITY_ROUTES",
+      "opened": true,
+      "csv_bytes": 2917
+    },
+    {
+      "sheet": "AMPACITY_AMBIENT_FACTORS",
+      "opened": true,
+      "csv_bytes": 1131
+    },
+    {
+      "sheet": "AMPACITY_CCC_FACTORS",
+      "opened": true,
+      "csv_bytes": 156
+    },
+    {
+      "sheet": "AMPACITY_PARAMETERS",
+      "opened": true,
+      "csv_bytes": 547
+    },
+    {
+      "sheet": "NEC_AMPACITY_2020",
+      "opened": true,
+      "csv_bytes": 334587
+    },
+    {
+      "sheet": "NEC_AMPACITY_2023",
+      "opened": true,
+      "csv_bytes": 333655
+    },
+    {
+      "sheet": "GENERATORS",
+      "opened": true,
+      "csv_bytes": 16470
+    },
+    {
+      "sheet": "MOTOR_LOCKED_ROTOR_CODES",
+      "opened": true,
+      "csv_bytes": 5200
+    },
+    {
+      "sheet": "CABLE_FAULT_CURRENT_REFERENCE",
+      "opened": true,
+      "csv_bytes": 1870
+    },
+    {
+      "sheet": "CABLE_TRAY_EQUIPMENT",
+      "opened": true,
+      "csv_bytes": 74526
+    },
+    {
+      "sheet": "TRAY_EXPANSION_RULES",
+      "opened": true,
+      "csv_bytes": 1016
+    },
+    {
+      "sheet": "CABLE_CLEAT_SIZES",
+      "opened": true,
+      "csv_bytes": 21191
+    },
+    {
+      "sheet": "CABLE_CLEAT_SIZE_MAP",
+      "opened": true,
+      "csv_bytes": 34978
+    },
+    {
+      "sheet": "TRAY_ACCESSORY_RULES",
+      "opened": true,
+      "csv_bytes": 7280
+    },
+    {
+      "sheet": "CABLE_PLANNING_DEFAULTS",
+      "opened": true,
+      "csv_bytes": 5027
+    },
+    {
+      "sheet": "NEC_TRAY_FILL",
+      "opened": true,
+      "csv_bytes": 6302
+    },
+    {
+      "sheet": "NEC_CHANNEL_TRAY_FILL",
+      "opened": true,
+      "csv_bytes": 1215
+    },
+    {
+      "sheet": "TRAY_ENGINEERING_DEFAULTS",
+      "opened": true,
+      "csv_bytes": 663
+    },
+    {
+      "sheet": "CABLE_IMPEDANCE_DEFAULTS",
+      "opened": true,
+      "csv_bytes": 1511
+    },
+    {
+      "sheet": "TRAY_EGC_METAL_AREA",
+      "opened": true,
+      "csv_bytes": 2734
+    },
+    {
+      "sheet": "EGC_SIZE_BY_OCPD",
+      "opened": true,
+      "csv_bytes": 5848
+    },
+    {
+      "sheet": "EGC_SIZE_THRESHOLDS",
+      "opened": true,
+      "csv_bytes": 5978
+    },
+    {
+      "sheet": "TRAY_EGC_AREA_THRESHOLDS",
+      "opened": true,
+      "csv_bytes": 2865
+    },
+    {
+      "sheet": "TRAY_WIDTH_CODES",
+      "opened": true,
+      "csv_bytes": 1870
+    },
+    {
+      "sheet": "TRAY_BARRIER_COVER_CODES",
+      "opened": true,
+      "csv_bytes": 1144
+    },
+    {
+      "sheet": "TRAY_GROUNDING_ACCESSORIES",
+      "opened": true,
+      "csv_bytes": 5196
+    },
+    {
+      "sheet": "PARTS_CATALOG",
+      "opened": true,
+      "csv_bytes": 148253
+    },
+    {
+      "sheet": "BREAKER_LUGS",
+      "opened": true,
+      "csv_bytes": 87118
+    },
+    {
+      "sheet": "PV_OPTIMIZERS",
+      "opened": true,
+      "csv_bytes": 12940
+    },
+    {
+      "sheet": "CONDUCTOR_PROPERTIES",
+      "opened": true,
+      "csv_bytes": 5657
+    },
+    {
+      "sheet": "LEGACY_NEC_REFERENCE",
+      "opened": true,
+      "csv_bytes": 323546
+    },
+    {
+      "sheet": "SHEET_MAP",
+      "opened": true,
+      "csv_bytes": 32658
+    },
+    {
+      "sheet": "FIELD_AUDIT",
+      "opened": true,
+      "csv_bytes": 392318
+    },
+    {
+      "sheet": "DATA_ISSUES",
+      "opened": true,
+      "csv_bytes": 528069
+    },
+    {
+      "sheet": "RESEARCH_GUIDANCE",
+      "opened": true,
+      "csv_bytes": 21550
+    },
+    {
+      "sheet": "MODEL_REQUIREMENTS",
+      "opened": true,
+      "csv_bytes": 20387
+    },
+    {
+      "sheet": "PV_UNIT_REVIEW",
+      "opened": true,
+      "csv_bytes": 11691766
+    },
+    {
+      "sheet": "PLUGIN_LOG",
+      "opened": true,
+      "csv_bytes": 11290
+    },
+    {
+      "sheet": "CHANGE_LOG",
+      "opened": true,
+      "csv_bytes": 20347777
+    },
+    {
+      "sheet": "AUDIT_README",
+      "opened": true,
+      "csv_bytes": 13345
+    },
+    {
+      "sheet": "OPTIMIZER_REVIEW",
+      "opened": true,
+      "csv_bytes": 12934
+    },
+    {
+      "sheet": "DATABASE_TABLE_INDEX",
+      "opened": true,
+      "csv_bytes": 19365
+    },
+    {
+      "sheet": "PAPER_AUDIT",
+      "opened": true,
+      "csv_bytes": 167612
+    },
+    {
+      "sheet": "CALCULATOR_KEY_AUDIT",
+      "opened": true,
+      "csv_bytes": 21990
+    },
+    {
+      "sheet": "CABLE_NORMALIZATION",
+      "opened": true,
+      "csv_bytes": 5368954
+    },
+    {
+      "sheet": "NUMERIC_BENCHMARKS",
+      "opened": true,
+      "csv_bytes": 469
+    },
+    {
+      "sheet": "CEC_PV_ACTIVE",
+      "opened": true,
+      "csv_bytes": 9843541
+    },
+    {
+      "sheet": "CEC_SOLAR_INVERTERS",
+      "opened": true,
+      "csv_bytes": 1739563
+    },
+    {
+      "sheet": "CEC_BATTERY_INVERTERS",
+      "opened": true,
+      "csv_bytes": 941637
+    },
+    {
+      "sheet": "CEC_BATTERIES",
+      "opened": true,
+      "csv_bytes": 308512
+    },
+    {
+      "sheet": "CEC_ENERGY_STORAGE",
+      "opened": true,
+      "csv_bytes": 3867819
+    },
+    {
+      "sheet": "CEC_METERS",
+      "opened": true,
+      "csv_bytes": 142392
+    },
+    {
+      "sheet": "CEC_LEGACY_PCS",
+      "opened": true,
+      "csv_bytes": 832675
+    },
+    {
+      "sheet": "CEC_V2G",
+      "opened": true,
+      "csv_bytes": 11918
+    },
+    {
+      "sheet": "CEC_BATTERY_ARCHIVE",
+      "opened": true,
+      "csv_bytes": 3276
+    },
+    {
+      "sheet": "CEC_INVERTER_ARCHIVE",
+      "opened": true,
+      "csv_bytes": 1324700
+    },
+    {
+      "sheet": "CEC_PV_ARCHIVE",
+      "opened": true,
+      "csv_bytes": 2767236
+    },
+    {
+      "sheet": "CEC_POWER_CONTROL",
+      "opened": true,
+      "csv_bytes": 55399
+    },
+    {
+      "sheet": "CEC_PMRS",
+      "opened": true,
+      "csv_bytes": 11387
+    },
+    {
+      "sheet": "CEC_PMRS_HISTORICAL",
+      "opened": true,
+      "csv_bytes": 14680
+    },
+    {
+      "sheet": "CEC_FIELD_MAP",
+      "opened": true,
+      "csv_bytes": 106479
+    },
+    {
+      "sheet": "CEC_SOURCE_NOTES",
+      "opened": true,
+      "csv_bytes": 206108
+    },
+    {
+      "sheet": "CEC_IMPORT_INDEX",
+      "opened": true,
+      "csv_bytes": 3962
+    },
+    {
+      "sheet": "CEC_LISTING_LINKS",
+      "opened": true,
+      "csv_bytes": 10017040
+    },
+    {
+      "sheet": "CEC_MODEL_GROUPS",
+      "opened": true,
+      "csv_bytes": 5706205
+    },
+    {
+      "sheet": "CEC_ASSEMBLY_RELATIONS",
+      "opened": true,
+      "csv_bytes": 21200
+    },
+    {
+      "sheet": "REQUEST_AUDIT",
+      "opened": true,
+      "csv_bytes": 6151
+    },
+    {
+      "sheet": "EQUIPMENT_RECORD_HISTORY",
+      "opened": true,
+      "csv_bytes": 14712
+    },
+    {
+      "sheet": "RECORD_RECONCILIATION",
+      "opened": true,
+      "csv_bytes": 52371
+    },
+    {
+      "sheet": "CEC_FILE_RECONCILIATION",
+      "opened": true,
+      "csv_bytes": 5227
+    }
+  ],
+  "limitations": [
+    "Microsoft Excel itself was not available for a direct opening test. Successful LibreOffice import does not guarantee every Microsoft Excel version or add-in configuration."
+  ]
+}

@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="no-referrer" />
+  <title>Engineering Equipment Master Database</title>
+  <meta name="description" content="Read-only engineering equipment master database covering 196,215 records across 29 equipment categories and 34 engineering reference tables." />
+  <meta property="og:title" content="Engineering Equipment Master Database" />
+  <meta property="og:description" content="Column-filterable engineering equipment catalog and 34 engineering reference tables across 196,215 records." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/app.css?v=11" />
+</head>
+<body>
+  <div class="app-frame">
+    <!-- Top Application Bar -->
+    <header class="topbar">
+      <div class="topbar-left">
+        <button id="mobile-nav-btn" class="icon-btn mobile-only" type="button" aria-label="Toggle navigation sidebar">
+          <span class="icon-slot" data-icon="menu"></span>
+        </button>
+        <div class="brand-lockup">
+          <span class="brand-mark">master<span class="brand-dot">.</span></span>
+          <span class="brand-meta tabular-nums" id="brand-meta">196,215 records · 29 types</span>
+        </div>
+      </div>
+
+      <nav class="topbar-nav" aria-label="Primary workspace views">
+        <button id="nav-catalog-btn" class="nav-tab is-active" type="button" data-view="catalog">
+          <span class="icon-slot" data-icon="grid"></span>
+          <span>Equipment Catalog</span>
+        </button>
+        <button id="nav-refs-btn" class="nav-tab" type="button" data-view="references">
+          <span class="icon-slot" data-icon="book"></span>
+          <span>Engineering References <span class="nav-count tabular-nums" id="nav-refs-count">34</span></span>
+        </button>
+      </nav>
+
+      <div class="topbar-right">
+        <button id="theme-toggle-btn" class="icon-btn" type="button" aria-label="Switch Dark or Light theme" title="Toggle Dark / Light surface">
+          <span class="icon-slot" id="theme-icon-slot" data-icon="sun"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Workspace Shell -->
+    <div class="app-shell">
+      <div id="sidebar-backdrop" class="sidebar-backdrop" hidden></div>
+
+      <!-- Left Navigation Rail (Switches dynamically between Equipment Categories & Engineering References) -->
+      <aside id="category-sidebar" class="sidebar" aria-label="Database navigation">
+        <div id="sidebar-catalog-pane" class="sidebar-pane">
+          <div class="sidebar-head">
+            <div class="sidebar-search-wrap">
+              <span class="icon-slot search-ico" data-icon="search"></span>
+              <input
+                id="cat-search-input"
+                class="sidebar-search"
+                type="search"
+                placeholder="Filter 29 categories... (⌘K)"
+                autocomplete="off"
+                aria-label="Filter equipment categories"
+              />
+            </div>
+          </div>
+          <div id="category-rail" class="category-rail"></div>
+        </div>
+
+        <div id="sidebar-refs-pane" class="sidebar-pane" hidden>
+          <div class="sidebar-head">
+            <div class="sidebar-search-wrap">
+              <span class="icon-slot search-ico" data-icon="search"></span>
+              <input
+                id="ref-list-search"
+                class="sidebar-search"
+                type="search"
+                placeholder="Filter 34 reference tables..."
+                autocomplete="off"
+                aria-label="Filter engineering reference tables"
+              />
+            </div>
+          </div>
+          <div id="ref-list" class="category-rail"></div>
+        </div>
+      </aside>
+
+      <!-- Primary Catalog Workspace -->
+      <main id="catalog-workspace" class="main-canvas">
+        <section class="command-header">
+          <div class="command-title-wrap">
+            <div class="command-eyebrow">
+              <span id="cat-family-label">Solar &amp; storage</span>
+              <span class="sep">/</span>
+              <span id="cat-file-label" class="mono">pv-modules</span>
+            </div>
+            <h1 id="cat-title">PV modules</h1>
+            <p id="cat-description" class="command-desc">PV modules from every source, in one list.</p>
+          </div>
+          <div class="command-actions">
+            <span id="cat-matched-badge" class="matched-pill tabular-nums">— records</span>
+            <button id="reset-all-filters-btn" class="btn btn-accent-outline" type="button" hidden>
+              <span class="icon-slot" data-icon="reset"></span>
+              <span>Reset all filters</span>
+            </button>
+          </div>
+        </section>
+
+        <div id="active-filters-bar" class="active-filters-bar" hidden>
+          <span class="active-filters-label">Active column filters:</span>
+          <div id="active-filter-chips" class="active-filter-chips"></div>
+        </div>
+
+        <section class="grid-card" aria-label="Equipment records data grid">
+          <div class="grid-toolbar">
+            <div class="grid-search-wrap">
+              <span class="icon-slot search-ico" data-icon="search"></span>
+              <input
+                id="global-search-input"
+                class="grid-search-input"
+                type="search"
+                placeholder="Search model, ID, manufacturer, specifications... ( / )"
+                autocomplete="off"
+                aria-label="Search across active equipment category"
+              />
+              <span id="search-index-status" class="search-index-tag"></span>
+            </div>
+
+            <div class="grid-pager">
+              <label class="page-size-label">
+                <span>Rows</span>
+                <select id="page-size-select" class="compact-select" aria-label="Rows per page">
+                  <option value="50">50</option>
+                  <option value="100" selected>100</option>
+                  <option value="250">250</option>
+                </select>
+              </label>
+              <span id="pager-summary" class="pager-summary tabular-nums">0–0 of 0</span>
+              <div class="pager-btns">
+                <button id="page-first-btn" class="icon-btn-sm" type="button" title="First page" aria-label="First page">«</button>
+                <button id="page-prev-btn" class="icon-btn-sm" type="button" title="Previous page" aria-label="Previous page">‹</button>
+                <button id="page-next-btn" class="icon-btn-sm" type="button" title="Next page" aria-label="Next page">›</button>
+                <button id="page-last-btn" class="icon-btn-sm" type="button" title="Last page" aria-label="Last page">»</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-scroll" id="table-scroll">
+            <table id="catalog-table" class="data-grid">
+              <colgroup id="catalog-colgroup"></colgroup>
+              <thead id="catalog-thead"></thead>
+              <tbody id="catalog-tbody"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <!-- Consolidated Engineering References Workspace (Single Place Only) -->
+      <main id="references-workspace" class="main-canvas" hidden>
+        <section class="command-header">
+          <div class="command-title-wrap">
+            <div class="command-eyebrow">
+              <span id="ref-active-group">Engineering standards &amp; tables</span>
+              <span class="sep">/</span>
+              <span id="ref-active-code" class="mono">—</span>
+            </div>
+            <h1 id="ref-active-title">Select a reference table</h1>
+            <p id="ref-active-meta" class="command-desc">Standardized engineering reference tables with per-column filters.</p>
+          </div>
+          <div class="command-actions">
+            <span id="ref-row-count" class="matched-pill tabular-nums">0 rows</span>
+            <button id="ref-clear-cols-btn" class="btn btn-accent-outline" type="button" hidden>
+              <span class="icon-slot" data-icon="reset"></span>
+              <span>Reset reference filters</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="grid-card" aria-label="Engineering reference data table">
+          <div class="grid-toolbar">
+            <div class="grid-search-wrap">
+              <span class="icon-slot search-ico" data-icon="search"></span>
+              <input
+                id="ref-row-search"
+                class="grid-search-input"
+                type="search"
+                placeholder="Search across all columns of this reference table..."
+                autocomplete="off"
+                aria-label="Global filter reference table rows"
+              />
+            </div>
+
+            <div class="grid-pager">
+              <label class="page-size-label">
+                <span>Rows</span>
+                <select id="ref-page-size-select" class="compact-select" aria-label="Reference rows per page">
+                  <option value="50">50</option>
+                  <option value="100" selected>100</option>
+                  <option value="250">250</option>
+                </select>
+              </label>
+              <span id="ref-pager-summary" class="pager-summary tabular-nums">0–0 of 0</span>
+              <div class="pager-btns">
+                <button id="ref-page-first-btn" class="icon-btn-sm" type="button" title="First page" aria-label="Reference first page">«</button>
+                <button id="ref-page-prev-btn" class="icon-btn-sm" type="button" title="Previous page" aria-label="Reference previous page">‹</button>
+                <button id="ref-page-next-btn" class="icon-btn-sm" type="button" title="Next page" aria-label="Reference next page">›</button>
+                <button id="ref-page-last-btn" class="icon-btn-sm" type="button" title="Last page" aria-label="Reference last page">»</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="table-scroll ref-table-scroll">
+            <table id="ref-data-table" class="data-grid">
+              <thead id="ref-thead"></thead>
+              <tbody id="ref-tbody"></tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- Record Technical Detail & Source Drawer -->
+  <div id="drawer-backdrop" class="drawer-backdrop" hidden></div>
+  <aside id="detail-drawer" class="detail-drawer" aria-label="Equipment specifications and sources" hidden>
+    <header class="drawer-head">
+      <div class="drawer-title-group">
+        <div id="drawer-rid" class="drawer-eyebrow mono">—</div>
+        <h2 id="drawer-title" class="drawer-title">Equipment Detail</h2>
+        <div id="drawer-sub" class="drawer-sub">—</div>
+      </div>
+      <button id="drawer-close-btn" class="icon-btn" type="button" aria-label="Close detail drawer">
+        <span class="icon-slot" data-icon="close"></span>
+      </button>
+    </header>
+    <div id="drawer-body" class="drawer-body"></div>
+  </aside>
+
+  <script src="collections/index.js"></script>
+  <script src="data/catalog.js"></script>
+  <script src="assets/integrity_helpers.js?v=10"></script>
+  <script src="assets/app.js?v=10"></script>
+</body>
+</html>
